@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+
+media_folder: static/media
+public_folder: /media
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - label: Páginas
+    name: pages
+    files:
+      - label: Portada
+        name: frontpage
+        file: src/data/pages/frontpage.yml
+        fields:
+          - label: Título
+            name: title
+            widget: string
+          - label: Entradilla
+            name: tagline
+            widget: markdown
