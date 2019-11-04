@@ -15,7 +15,7 @@ collections:
     files:
       - label: Portada
         name: frontpage
-        file: src/data/pages/frontpage.yml
+        file: src/data/pages/frontpage.md
         fields:
           - label: Título
             name: title
