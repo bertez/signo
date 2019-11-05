@@ -1,7 +1,10 @@
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 const { createFilePath } = require('gatsby-source-filesystem');
 
-exports.createPages = async ({ actions: { createPage } }) => {
+exports.createPages = async ({ actions: { createPage }, graphql }) => {
+  // const pages = await graphql(``);
+
+  // console.log(pages);
   //Frontpage
   createPage({
     path: '/',

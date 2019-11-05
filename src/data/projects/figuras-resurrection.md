@@ -1,4 +1,5 @@
 ---
+template: project
 title: Figuras Resurrection Fest
 tagline: Lorem ipsum dolor sit amet
 highlight: true
@@ -17,4 +18,3 @@ links:
     url: >-
       https://www.lavozdegalicia.es/noticia/elecciones/2019/11/05/verdades-mentiras-debate/00031572914180193439805.htm
 ---
-
