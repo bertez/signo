@@ -116,7 +116,7 @@ collections:
             name: text
             widget: markdown
             required: false
-          - label: Imágen
+          - label: Imagen
             name: image
             widget: image
             required: false
@@ -131,7 +131,7 @@ collections:
           - label: Título
             name: title
             widget: string
-          - label: Imágen
+          - label: Imagen
             name: image
             widget: image
       - label: Links
@@ -150,3 +150,72 @@ collections:
           - label: Fecha
             name: date
             widget: date
+  - label: Servicios
+    name: services
+    folder: src/data/servicios
+    create: true
+    fields:
+      - label: Template
+        name: template
+        widget: hidden
+        default: service
+      - label: Título
+        name: title
+        widget: string
+      - label: Entradilla
+        name: tagline
+        widget: markdown
+      - label: Imagen principal
+        name: picture
+        widget: image
+      - label: Descripción
+        name: description
+        widget: markdown
+      - label: Detalles
+        name: details
+        widget: list
+        fields:
+          - label: Título
+            name: title
+            widget: string
+          - label: Imagen
+            name: image
+            widget: image
+          - label: Texto
+            name: text
+            widget: markdown
+      - label: Galería
+        name: gallery
+        widget: list
+        fields:
+          - label: Título
+            name: title
+            widget: string
+          - label: Imagen
+            name: image
+            widget: image
+      - label: Tarifas
+        name: prices
+        widget: list
+        fields:
+          - label: Nombre
+            name: name
+            widget: string
+          - label: Descripción
+            name: description
+            widget: string
+          - label: Precio
+            name: price
+            widget: number
+            valueType: float
+      - label: Proyectos Destacados
+        name: related_projects
+        widget: list
+        fields:
+          - label: Proyecto
+            name: project
+            widget: relation
+            collection: projects
+            searchFields: ["title"]
+            valueField: title
+            displayFields: ["title"]
