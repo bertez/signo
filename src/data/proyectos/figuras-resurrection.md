@@ -4,7 +4,7 @@ title: Figuras Resurrection Fest
 tagline: Lorem ipsum dolor sit amet
 highlight: true
 related_client: Resurrection Fest Viveiro
-picture: /media/avatar.jpg
+picture: /media/photo-1572240979568-6ddb008a1128.jpg
 sections:
   - text: Locamente
     title: Movida Gorda
@@ -19,3 +19,4 @@ links:
     url: >-
       https://www.lavozdegalicia.es/noticia/elecciones/2019/11/05/verdades-mentiras-debate/00031572914180193439805.htm
 ---
+
