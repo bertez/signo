@@ -1,5 +1,5 @@
 ---
 title: Concello de Viveiro
-Logo: /media/escudo_de_viveiro.svg
+Logo: /media/avatar.jpg
 ---
 
