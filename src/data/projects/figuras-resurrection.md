@@ -1,5 +1,5 @@
 ---
-title: Figuras Resurrection
+title: Figuras Resurrection Fest
 tagline: Lorem ipsum dolor sit amet
 highlight: true
 picture: /media/avatar.jpg
