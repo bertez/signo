@@ -67,7 +67,7 @@ collections:
         widget: image
   - label: Proyectos
     name: projects
-    folder: src/data/projects
+    folder: src/data/proyectos
     create: true
     fields:
       - label: Template
