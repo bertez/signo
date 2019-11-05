@@ -3,6 +3,7 @@ template: project
 title: Figuras Resurrection Fest
 tagline: Lorem ipsum dolor sit amet
 highlight: true
+related_client: Resurrection Fest Viveiro
 picture: /media/avatar.jpg
 sections:
   - text: Locamente

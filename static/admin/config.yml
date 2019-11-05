@@ -27,13 +27,17 @@ collections:
           - label: Entradilla
             name: tagline
             widget: markdown
-          - label: Proyecto Destacado
-            name: project_highlight
-            widget: relation
-            collection: projects
-            searchFields: ["title"]
-            valueField: title
-            displayFields: ["title"]
+          - label: Proyectos Destacados
+            name: related_projects
+            widget: list
+            fields:
+              - label: Proyecto
+                name: project
+                widget: relation
+                collection: projects
+                searchFields: ["title"]
+                valueField: title
+                displayFields: ["title"]
           - label: Entradilla servicios
             name: services_intro
             widget: markdown
@@ -59,6 +63,10 @@ collections:
     folder: src/data/clients
     create: true
     fields:
+      - label: Template
+        name: template
+        widget: hidden
+        default: client
       - label: Título
         name: title
         widget: string
@@ -83,6 +91,13 @@ collections:
       - label: Destacado
         name: highlight
         widget: boolean
+      - label: Cliente
+        name: related_client
+        widget: relation
+        collection: clients
+        searchFields: ["title"]
+        valueField: title
+        displayFields: ["title"]
       - label: Imagen principal
         name: picture
         widget: image
