@@ -72,6 +72,7 @@ module.exports = {
     'gatsby-plugin-catch-links'
   ],
   mapping: {
-    'MarkdownRemark.fields.projects': 'MarkdownRemark'
+    'MarkdownRemark.fields.projects': 'MarkdownRemark',
+    'MarkdownRemark.fields.client': 'MarkdownRemark'
   }
 };

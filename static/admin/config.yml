@@ -60,7 +60,7 @@ collections:
             widget: markdown
   - label: Clientes
     name: clients
-    folder: src/data/clients
+    folder: src/data/clientes
     create: true
     fields:
       - label: Template
@@ -71,7 +71,7 @@ collections:
         name: title
         widget: string
       - label: Logo
-        name: Logo
+        name: picture
         widget: image
   - label: Proyectos
     name: projects

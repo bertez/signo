@@ -74,10 +74,25 @@ exports.onCreateNode = ({
       value: slug
     });
 
-    // Add related projects if necessary
-    if (node.frontmatter.project_highlight) {
+    // Add related client field if necessary
+    if (node.frontmatter.related_client) {
+      const client = allClients
+        .filter(c => c.frontmatter.title === node.frontmatter.related_client)
+        .map(c => c.id);
+
+      createNodeField({
+        node,
+        name: 'client',
+        value: client[0]
+      });
+    }
+
+    // Add related projects field if necessary
+    if (node.frontmatter.related_projects) {
+      const projectList = node.frontmatter.related_projects.map(p => p.project);
+
       const projects = allProjects
-        .filter(p => p.frontmatter.title === node.frontmatter.project_highlight)
+        .filter(p => projectList.includes(p.frontmatter.title))
         .map(p => p.id);
 
       createNodeField({
