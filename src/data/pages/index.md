@@ -5,4 +5,3 @@ project_highlight: Figuras Resurrection
 services_intro: Movida sobre servicios
 company_intro: Texto sobre empresa
 ---
-

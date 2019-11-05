@@ -15,8 +15,12 @@ collections:
     files:
       - label: Portada
         name: frontpage
-        file: src/data/pages/frontpage.md
+        file: src/data/pages/index.md
         fields:
+          - label: Template
+            name: template
+            widget: hidden
+            default: frontpage
           - label: Título
             name: title
             widget: string
@@ -36,6 +40,20 @@ collections:
           - label: Entradilla empresa
             name: company_intro
             widget: markdown
+      - label: Proyectos
+        name: projects
+        file: src/data/pages/proyectos.md
+        fields:
+          - label: Template
+            name: template
+            widget: hidden
+            default: projects
+          - label: Título
+            name: title
+            widget: string
+          - label: Entradilla
+            name: tagline
+            widget: markdown
   - label: Clientes
     name: clients
     folder: src/data/clients
@@ -52,6 +70,10 @@ collections:
     folder: src/data/projects
     create: true
     fields:
+      - label: Template
+        name: template
+        widget: hidden
+        default: project
       - label: Título
         name: title
         widget: string
