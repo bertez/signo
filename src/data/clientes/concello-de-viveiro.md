@@ -1,5 +1,6 @@
 ---
 template: client
 title: Concello de Viveiro
-Logo: /media/escudo_de_viveiro.svg
+picture: /media/avatar.jpg
 ---
+
