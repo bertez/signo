@@ -9,6 +9,10 @@ sections:
   - text: Locamente
     title: Movida Gorda
     type: text
+  - text: Lolailo pardo
+    title: Video fino
+    type: video
+    video: /media/file_example_mp4_640_3mg.mp4
 gallery:
   - image: /media/avatar.jpg
     title: Foto
