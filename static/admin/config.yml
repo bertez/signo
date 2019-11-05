@@ -105,13 +105,13 @@ collections:
         name: sections
         widget: list
         fields:
+          - label: Título
+            name: title
+            widget: string
           - label: Tipo
             name: type
             widget: select
             options: ["text", "video", "image"]
-          - label: Título
-            name: title
-            widget: string
           - label: Texto
             name: text
             widget: markdown
