@@ -1,5 +1,5 @@
 ---
-title: Concello de Viveiro
+title: Excelentísimo Concello de Viveiro
 Logo: /media/avatar.jpg
 ---
 
