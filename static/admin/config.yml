@@ -23,3 +23,93 @@ collections:
           - label: Entradilla
             name: tagline
             widget: markdown
+          - label: Proyecto Destacado
+            name: project_highlight
+            widget: relation
+            collection: projects
+            searchFields: ["title"]
+            valueField: title
+            displayFields: ["title"]
+          - label: Entradilla servicios
+            name: services_intro
+            widget: markdown
+          - label: Entradilla empresa
+            name: company_intro
+            widget: markdown
+  - label: Clientes
+    name: clients
+    folder: src/data/clients
+    create: true
+    fields:
+      - label: Título
+        name: title
+        widget: string
+      - label: Logo
+        name: Logo
+        widget: image
+  - label: Proyectos
+    name: projects
+    folder: src/data/projects
+    create: true
+    fields:
+      - label: Título
+        name: title
+        widget: string
+      - label: Entradilla
+        name: tagline
+        widget: markdown
+      - label: Destacado
+        name: highlight
+        widget: boolean
+      - label: Imagen principal
+        name: picture
+        widget: image
+      - label: Secciones
+        name: sections
+        widget: list
+        fields:
+          - label: Tipo
+            name: type
+            widget: select
+            options: ["text", "video", "image"]
+          - label: Título
+            name: title
+            widget: string
+          - label: Texto
+            name: text
+            widget: markdown
+            required: false
+          - label: Imágen
+            name: image
+            widget: image
+            required: false
+          - label: Vídeo
+            name: video
+            widget: file
+            required: false
+      - label: Galería
+        name: gallery
+        widget: list
+        fields:
+          - label: Título
+            name: title
+            widget: string
+          - label: Imágen
+            name: image
+            widget: image
+      - label: Links
+        name: links
+        widget: list
+        fields:
+          - label: Cita
+            name: cite
+            widget: markdown
+          - label: Fuente
+            name: source
+            widget: string
+          - label: URL
+            name: url
+            widget: string
+          - label: Fecha
+            name: date
+            widget: date
