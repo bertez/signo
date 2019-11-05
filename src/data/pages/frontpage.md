@@ -1,4 +1,5 @@
 ---
 title: Signo Taller del Rótulo
-tagline: '**Lorem ipsum** dolor sit amet'
+tagline: '**Lorem ipsum** dolor sit amet2'
 ---
+
