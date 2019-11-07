@@ -10,7 +10,7 @@ slug:
   sanitize_replacement: "-"
 
 collections:
-  - label: Páginas
+  - label: Contenido páginas
     name: pages
     files:
       - label: Portada
