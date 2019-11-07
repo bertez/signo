@@ -24,6 +24,14 @@ collections:
           - label: Título
             name: title
             widget: string
+          - label: Descripción SEO
+            name: seo_description
+            widget: string
+            required: false
+          - label: Imagen SEO
+            name: seo_image
+            widget: string
+            required: false
           - label: Entradilla
             name: tagline
             widget: string
@@ -55,6 +63,14 @@ collections:
           - label: Título
             name: title
             widget: string
+          - label: Descripción SEO
+            name: seo_description
+            widget: string
+            required: false
+          - label: Imagen SEO
+            name: seo_image
+            widget: string
+            required: false
           - label: Entradilla
             name: tagline
             widget: markdown
@@ -69,6 +85,14 @@ collections:
           - label: Título
             name: title
             widget: string
+          - label: Descripción SEO
+            name: seo_description
+            widget: string
+            required: false
+          - label: Imagen SEO
+            name: seo_image
+            widget: string
+            required: false
           - label: Entradilla
             name: tagline
             widget: markdown
@@ -83,6 +107,14 @@ collections:
           - label: Título
             name: title
             widget: string
+          - label: Descripción SEO
+            name: seo_description
+            widget: string
+            required: false
+          - label: Imagen SEO
+            name: seo_image
+            widget: string
+            required: false
           - label: Entradilla
             name: tagline
             widget: markdown
@@ -168,6 +200,14 @@ collections:
       - label: Título
         name: title
         widget: string
+      - label: Descripción SEO
+        name: seo_description
+        widget: string
+        required: false
+      - label: Imagen SEO
+        name: seo_image
+        widget: string
+        required: false
       - label: Entradilla
         name: tagline
         widget: markdown
@@ -246,6 +286,14 @@ collections:
       - label: Título
         name: title
         widget: string
+      - label: Descripción SEO
+        name: seo_description
+        widget: string
+        required: false
+      - label: Imagen SEO
+        name: seo_image
+        widget: string
+        required: false
       - label: Imagen principal
         name: picture
         widget: image
@@ -312,6 +360,14 @@ collections:
       - label: Título
         name: title
         widget: string
+      - label: Descripción SEO
+        name: seo_description
+        widget: string
+        required: false
+      - label: Imagen SEO
+        name: seo_image
+        widget: string
+        required: false
       - label: Imagen principal
         name: picture
         widget: image
