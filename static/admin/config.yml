@@ -26,7 +26,7 @@ collections:
             widget: string
           - label: Entradilla
             name: tagline
-            widget: markdown
+            widget: string
           - label: Proyectos Destacados
             name: related_projects
             widget: list
@@ -58,6 +58,89 @@ collections:
           - label: Entradilla
             name: tagline
             widget: markdown
+      - label: Construcciones singulares
+        name: products
+        file: src/data/pages/construcciones-singulares.md
+        fields:
+          - label: Template
+            name: template
+            widget: hidden
+            default: products
+          - label: Título
+            name: title
+            widget: string
+          - label: Entradilla
+            name: tagline
+            widget: markdown
+      - label: empresa
+        name: company
+        file: src/data/pages/empresa.md
+        fields:
+          - label: Template
+            name: template
+            widget: hidden
+            default: company
+          - label: Título
+            name: title
+            widget: string
+          - label: Entradilla
+            name: tagline
+            widget: markdown
+          - label: Datos contacto
+            name: contact_info
+            widget: markdown
+          - label: Google Map
+            name: Map
+            widget: string
+          - label: Equipo
+            name: team
+            widget: list
+            fields:
+              - label: Nombre
+                name: name
+                widget: string
+              - label: Cargo
+                name: position
+                widget: string
+              - label: Foto
+                name: picture
+                widget: image
+              - label: Email
+                name: email
+                widget: string
+          - label: Descripción
+            name: description
+            widget: markdown
+          - label: Imagen principal
+            name: picture
+            widget: image
+          - label: Historia
+            name: timeline
+            widget: list
+            fields:
+              - label: Año
+                name: year
+                widget: number
+                valueType: int
+              - label: Texto
+                name: text
+                widget: markdown
+          - label: Links
+            name: links
+            widget: list
+            fields:
+              - label: Cita
+                name: cite
+                widget: markdown
+              - label: Fuente
+                name: source
+                widget: string
+              - label: URL
+                name: url
+                widget: string
+              - label: Fecha
+                name: date
+                widget: date
   - label: Clientes
     name: clients
     folder: src/data/clientes
@@ -112,6 +195,7 @@ collections:
             name: type
             widget: select
             options: ["text", "video", "image"]
+            default: text
           - label: Texto
             name: text
             widget: markdown
@@ -162,9 +246,6 @@ collections:
       - label: Título
         name: title
         widget: string
-      - label: Entradilla
-        name: tagline
-        widget: markdown
       - label: Imagen principal
         name: picture
         widget: image
@@ -219,3 +300,42 @@ collections:
             searchFields: ["title"]
             valueField: title
             displayFields: ["title"]
+  - label: Construcción
+    name: products
+    folder: src/data/construcciones
+    create: true
+    fields:
+      - label: Template
+        name: template
+        widget: hidden
+        default: product
+      - label: Título
+        name: title
+        widget: string
+      - label: Imagen principal
+        name: picture
+        widget: image
+      - label: Imagen listados
+        name: alt_picture
+        widget: image
+      - label: Descripción
+        name: description
+        widget: markdown
+      - label: Galería
+        name: gallery
+        widget: list
+        fields:
+          - label: Título
+            name: title
+            widget: string
+          - label: Imagen
+            name: image
+            widget: image
+      - label: Detalles compra
+        name: buy_details
+        widget: markdown
+      - label: Precio
+        name: price
+        widget: number
+        valueType: float
+        required: false
