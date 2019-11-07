@@ -30,7 +30,7 @@ collections:
             required: false
           - label: Imagen SEO
             name: seo_image
-            widget: string
+            widget: image
             required: false
           - label: Entradilla
             name: tagline
@@ -69,7 +69,7 @@ collections:
             required: false
           - label: Imagen SEO
             name: seo_image
-            widget: string
+            widget: image
             required: false
           - label: Entradilla
             name: tagline
@@ -91,7 +91,7 @@ collections:
             required: false
           - label: Imagen SEO
             name: seo_image
-            widget: string
+            widget: image
             required: false
           - label: Entradilla
             name: tagline
@@ -113,7 +113,7 @@ collections:
             required: false
           - label: Imagen SEO
             name: seo_image
-            widget: string
+            widget: image
             required: false
           - label: Entradilla
             name: tagline
@@ -206,7 +206,7 @@ collections:
         required: false
       - label: Imagen SEO
         name: seo_image
-        widget: string
+        widget: image
         required: false
       - label: Entradilla
         name: tagline
@@ -292,7 +292,7 @@ collections:
         required: false
       - label: Imagen SEO
         name: seo_image
-        widget: string
+        widget: image
         required: false
       - label: Imagen principal
         name: picture
@@ -366,7 +366,7 @@ collections:
         required: false
       - label: Imagen SEO
         name: seo_image
-        widget: string
+        widget: image
         required: false
       - label: Imagen principal
         name: picture
