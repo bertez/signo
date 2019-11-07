@@ -34,7 +34,7 @@ collections:
             required: false
           - label: Entradilla
             name: tagline
-            widget: string
+            widget: markdown
           - label: Proyectos Destacados
             name: related_projects
             widget: list
