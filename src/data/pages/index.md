@@ -1,6 +1,7 @@
 ---
 template: frontpage
 title: Signo Taller del Rótulo
+seo_description: 'Portada de Signo, texto de SEO'
 tagline: |-
   **Lorem ipsum** dolor sit amet
 
