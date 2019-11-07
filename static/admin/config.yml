@@ -16,6 +16,8 @@ collections:
       - label: Portada
         name: frontpage
         file: src/data/pages/index.md
+        editor:
+          preview: false
         fields:
           - label: Template
             name: template
@@ -55,6 +57,8 @@ collections:
       - label: Proyectos
         name: projects
         file: src/data/pages/proyectos.md
+        editor:
+          preview: false
         fields:
           - label: Template
             name: template
@@ -77,6 +81,8 @@ collections:
       - label: Construcciones singulares
         name: products
         file: src/data/pages/construcciones-singulares.md
+        editor:
+          preview: false
         fields:
           - label: Template
             name: template
@@ -99,6 +105,8 @@ collections:
       - label: Empresa
         name: company
         file: src/data/pages/empresa.md
+        editor:
+          preview: false
         fields:
           - label: Template
             name: template
@@ -176,6 +184,8 @@ collections:
   - label: Clientes
     name: clients
     folder: src/data/clientes
+    editor:
+      preview: false
     create: true
     fields:
       - label: Template
@@ -191,6 +201,8 @@ collections:
   - label: Proyectos
     name: projects
     folder: src/data/proyectos
+    editor:
+      preview: false
     create: true
     fields:
       - label: Template
@@ -277,6 +289,8 @@ collections:
   - label: Servicios
     name: services
     folder: src/data/servicios
+    editor:
+      preview: false
     create: true
     fields:
       - label: Template
@@ -351,6 +365,8 @@ collections:
   - label: Construcción
     name: products
     folder: src/data/construcciones
+    editor:
+      preview: false
     create: true
     fields:
       - label: Template
