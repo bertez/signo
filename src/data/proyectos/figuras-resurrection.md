@@ -1,6 +1,8 @@
 ---
 template: project
 title: Figuras Resurrection Fest
+seo_description: Texto seo sobre figuras Resu
+seo_image: /media/mini-sample-drone.jpg
 tagline: Lorem ipsum dolor sit amet
 highlight: true
 related_client: Resurrection Fest Viveiro
@@ -13,13 +15,15 @@ sections:
     title: Video fino
     type: video
     video: /media/file_example_mp4_640_3mg.mp4
-  - text: Lolailo pardo222
+  - image: /media/photo-1572240979568-6ddb008a1128.jpg
+    text: Lolailo pardo222
     title: Imagen fino
     type: image
-    image: /media/photo-1572240979568-6ddb008a1128.jpg
 gallery:
-  - image: /media/avatar.jpg
+  - image: /media/sample-phone.jpg
     title: Foto
+  - image: /media/sample-camera.jpg
+    title: Otra foto
 links:
   - cite: Moi bonito todo
     date: 2019-11-05T09:32:03.242Z
@@ -27,3 +31,4 @@ links:
     url: >-
       https://www.lavozdegalicia.es/noticia/elecciones/2019/11/05/verdades-mentiras-debate/00031572914180193439805.htm
 ---
+
