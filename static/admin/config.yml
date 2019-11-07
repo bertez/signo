@@ -12,12 +12,12 @@ slug:
 collections:
   - label: Contenido páginas
     name: pages
+    editor:
+      preview: false
     files:
       - label: Portada
         name: frontpage
         file: src/data/pages/index.md
-        editor:
-          preview: false
         fields:
           - label: Template
             name: template
@@ -57,8 +57,6 @@ collections:
       - label: Proyectos
         name: projects
         file: src/data/pages/proyectos.md
-        editor:
-          preview: false
         fields:
           - label: Template
             name: template
@@ -81,8 +79,6 @@ collections:
       - label: Construcciones singulares
         name: products
         file: src/data/pages/construcciones-singulares.md
-        editor:
-          preview: false
         fields:
           - label: Template
             name: template
@@ -105,8 +101,6 @@ collections:
       - label: Empresa
         name: company
         file: src/data/pages/empresa.md
-        editor:
-          preview: false
         fields:
           - label: Template
             name: template
