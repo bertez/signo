@@ -96,7 +96,7 @@ collections:
           - label: Entradilla
             name: tagline
             widget: markdown
-      - label: empresa
+      - label: Empresa
         name: company
         file: src/data/pages/empresa.md
         fields:
