@@ -7,6 +7,7 @@ description: |2-
    Praesent eleifend massa molestie, dignissim arcu at, vehicula dolor. Aenean finibus bibendum ipsum elementum ultricies. Fusce vel lacus eu dui aliquam tincidunt. Donec metus ligula, posuere vel leo id, suscipit laoreet ante. Fusce luctus lacus ac varius iaculis. Maecenas nisl leo, vestibulum eget sem ac, congue vehicula purus.
 
    Praesent eleifend massa molestie, dignissim arcu at, vehicula dolor. Aenean finibus bibendum ipsum elementum ultricies. Fusce vel lacus eu dui aliquam tincidunt. Donec metus ligula, posuere vel leo id, suscipit laoreet ante. Fusce luctus lacus ac varius iaculis. Maecenas nisl leo, vestibulum eget sem ac, congue vehicula purus.
+short_description: Servicio genérico
 details:
   - image: /media/mini-sample-drone.jpg
     text: >-
@@ -26,4 +27,3 @@ prices:
 related_projects:
   - project: Paneles pirolíticos
 ---
-

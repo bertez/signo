@@ -177,7 +177,7 @@ collections:
                 widget: date
   - label: Clientes
     name: clients
-    folder: src/data/clientes
+    folder: src/data/cliente
     editor:
       preview: false
     create: true
@@ -194,7 +194,7 @@ collections:
         widget: image
   - label: Proyectos
     name: projects
-    folder: src/data/proyectos
+    folder: src/data/proyecto
     editor:
       preview: false
     create: true
@@ -282,7 +282,7 @@ collections:
             widget: date
   - label: Servicios
     name: services
-    folder: src/data/servicios
+    folder: src/data/servicio
     editor:
       preview: false
     create: true
@@ -305,6 +305,9 @@ collections:
       - label: Imagen principal
         name: picture
         widget: image
+      - label: Descripción corta
+        name: short_description
+        widget: string
       - label: Descripción
         name: description
         widget: markdown
@@ -358,7 +361,7 @@ collections:
             displayFields: ["title"]
   - label: Construcción
     name: products
-    folder: src/data/construcciones
+    folder: src/data/construccion
     editor:
       preview: false
     create: true
