@@ -4,7 +4,9 @@ title: Lampara de metacrilato
 seo_description: SEO lampara metacrilato
 seo_image: /media/mini-sample-drone.jpg
 picture: /media/sample-phone.jpg
+highlight: true
 alt_picture: /media/alberto.jpeg
+short_description: Lorem ipsum
 description: >-
   Phasellus augue ante, imperdiet ut dictum aliquet, cursus vel justo. Duis sed
   justo id purus fermentum ultrices. Quisque sit amet quam ex. Nullam ultrices
@@ -24,4 +26,3 @@ gallery:
 buy_details: Compra barato vende caro
 price: 1233
 ---
-

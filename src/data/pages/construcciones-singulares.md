@@ -1,4 +1,5 @@
 ---
+template: products
 title: Construcciones singulares
 seo_description: Página de construcciones singulares de Signo!
 seo_image: /media/mini-sample-drone.jpg
@@ -13,4 +14,3 @@ tagline: >-
   parturient montes, nascetur ridiculus mus. Curabitur sit amet sem a massa
   elementum laoreet in eget nisl.
 ---
-

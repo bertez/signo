@@ -1,4 +1,5 @@
 ---
+template: company
 title: Empresa
 seo_description: Página de empresa de signo
 seo_image: /media/sample-chip.jpg
@@ -51,4 +52,3 @@ links:
     url: >-
       https://www.lavozdegalicia.es/noticia/ourense/2019/11/06/jacome-propone-construir-ourense-mayor-rascacielos-espana/00031573036556246570366.htm
 ---
-

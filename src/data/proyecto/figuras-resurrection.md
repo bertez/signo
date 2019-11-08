@@ -15,7 +15,7 @@ sections:
     title: Video fino
     type: video
     video: /media/file_example_mp4_640_3mg.mp4
-  - image: /media/photo-1572240979568-6ddb008a1128.jpg
+  - image: /media/sample-chip.jpg
     text: Lolailo pardo222
     title: Imagen fino
     type: image

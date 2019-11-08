@@ -381,6 +381,9 @@ collections:
         name: seo_image
         widget: image
         required: false
+      - label: Destacado
+        name: highlight
+        widget: boolean
       - label: Imagen principal
         name: picture
         widget: image
@@ -390,6 +393,9 @@ collections:
       - label: Descripción
         name: description
         widget: markdown
+      - label: Descripción listados
+        name: short_description
+        widget: string
       - label: Galería
         name: gallery
         widget: list

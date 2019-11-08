@@ -12,7 +12,6 @@ export const query = graphql`
     page: markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        tagline
         seo_description
         seo_image {
           childImageSharp {
@@ -21,6 +20,7 @@ export const query = graphql`
             }
           }
         }
+        tagline
       }
     }
     clients: allMarkdownRemark(
@@ -32,8 +32,8 @@ export const query = graphql`
             title
             picture {
               childImageSharp {
-                fluid(maxWidth: 200) {
-                  ...GatsbyImageSharpFluid
+                resolutions(width: 300, height: 200) {
+                  ...GatsbyImageSharpResolutions
                 }
               }
             }
@@ -60,8 +60,8 @@ export const query = graphql`
             highlight
             picture {
               childImageSharp {
-                fluid(maxWidth: 1000) {
-                  ...GatsbyImageSharpFluid
+                sizes(maxWidth: 1000) {
+                  ...GatsbyImageSharpSizes
                 }
               }
             }
