@@ -11,9 +11,6 @@ export default function MainWrapper({ children }) {
         frontmatter {
           phone
           address
-          dossier {
-            publicURL
-          }
           social {
             network
             handle
