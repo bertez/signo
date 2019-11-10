@@ -25,9 +25,16 @@ collections:
           - label: Dirección
             name: address
             widget: string
-          - label: Dossier PDF
+          - label: Dossier
             name: dossier
-            widget: file
+            widget: object
+            fields:
+              - label: Título
+                name: title
+                widget: string
+              - label: Fichero
+                name: file
+                widget: file
           - label: Redes Sociales
             name: social
             widget: list

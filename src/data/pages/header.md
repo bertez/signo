@@ -1,7 +1,6 @@
 ---
 phone: '9825612345'
 address: 'Pirixel, s/n'
-dossier: /media/sample.pdf
 social:
   - handle: '@grupofutures'
     network: twitter
@@ -10,4 +9,3 @@ social:
     network: instagram
     url: 'https://instagram.com/grupofutures'
 ---
-

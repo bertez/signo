@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 export default function Frontpage({ data }) {
-  console.log(JSON.stringify(data, null, 1));
+  // console.log(JSON.stringify(data, null, 1));
   return <h1>Frontpage!</h1>;
 }
 
