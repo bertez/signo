@@ -1,6 +1,9 @@
 ---
 phone: '9825612345'
 address: 'Pirixel, s/n'
+dossier:
+  file: /media/sample.pdf
+  title: Dossier Signo 2019
 social:
   - handle: '@grupofutures'
     network: twitter
@@ -9,3 +12,4 @@ social:
     network: instagram
     url: 'https://instagram.com/grupofutures'
 ---
+
