@@ -11,6 +11,12 @@ export default function MainWrapper({ children }) {
         frontmatter {
           phone
           address
+          dossier {
+            file {
+              publicURL
+            }
+            title
+          }
           social {
             network
             handle
@@ -37,14 +43,10 @@ export default function MainWrapper({ children }) {
     }
   `);
 
-  // console.log(JSON.stringify(data, null, 1));
-
   const {
     header: { frontmatter: headerData },
     services: { edges: services }
   } = data;
-
-  console.log(services, headerData);
 
   return (
     <>
@@ -57,7 +59,18 @@ export default function MainWrapper({ children }) {
             <li>
               <Link to="/empresa">{headerData.address}</Link>
             </li>
+            <li>
+              <a
+                href={headerData.dossier.file.publicURL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {headerData.dossier.title}
+              </a>
+            </li>
           </ul>
+
+          <ul></ul>
         </nav>
         <h1>
           <Link to="/">Signo</Link>
@@ -88,7 +101,7 @@ export default function MainWrapper({ children }) {
               </Link>
             </li>
             <li>
-              <Link to="/empresa">Empresa</Link>
+              <Link to="/empresa">Sobre Signo</Link>
             </li>
           </ul>
         </nav>

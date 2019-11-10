@@ -1,9 +1,17 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
+import SEO from '../components/SEO.jsx';
+
 export default function Frontpage({ data }) {
   // console.log(JSON.stringify(data, null, 1));
-  return <h1>Frontpage!</h1>;
+
+  return (
+    <section className="frontpage">
+      <SEO pageData={data.page} />
+      <h1>Frontpage!</h1>
+    </section>
+  );
 }
 
 export const query = graphql`
@@ -30,6 +38,9 @@ export const query = graphql`
             }
           }
         }
+      }
+      fields {
+        slug
       }
       frontmatter {
         title

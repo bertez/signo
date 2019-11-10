@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Signo',
     titleTemplate: '%s - Signo',
-    description: 'Signo Taller del Rótulo',
+    description: 'Signo Rotulación',
     url: 'http://signorotulacion.com',
     image: '/extra/card.png'
   },
@@ -36,13 +36,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Signo',
+        name: 'Signo Rotulación',
         short_name: 'Signo',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#000000',
-        display: 'minimal-ui'
-        // icon: 'static/extra/icon.png'
+        display: 'minimal-ui',
+        icon: 'static/extra/icon.png'
       }
     },
     'gatsby-transformer-sharp',
