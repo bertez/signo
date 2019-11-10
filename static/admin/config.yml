@@ -15,6 +15,34 @@ collections:
     editor:
       preview: false
     files:
+      - label: Cabecera
+        name: header
+        file: src/data/pages/header.md
+        fields:
+          - label: Teléfono
+            name: phone
+            widget: string
+          - label: Dirección
+            name: address
+            widget: string
+          - label: Dossier PDF
+            name: dossier
+            widget: file
+          - label: Redes Sociales
+            name: social
+            widget: list
+            fields:
+              - label: Red
+                name: network
+                widget: select
+                options: ["twitter", "facebook", "instagram"]
+                default: twitter
+              - label: URL
+                name: url
+                widget: string
+              - label: Usuario
+                name: handle
+                widget: string
       - label: Portada
         name: frontpage
         file: src/data/pages/index.md
@@ -124,7 +152,7 @@ collections:
             name: contact_info
             widget: markdown
           - label: Google Map
-            name: Map
+            name: map
             widget: string
           - label: Equipo
             name: team

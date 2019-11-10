@@ -41,6 +41,7 @@ export const query = graphql`
           }
         }
         gallery {
+          title
           image {
             childImageSharp {
               big: sizes(maxWidth: 1440) {

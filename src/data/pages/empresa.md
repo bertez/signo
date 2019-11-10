@@ -14,7 +14,7 @@ tagline: >-
   parturient montes, nascetur ridiculus mus. Curabitur sit amet sem a massa
   elementum laoreet in eget nisl.
 contact_info: 'Viveiro, S/N'
-Map: >-
+map: >-
   <iframe
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1442.8626597602552!2d-7.588407802270183!3d43.674682197681065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd321a950553e0b3%3A0xb14ff8945459f4e5!2sSIGNO%20TALLER%20DEL%20R%C3%93TULO%20(Grupo%20FUTURES)!5e0!3m2!1sen!2ses!4v1573121332642!5m2!1sen!2ses"
   width="600" height="450" frameborder="0" style="border:0;"
