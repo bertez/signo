@@ -18,7 +18,7 @@ function ImageSection({ section }) {
       <figure>
         <Img sizes={section.image.childImageSharp.sizes} />
       </figure>
-      <Md>{section.text}</Md>
+      {section.text && <Md>{section.text}</Md>}
     </>
   );
 }
@@ -27,7 +27,7 @@ function VideoSection({ section }) {
   return (
     <>
       <video src={section.video.publicURL} controls></video>
-      <Md>{section.text}</Md>
+      {section.text && <Md>{section.text}</Md>}
     </>
   );
 }

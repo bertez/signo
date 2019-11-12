@@ -13,8 +13,6 @@ import { ServiceList } from '../components/service-list.jsx';
 import { ProductListSimple } from '../components/product-list.jsx';
 
 export default function Frontpage({ data }) {
-  // console.log(JSON.stringify(data, null, 1));
-
   const {
     page: {
       fields: { projects },

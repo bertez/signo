@@ -1,7 +1,6 @@
 import React from 'react';
 
 export function PriceTable({ prices }) {
-  console.log(prices);
   return (
     <table>
       <thead>

@@ -8,8 +8,6 @@ import { ClientList } from '../components/client-list.jsx';
 import { ProjectList } from '../components/project-list.jsx';
 
 export default function Projects({ data }) {
-  console.log(JSON.stringify(data, null, 1));
-
   const {
     page: { frontmatter },
     projects: { edges: projects },

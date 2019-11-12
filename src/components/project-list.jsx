@@ -29,7 +29,6 @@ export function ProjectList({
   link = false,
   size = 'big'
 }) {
-  console.log(projects);
   return (
     <section className="project-list big">
       <ul>
