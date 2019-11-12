@@ -2,15 +2,36 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import SEO from '../components/SEO.jsx';
+import Md from '../helpers/markdown.jsx';
+
+import { ProductList, ProductListSimple } from '../components/product-list';
 
 export default function Products({ data }) {
-  console.log(JSON.stringify(data, null, 1));
+  const {
+    page: { frontmatter },
+    products: { edges: products }
+  } = data;
 
   return (
-    <section className="products">
+    <article className="content content-products">
       <SEO pageData={data.page} />
-      <h1>Products!</h1>
-    </section>
+      <header>
+        <h1>{frontmatter.title}</h1>
+        <Md>{frontmatter.tagline}</Md>
+      </header>
+
+      <section className="featured-products">
+        <ProductList
+          products={products.filter(
+            product => product.node.frontmatter.highlight
+          )}
+        />
+      </section>
+
+      <section className="product-list">
+        <ProductListSimple products={products} />
+      </section>
+    </article>
   );
 }
 

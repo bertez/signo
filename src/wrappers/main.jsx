@@ -121,6 +121,36 @@ export default function MainWrapper({ children }) {
        */}
       <footer>
         <p>(c) Signo, 2019</p>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Portada</Link>
+            </li>
+            <li>
+              <Link to="/proyectos">Proyectos</Link>
+            </li>
+            <li>
+              Servicios:
+              <ul>
+                {services.map(service => (
+                  <li key={service.node.id}>
+                    <Link to={service.node.fields.slug}>
+                      {service.node.frontmatter.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
+            <li>
+              <Link to="/construcciones-singulares">
+                Construcciones singulares
+              </Link>
+            </li>
+            <li>
+              <Link to="/empresa">Sobre Signo</Link>
+            </li>
+          </ul>
+        </nav>
       </footer>
     </>
   );

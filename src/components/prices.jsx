@@ -1,6 +1,7 @@
 import React from 'react';
 
 export function PriceTable({ prices }) {
+  console.log(prices);
   return (
     <table>
       <thead>
@@ -15,7 +16,9 @@ export function PriceTable({ prices }) {
           <tr key={`price_${index}`}>
             <td>{price.name}</td>
             <td>{price.description}</td>
-            <td>{price.price}€</td>
+            <td>
+              {price.price} {price.unit}
+            </td>
           </tr>
         ))}
       </tbody>

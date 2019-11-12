@@ -3,14 +3,51 @@ import { graphql } from 'gatsby';
 
 import SEO from '../components/SEO.jsx';
 
+import Img from 'gatsby-image';
+import Md from '../helpers/markdown.jsx';
+
+import { Gallery } from '../components/gallery.jsx';
+import { ProductListSimple } from '../components/product-list.jsx';
+
 export default function Product({ data }) {
-  console.log(JSON.stringify(data, null, 1));
+  const {
+    page: { frontmatter },
+    products: { edges: products }
+  } = data;
 
   return (
-    <section className="product">
+    <article className="product content-product">
       <SEO pageData={data.page} />
-      <h1>Product single!</h1>
-    </section>
+      <header>
+        <h1>{frontmatter.title}</h1>
+
+        <figure>
+          <Img sizes={frontmatter.picture.childImageSharp.sizes} />
+        </figure>
+      </header>
+
+      <section className="product-description">
+        <Md>{frontmatter.description}</Md>
+      </section>
+
+      <section className="product-gallery">
+        <h2>Galería</h2>
+
+        <Gallery images={frontmatter.gallery} />
+      </section>
+
+      <section className="product-buy">
+        <Md>{frontmatter.buy_details}</Md>
+        <section className="buy-cta">
+          <p>{frontmatter.price}€</p>
+          <button>Comprar</button>
+        </section>
+      </section>
+
+      <section className="product-list">
+        <ProductListSimple products={products} />
+      </section>
+    </article>
   );
 }
 

@@ -68,7 +68,9 @@ export default function Frontpage({ data }) {
         </header>
       </section>
 
-      <ProductListSimple products={products} />
+      <section className="product-list">
+        <ProductListSimple products={products} />
+      </section>
     </article>
   );
 }

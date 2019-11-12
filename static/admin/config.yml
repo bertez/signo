@@ -391,6 +391,10 @@ collections:
             name: price
             widget: number
             valueType: float
+          - label: Unidad
+            name: unit
+            widget: string
+            default: €
       - label: Proyectos Destacados
         name: related_projects
         widget: list

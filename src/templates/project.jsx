@@ -37,13 +37,13 @@ export default function Project({ data }) {
         ))}
       </ul>
 
-      <section className="gallery">
+      <section className="project-gallery">
         <h2>Galería</h2>
 
         <Gallery images={frontmatter.gallery} />
       </section>
 
-      <section className="cites">
+      <section className="project-cites">
         <h2>Referencias en medios y redes sociales</h2>
         <Cites links={frontmatter.links} />
       </section>
