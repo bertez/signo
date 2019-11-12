@@ -7,6 +7,7 @@ tagline: Lorem ipsum dolor sit amet
 highlight: true
 related_client: Resurrection Fest Viveiro
 picture: /media/sample-chip.jpg
+short_description: Descripción corta proyecto
 sections:
   - text: Locamente
     title: Movida Gorda

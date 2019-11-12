@@ -70,7 +70,15 @@ export default function MainWrapper({ children }) {
             </li>
           </ul>
 
-          <ul></ul>
+          <ul>
+            {headerData.social.map(social => (
+              <li key={social.url}>
+                <a href={social.url} className={social.network}>
+                  {social.handle}
+                </a>
+              </li>
+            ))}
+          </ul>
         </nav>
         <h1>
           <Link to="/">Signo</Link>
@@ -109,6 +117,8 @@ export default function MainWrapper({ children }) {
 
       <main>{children}</main>
 
+      {/* TODO: footer
+       */}
       <footer>
         <p>(c) Signo, 2019</p>
       </footer>

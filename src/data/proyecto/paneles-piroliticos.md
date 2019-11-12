@@ -13,6 +13,7 @@ tagline: >-
 highlight: false
 related_client: Concello de Viveiro
 picture: /media/sample-computer.jpg
+short_description: Descripción corta proyecto paneles
 sections:
   - image: /media/sample-tablet.jpg
     title: Imagen loca
@@ -27,4 +28,3 @@ links:
     url: >-
       https://elpais.com/internacional/2019/11/04/actualidad/1572897982_577464.html
 ---
-

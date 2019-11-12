@@ -89,6 +89,9 @@ collections:
           - label: Entradilla empresa
             name: company_intro
             widget: markdown
+          - label: Imagen empresa
+            name: company_picture
+            widget: image
       - label: Proyectos
         name: projects
         file: src/data/pages/proyectos.md
@@ -265,6 +268,10 @@ collections:
       - label: Imagen principal
         name: picture
         widget: image
+      - label: Descripción listados
+        name: short_description
+        widget: string
+        required: false
       - label: Secciones
         name: sections
         widget: list
