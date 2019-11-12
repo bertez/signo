@@ -7,7 +7,7 @@ import Md from '../helpers/markdown.jsx';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 
-import { ProjectListBig } from '../components/project-list.jsx';
+import { ProjectList } from '../components/project-list.jsx';
 import { ClientList } from '../components/client-list.jsx';
 import { ServiceList } from '../components/service-list.jsx';
 import { ProductListSimple } from '../components/product-list.jsx';
@@ -26,7 +26,7 @@ export default function Frontpage({ data }) {
   } = data;
 
   return (
-    <article className="content frontpage">
+    <article className="content content-frontpage">
       <SEO pageData={data.page} />
 
       <header>
@@ -34,9 +34,13 @@ export default function Frontpage({ data }) {
         <Md>{frontmatter.tagline}</Md>
       </header>
 
-      <ProjectListBig projects={projects} />
+      <section className="projects">
+        <ProjectList projects={projects} />
+      </section>
 
-      <ClientList clients={clients} />
+      <section className="clients">
+        <ClientList clients={clients} />
+      </section>
 
       {/* Services intro */}
 
@@ -87,7 +91,7 @@ export const query = graphql`
             short_description
             picture {
               childImageSharp {
-                sizes(maxWidth: 1440) {
+                big: sizes(maxWidth: 1440) {
                   ...GatsbyImageSharpSizes
                 }
               }

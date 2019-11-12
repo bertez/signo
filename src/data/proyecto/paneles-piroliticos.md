@@ -16,7 +16,6 @@ picture: /media/sample-computer.jpg
 short_description: Descripción corta proyecto paneles
 sections:
   - image: /media/sample-tablet.jpg
-    title: Imagen loca
     type: image
 gallery:
   - image: /media/sample-chip.jpg

@@ -3,12 +3,12 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 
-export function FeaturedProject({ project, link }) {
+export function FeaturedProject({ project, link, size = 'big' }) {
   return (
     <>
       <figure className="project-image">
         <Link to={project.fields.slug}>
-          <Img sizes={project.frontmatter.picture.childImageSharp.sizes} />
+          <Img sizes={project.frontmatter.picture.childImageSharp[size]} />
         </Link>
       </figure>
       <section className="project-info">
@@ -23,17 +23,23 @@ export function FeaturedProject({ project, link }) {
   );
 }
 
-export function ProjectListBig({ projects }) {
+export function ProjectList({
+  projects,
+  more = true,
+  link = false,
+  size = 'big'
+}) {
+  console.log(projects);
   return (
     <section className="project-list big">
       <ul>
         {projects.map(project => (
           <li className="project" key={project.fields.slug}>
-            <FeaturedProject project={project} />
+            <FeaturedProject project={project} link={link} size={size} />
           </li>
         ))}
       </ul>
-      <Link to="/proyectos">Más proyectos</Link>
+      {more && <Link to="/proyectos">Más proyectos</Link>}
     </section>
   );
 }

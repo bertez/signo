@@ -13,12 +13,10 @@ sections:
     title: Movida Gorda
     type: text
   - text: Lolailo pardo
-    title: Video fino
     type: video
     video: /media/file_example_mp4_640_3mg.mp4
   - image: /media/sample-chip.jpg
     text: Lolailo pardo222
-    title: Imagen fino
     type: image
 gallery:
   - image: /media/sample-phone.jpg

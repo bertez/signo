@@ -4,8 +4,6 @@ import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 export function ProductListSimple({ products }) {
-  console.log(products);
-
   return (
     <section className="product-list">
       <h2>Construcciones singulares</h2>

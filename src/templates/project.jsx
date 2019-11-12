@@ -2,15 +2,52 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import SEO from '../components/SEO.jsx';
+import Md from '../helpers/markdown.jsx';
+import Img from 'gatsby-image';
+
+import { ProjectSection } from '../components/project-section.jsx';
+import { Gallery } from '../components/gallery.jsx';
+import { Cites } from '../components/cites.jsx';
 
 export default function Project({ data }) {
-  console.log(JSON.stringify(data, null, 1));
+  const {
+    page: { frontmatter }
+  } = data;
 
   return (
-    <section className="project">
+    <article className="content content-project">
       <SEO pageData={data.page} />
-      <h1>Project single!</h1>
-    </section>
+      <header>
+        <h1>{frontmatter.title}</h1>
+        <Md>{frontmatter.tagline}</Md>
+
+        <figure>
+          <Img
+            sizes={frontmatter.picture.childImageSharp.sizes}
+            alt={frontmatter.title}
+          />
+        </figure>
+      </header>
+
+      <ul className="project-sections">
+        {frontmatter.sections.map((section, index) => (
+          <li key={`project_section_${index}`}>
+            <ProjectSection section={section} />
+          </li>
+        ))}
+      </ul>
+
+      <section className="gallery">
+        <h2>Galería</h2>
+
+        <Gallery images={frontmatter.gallery} />
+      </section>
+
+      <section className="cites">
+        <h2>Referencias en medios y redes sociales</h2>
+        <Cites links={frontmatter.links} />
+      </section>
+    </article>
   );
 }
 

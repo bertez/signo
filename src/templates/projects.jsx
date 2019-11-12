@@ -2,15 +2,54 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import SEO from '../components/SEO.jsx';
+import Md from '../helpers/markdown.jsx';
+
+import { ClientList } from '../components/client-list.jsx';
+import { ProjectList } from '../components/project-list.jsx';
 
 export default function Projects({ data }) {
   console.log(JSON.stringify(data, null, 1));
 
+  const {
+    page: { frontmatter },
+    projects: { edges: projects },
+    clients: { edges: clients }
+  } = data;
+
   return (
-    <section className="projects">
+    <article className="content content-projects">
       <SEO pageData={data.page} />
-      <h1>Projects!</h1>
-    </section>
+      <header>
+        <h1>{frontmatter.title}</h1>
+        <Md>{frontmatter.tagline}</Md>
+      </header>
+
+      <section className="clients">
+        <ClientList clients={clients} />
+      </section>
+
+      <section className="projects">
+        {/* Featured */}
+        <ProjectList
+          more={false}
+          link={true}
+          projects={projects
+            .filter(project => project.node.frontmatter.highlight)
+            .map(project => project.node)}
+        />
+
+        <h2>Otros proyectos</h2>
+        <ProjectList
+          more={false}
+          size="small"
+          projects={projects
+            .filter(project => !project.node.frontmatter.highlight)
+            .map(project => project.node)}
+        />
+
+        {/* Other */}
+      </section>
+    </article>
   );
 }
 
@@ -38,6 +77,9 @@ export const query = graphql`
     ) {
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
             title
             picture {
@@ -59,6 +101,9 @@ export const query = graphql`
           fields {
             slug
             client {
+              fields {
+                slug
+              }
               frontmatter {
                 title
               }
@@ -70,7 +115,10 @@ export const query = graphql`
             highlight
             picture {
               childImageSharp {
-                sizes(maxWidth: 1000) {
+                big: sizes(maxWidth: 1000) {
+                  ...GatsbyImageSharpSizes
+                }
+                small: sizes(maxWidth: 300) {
                   ...GatsbyImageSharpSizes
                 }
               }
