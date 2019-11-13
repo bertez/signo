@@ -35,25 +35,31 @@ export default function Service({ data }) {
         <Md>{frontmatter.description}</Md>
       </section>
 
-      <section className="service-details">
-        <ul>
-          {frontmatter.details.map((detail, index) => (
-            <li key={`service_detail_${index}`}>
-              <ServiceDetail detail={detail} />
-            </li>
-          ))}
-        </ul>
-      </section>
+      {frontmatter.details && (
+        <section className="service-details">
+          <ul>
+            {frontmatter.details.map((detail, index) => (
+              <li key={`service_detail_${index}`}>
+                <ServiceDetail detail={detail} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
-      <section className="service-gallery">
-        <h2>Galería</h2>
+      {frontmatter.gallery && (
+        <section className="service-gallery">
+          <h2>Galería</h2>
 
-        <Gallery images={frontmatter.gallery} />
-      </section>
+          <Gallery images={frontmatter.gallery} />
+        </section>
+      )}
 
-      <section className="service-prices">
-        <PriceTable prices={frontmatter.prices} />
-      </section>
+      {frontmatter.prices && (
+        <section className="service-prices">
+          <PriceTable prices={frontmatter.prices} />
+        </section>
+      )}
 
       <section className="service-projects">
         <h2>Proyectos relacionados</h2>

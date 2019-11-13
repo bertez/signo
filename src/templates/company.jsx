@@ -25,42 +25,50 @@ export default function Company({ data }) {
         <div dangerouslySetInnerHTML={{ __html: frontmatter.map }} />
       </section>
 
-      <section className="company-team">
-        <h2>Equipo</h2>
-        <ul>
-          {frontmatter.team.map(person => (
-            <li key={person.email}>
-              <figure>
-                <Img resolutions={person.picture.childImageSharp.resolutions} />
-                <h3>{person.name}</h3>
-                <p>{person.position}</p>
-              </figure>
-            </li>
-          ))}
-        </ul>
-      </section>
+      {frontmatter.team && (
+        <section className="company-team">
+          <h2>Equipo</h2>
+          <ul>
+            {frontmatter.team.map(person => (
+              <li key={person.email}>
+                <figure>
+                  <Img
+                    resolutions={person.picture.childImageSharp.resolutions}
+                  />
+                  <h3>{person.name}</h3>
+                  <p>{person.position}</p>
+                </figure>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section className="company-about">
         <h2>Sobre la empresa</h2>
         <Md>{frontmatter.description}</Md>
       </section>
 
-      <section className="company-timeline">
-        <h2>Historia</h2>
-        <ul>
-          {frontmatter.timeline.map((unit, index) => (
-            <li key={`timeline_${unit}_${index}`}>
-              <h3>{unit.year}</h3>
-              <p>{unit.text}</p>
-            </li>
-          ))}
-        </ul>
-      </section>
+      {frontmatter.timeline && (
+        <section className="company-timeline">
+          <h2>Historia</h2>
+          <ul>
+            {frontmatter.timeline.map((unit, index) => (
+              <li key={`timeline_${unit}_${index}`}>
+                <h3>{unit.year}</h3>
+                <p>{unit.text}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
-      <section className="company-cites">
-        <h2>Signo en los medios de comunicación</h2>
-        <Cites links={frontmatter.links} />
-      </section>
+      {frontmatter.links && (
+        <section className="company-cites">
+          <h2>Signo en los medios de comunicación</h2>
+          <Cites links={frontmatter.links} />
+        </section>
+      )}
     </article>
   );
 }

@@ -29,24 +29,30 @@ export default function Project({ data }) {
         </figure>
       </header>
 
-      <ul className="project-sections">
-        {frontmatter.sections.map((section, index) => (
-          <li key={`project_section_${index}`}>
-            <ProjectSection section={section} />
-          </li>
-        ))}
-      </ul>
+      {frontmatter.sections && (
+        <ul className="project-sections">
+          {frontmatter.sections.map((section, index) => (
+            <li key={`project_section_${index}`}>
+              <ProjectSection section={section} />
+            </li>
+          ))}
+        </ul>
+      )}
 
-      <section className="project-gallery">
-        <h2>Galería</h2>
+      {frontmatter.gallery && (
+        <section className="project-gallery">
+          <h2>Galería</h2>
 
-        <Gallery images={frontmatter.gallery} />
-      </section>
+          <Gallery images={frontmatter.gallery} />
+        </section>
+      )}
 
-      <section className="project-cites">
-        <h2>Referencias en medios y redes sociales</h2>
-        <Cites links={frontmatter.links} />
-      </section>
+      {frontmatter.links && (
+        <section className="project-cites">
+          <h2>Referencias en medios y redes sociales</h2>
+          <Cites links={frontmatter.links} />
+        </section>
+      )}
     </article>
   );
 }
@@ -84,9 +90,7 @@ export const query = graphql`
           type
           title
           text
-          video {
-            publicURL
-          }
+          video
           image {
             childImageSharp {
               sizes(maxWidth: 1440) {

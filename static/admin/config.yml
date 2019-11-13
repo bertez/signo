@@ -230,6 +230,10 @@ collections:
       - label: Logo
         name: picture
         widget: image
+      - lalbel: Visible en la web
+        name: visible
+        widget: boolean
+        default: true
   - label: Proyectos
     name: projects
     folder: src/data/proyecto
@@ -293,9 +297,10 @@ collections:
             name: image
             widget: image
             required: false
-          - label: Vídeo
+          - label: Vídeo de Youtube
             name: video
-            widget: file
+            hint: Poner sólo el id del vídeo (p. ej. oHg5SJYRHA0)
+            widget: string
             required: false
       - label: Galería
         name: gallery

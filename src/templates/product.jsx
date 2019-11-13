@@ -30,11 +30,12 @@ export default function Product({ data }) {
         <Md>{frontmatter.description}</Md>
       </section>
 
-      <section className="product-gallery">
-        <h2>Galería</h2>
-
-        <Gallery images={frontmatter.gallery} />
-      </section>
+      {frontmatter.gallery && (
+        <section className="product-gallery">
+          <h2>Galería</h2>
+          <Gallery images={frontmatter.gallery} />
+        </section>
+      )}
 
       <section className="product-buy">
         <Md>{frontmatter.buy_details}</Md>

@@ -14,7 +14,7 @@ sections:
     type: text
   - text: Lolailo pardo
     type: video
-    video: /media/file_example_mp4_640_3mg.mp4
+    video: kjUpYlKs0nM
   - image: /media/sample-chip.jpg
     text: Lolailo pardo222
     type: image
