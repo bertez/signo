@@ -11,7 +11,6 @@ short_description: >-
   Guitarra fabricada en aluminio, con un diseño Steam Punk basado en modelo
   Gibson Less Paul.
 sections:
-  - type: text
   - image: /media/mini-sample-computer.jpg
     text: Guitarra
     title: Guitarras
