@@ -11,6 +11,6 @@ related_projects:
   - project: Figuras Resurrection Fest
 services_intro: Movida sobre servicios!
 company_intro: Texto sobre empresa!
-company_picture: /media/mini-sample-computer.jpg
+company_picture: /media/20160702_185356.jpg
 ---
 
