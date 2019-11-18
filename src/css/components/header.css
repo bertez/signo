@@ -1,4 +1,5 @@
 header.main {
+  @extend %text-body;
   padding-top: 1rem;
   margin-bottom: 2rem;
   position: relative;
@@ -73,11 +74,8 @@ header.main {
       }
 
       & > ul {
-        &.is-active {
-          display: initial;
-        }
-
-        display: none;
+        @extend %fadeIn;
+        @extend %text-headline;
         position: fixed;
         top: 0;
         left: 0;
@@ -86,10 +84,44 @@ header.main {
         background-color: var(--dark);
         z-index: 1;
         padding: 2rem;
+        color: var(--bright);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        & li {
+          @extend %slideIn;
+          animation-fill-mode: both;
+          margin: 0.5rem 0;
+
+          &:nth-child(1) {
+            animation-delay: 250ms;
+          }
+
+          &:nth-child(2) {
+            animation-delay: 300ms;
+          }
+
+          &:nth-child(3) {
+            animation-delay: 350ms;
+          }
+
+          &:nth-child(4) {
+            animation-delay: 400ms;
+          }
+
+          &:nth-child(5) {
+            animation-delay: 450ms;
+          }
+        }
 
         & a {
           color: var(--bright);
-          font-size: 2rem;
+          transition: color 200ms;
+
+          &:hover {
+            color: var(--medium);
+          }
         }
       }
     }

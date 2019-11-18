@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import { Link } from 'gatsby';
@@ -6,7 +6,6 @@ import { Link } from 'gatsby';
 import '../css/base.css';
 
 import signo from '../img/signo.svg';
-import menu from '../img/menu.svg';
 
 export default function MainWrapper({ children }) {
   const data = useStaticQuery(graphql`
@@ -103,37 +102,16 @@ export default function MainWrapper({ children }) {
               type="button"
               onClick={() => toggleMenu(!menuVisible)}
             >
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
+              <span className="hamburger-box">
+                <span className="hamburger-inner"></span>
               </span>
             </button>
-            <ul className={menuVisible ? 'is-active' : ''}>
-              <li>
-                <Link to="/">Portada</Link>
-              </li>
-              <li>
-                <Link to="/proyectos">Proyectos</Link>
-              </li>
-              <li>
-                <ul>
-                  {services.map(service => (
-                    <li key={service.node.id}>
-                      <Link to={service.node.fields.slug}>
-                        {service.node.frontmatter.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-              <li>
-                <Link to="/construcciones-singulares">
-                  Construcciones singulares
-                </Link>
-              </li>
-              <li>
-                <Link to="/empresa">Sobre Signo</Link>
-              </li>
-            </ul>
+            {menuVisible && (
+              <Menu
+                close={() => toggleMenu(!menuVisible)}
+                services={services}
+              />
+            )}
           </nav>
         </section>
       </header>
@@ -176,5 +154,35 @@ export default function MainWrapper({ children }) {
         </nav>
       </footer>
     </>
+  );
+}
+
+function Menu({ close, services }) {
+  useLayoutEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = originalStyle;
+    };
+  }, []);
+
+  return (
+    <ul onClick={close}>
+      <li>
+        <Link to="/">Portada</Link>
+      </li>
+      <li>
+        <Link to="/proyectos">Proyectos</Link>
+      </li>
+      <li>
+        <Link to="/servicios">Servicios</Link>
+      </li>
+      <li>
+        <Link to="/construcciones-singulares">Construcciones singulares</Link>
+      </li>
+      <li>
+        <Link to="/empresa">Sobre Signo</Link>
+      </li>
+    </ul>
   );
 }

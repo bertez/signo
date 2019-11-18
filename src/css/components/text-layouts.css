@@ -1,0 +1,16 @@
+.ly-text-header {
+  @extend %big-margin;
+  margin-bottom: 2rem;
+
+  & h1 {
+    display: none;
+  }
+
+  & h2 {
+    @extend %text-title;
+  }
+
+  & p {
+    @extend %text-headline;
+  }
+}

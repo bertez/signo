@@ -18,3 +18,52 @@
   border: 0;
   background-color: transparent;
 }
+
+/* Text */
+
+%text-title {
+  font-family: Mukta, sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 46px;
+}
+
+%text-headline {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+%text-body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+%text-body-bold {
+  @extend %text-body;
+  font-weight: 700;
+}
+
+%text-caption {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+%text-caption-bold {
+  @extend %text-caption;
+  font-weight: 700;
+}
+
+/* Animations */
+
+%fadeIn {
+  animation: fadein 500ms;
+}
+
+%slideIn {
+  animation: slidein 500ms;
+}
