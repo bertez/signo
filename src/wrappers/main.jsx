@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import { Link } from 'gatsby';
+
+import '../css/base.css';
+
+import signo from '../img/signo.svg';
+import menu from '../img/menu.svg';
 
 export default function MainWrapper({ children }) {
   const data = useStaticQuery(graphql`
@@ -48,16 +53,15 @@ export default function MainWrapper({ children }) {
     services: { edges: services }
   } = data;
 
+  const [menuVisible, toggleMenu] = useState(false);
+
   return (
     <>
-      <header>
-        <nav>
+      <header className="main">
+        <nav className="utility">
           <ul>
             <li>
               <a href={`tel:${headerData.phone}`}>{headerData.phone}</a>
-            </li>
-            <li>
-              <Link to="/empresa">{headerData.address}</Link>
             </li>
             <li>
               <a
@@ -73,46 +77,65 @@ export default function MainWrapper({ children }) {
           <ul>
             {headerData.social.map(social => (
               <li key={social.url}>
-                <a href={social.url} className={social.network}>
+                <a
+                  href={social.url}
+                  className={social.network}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {social.handle}
                 </a>
               </li>
             ))}
           </ul>
         </nav>
-        <h1>
-          <Link to="/">Signo</Link>
-        </h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Portada</Link>
-            </li>
-            <li>
-              <Link to="/proyectos">Proyectos</Link>
-            </li>
-            <li>
-              Servicios:
-              <ul>
-                {services.map(service => (
-                  <li key={service.node.id}>
-                    <Link to={service.node.fields.slug}>
-                      {service.node.frontmatter.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-            <li>
-              <Link to="/construcciones-singulares">
-                Construcciones singulares
-              </Link>
-            </li>
-            <li>
-              <Link to="/empresa">Sobre Signo</Link>
-            </li>
-          </ul>
-        </nav>
+        <section className="header-menu">
+          <h1>
+            <Link to="/">
+              <img src={signo} alt="Signo" />
+            </Link>
+          </h1>
+          <nav>
+            <button
+              className={`hamburger hamburger--spin ${
+                menuVisible ? 'is-active' : ''
+              }`}
+              type="button"
+              onClick={() => toggleMenu(!menuVisible)}
+            >
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <ul className={menuVisible ? 'is-active' : ''}>
+              <li>
+                <Link to="/">Portada</Link>
+              </li>
+              <li>
+                <Link to="/proyectos">Proyectos</Link>
+              </li>
+              <li>
+                <ul>
+                  {services.map(service => (
+                    <li key={service.node.id}>
+                      <Link to={service.node.fields.slug}>
+                        {service.node.frontmatter.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+              <li>
+                <Link to="/construcciones-singulares">
+                  Construcciones singulares
+                </Link>
+              </li>
+              <li>
+                <Link to="/empresa">Sobre Signo</Link>
+              </li>
+            </ul>
+          </nav>
+        </section>
       </header>
 
       <main>{children}</main>

@@ -3,7 +3,7 @@ module.exports = {
     title: 'Signo',
     titleTemplate: '%s - Signo',
     description: 'Signo Rotulación',
-    url: 'http://signorotulacion.com',
+    siteUrl: 'https://signorotulacion.com',
     image: '/extra/card.png'
   },
   plugins: [
@@ -69,7 +69,8 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-netlify-cms',
-    'gatsby-plugin-catch-links'
+    'gatsby-plugin-catch-links',
+    'gatsby-plugin-sitemap'
   ],
   mapping: {
     'MarkdownRemark.fields.projects': 'MarkdownRemark',

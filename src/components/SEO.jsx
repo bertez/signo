@@ -12,7 +12,7 @@ const SEO = ({ pageData }) => {
           defaultTitle: title
           titleTemplate
           defaultDescription: description
-          url
+          url: siteUrl
           defaultImage: image
         }
       }

@@ -23,6 +23,7 @@ export default function Service({ data }) {
       <SEO pageData={data.page} />
       <header>
         <h1>{frontmatter.title}</h1>
+
         <figure>
           <Img
             sizes={frontmatter.picture.childImageSharp.sizes}

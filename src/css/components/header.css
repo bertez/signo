@@ -1,0 +1,97 @@
+header.main {
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+
+  & nav.utility {
+    @extend %small-margin;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+
+    & ul {
+      display: flex;
+    }
+
+    & ul:first-child {
+      & li {
+        margin-right: 0.5rem;
+      }
+    }
+
+    & ul:last-child {
+      & li {
+        margin-left: 0.5rem;
+        font-size: 0;
+
+        & a {
+          display: block;
+          width: 20px;
+          height: 20px;
+        }
+
+        & a.twitter {
+          background-image: url('../img/twitter.svg');
+        }
+
+        & a.instagram {
+          background-image: url('../img/instagram.svg');
+        }
+
+        & a.facebook {
+          background-image: url('../img/facebook.svg');
+        }
+      }
+    }
+  }
+
+  & section.header-menu {
+    @extend %big-margin;
+
+    display: flex;
+    justify-content: space-between;
+
+    & h1 img {
+      width: 10rem;
+    }
+
+    & nav {
+      & button {
+        outline: none;
+        position: relative;
+        z-index: 2;
+        padding-right: 0;
+
+        &.is-active {
+          & .hamburger-inner,
+          & .hamburger-inner::before,
+          & .hamburger-inner::after {
+            background-color: var(--bright);
+          }
+        }
+      }
+
+      & > ul {
+        &.is-active {
+          display: initial;
+        }
+
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--dark);
+        z-index: 1;
+        padding: 2rem;
+
+        & a {
+          color: var(--bright);
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
