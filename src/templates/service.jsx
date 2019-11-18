@@ -62,10 +62,12 @@ export default function Service({ data }) {
         </section>
       )}
 
-      <section className="service-projects">
-        <h2>Proyectos relacionados</h2>
-        <ProjectList more={false} size="small" projects={projects} />
-      </section>
+      {projects && (
+        <section className="service-projects">
+          <h2>Proyectos relacionados</h2>
+          <ProjectList more={false} size="small" projects={projects} />
+        </section>
+      )}
     </article>
   );
 }
