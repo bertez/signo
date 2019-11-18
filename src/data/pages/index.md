@@ -2,7 +2,7 @@
 template: frontpage
 title: Signo Taller del Rótulo
 seo_description: 'Portada de Signo, texto de SEO'
-seo_image: /media/mini-sample-computer.jpg
+seo_image: /media/logo-signo-construcciones-singulares_web.jpg
 tagline: |-
   **Lorem ipsum** dolor sit amet
 
@@ -11,5 +11,6 @@ related_projects:
   - project: Figuras Resurrection Fest
 services_intro: Movida sobre servicios!
 company_intro: Texto sobre empresa!
-company_picture: /media/mini-sample-computer.jpg
+company_picture: /media/20160702_185356.jpg
 ---
+

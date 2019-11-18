@@ -1,6 +1,6 @@
 ---
-phone: '9825612345'
-address: 'Pirixel, s/n'
+phone: '982989110'
+address: 'Plantío, s/n - 27863 Celeiro - Viveiro'
 dossier:
   file: /media/sample.pdf
   title: Dossier 2019
