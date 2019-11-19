@@ -1,0 +1,25 @@
+.ly-company-frontpage {
+  @extend %big-tb;
+  @extend %text-negative;
+
+  & header {
+    @extend %big-lr;
+    display: flex;
+    flex-direction: column;
+
+    & figure {
+      order: -1;
+      @extend %big-tb;
+    }
+
+    & h2 {
+      @extend %small-tb;
+    }
+
+    & a {
+      display: inline-block;
+      @extend %big-tb;
+      @extend %actionButton-negative;
+    }
+  }
+}

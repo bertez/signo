@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import SEO from '../components/SEO.jsx';
 import Md from '../helpers/markdown.jsx';
 
-import { ProductList, ProductListSimple } from '../components/product-list';
+import { ProductList, ProductListSlider } from '../components/product-list';
 
 export default function Products({ data }) {
   const {
@@ -29,7 +29,7 @@ export default function Products({ data }) {
       </section>
 
       <section className="product-list">
-        <ProductListSimple products={products} />
+        <ProductListSlider products={products} />
       </section>
     </article>
   );

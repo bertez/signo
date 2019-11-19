@@ -1,0 +1,13 @@
+.ly-services {
+  @extend %big-tb;
+
+  & li {
+    @extend %small-tb;
+    text-align: center;
+
+    & h3 {
+      @extend %text-title;
+      @extend %small-tb;
+    }
+  }
+}

@@ -8,9 +8,7 @@ export function ClientList({ clients }) {
         {clients.map(client => (
           <li key={client.node.fields.slug}>
             <Img
-              resolutions={
-                client.node.frontmatter.picture.childImageSharp.resolutions
-              }
+              sizes={client.node.frontmatter.picture.childImageSharp.sizes}
             />
             <h2>{client.node.frontmatter.title}</h2>
           </li>

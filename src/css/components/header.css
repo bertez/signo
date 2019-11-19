@@ -1,11 +1,10 @@
 header.main {
-  @extend %text-body;
   padding-top: 1rem;
   margin-bottom: 2rem;
   position: relative;
 
   & nav.utility {
-    @extend %small-margin;
+    @extend %small-lr;
     display: flex;
     justify-content: space-between;
 
@@ -48,7 +47,7 @@ header.main {
   }
 
   & section.header-menu {
-    @extend %big-margin;
+    @extend %big-lr;
 
     display: flex;
     justify-content: space-between;

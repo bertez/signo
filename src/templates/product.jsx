@@ -7,7 +7,7 @@ import Img from 'gatsby-image';
 import Md from '../helpers/markdown.jsx';
 
 import { Gallery } from '../components/gallery.jsx';
-import { ProductListSimple } from '../components/product-list.jsx';
+import { ProductListSlider } from '../components/product-list.jsx';
 
 export default function Product({ data }) {
   const {
@@ -46,7 +46,7 @@ export default function Product({ data }) {
       </section>
 
       <section className="product-list">
-        <ProductListSimple products={products} />
+        <ProductListSlider products={products} />
       </section>
     </article>
   );

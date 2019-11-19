@@ -1,0 +1,21 @@
+.ly-clients {
+  @extend %big-tb;
+  @extend %big-lr;
+
+  & ul {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+
+    & li {
+      & h2 {
+        @extend %text-headline;
+        margin-top: 0.5rem;
+        text-align: center;
+      }
+      & img {
+        max-width: 100%;
+      }
+    }
+  }
+}

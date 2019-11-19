@@ -10,7 +10,7 @@ import Img from 'gatsby-image';
 import { ProjectList } from '../components/project-list.jsx';
 import { ClientList } from '../components/client-list.jsx';
 import { ServiceList } from '../components/service-list.jsx';
-import { ProductListSimple } from '../components/product-list.jsx';
+import { ProductListSlider } from '../components/product-list.jsx';
 
 export default function Frontpage({ data }) {
   const {
@@ -32,28 +32,27 @@ export default function Frontpage({ data }) {
         <Md>{frontmatter.tagline}</Md>
       </header>
 
-      <section className="projects">
-        <ProjectList projects={projects} />
+      <section className="ly-projects-featured">
+        <ProjectList projects={projects} description={false} />
       </section>
 
-      <section className="clients">
+      <section className="ly-clients">
         <ClientList clients={clients} />
       </section>
 
       {/* Services intro */}
 
       <section className="services">
-        <header>
+        <header className="ly-text-header">
           <h2>Servicios</h2>
           <p>{frontmatter.services_intro}</p>
-
-          <ServiceList services={services} />
         </header>
+        <ServiceList services={services} />
       </section>
 
       {/* Company info */}
 
-      <section className="company">
+      <section className="ly-company-frontpage">
         <header>
           <h2>Empresa</h2>
           <section className="company-info">
@@ -67,7 +66,7 @@ export default function Frontpage({ data }) {
       </section>
 
       <section className="product-list">
-        <ProductListSimple products={products} />
+        <ProductListSlider products={products} />
       </section>
     </article>
   );
@@ -136,8 +135,8 @@ export const query = graphql`
             title
             picture {
               childImageSharp {
-                resolutions(width: 300, height: 200) {
-                  ...GatsbyImageSharpResolutions
+                sizes(maxWidth: 400) {
+                  ...GatsbyImageSharpSizes
                 }
               }
             }

@@ -1,6 +1,8 @@
 .ly-text-header {
-  @extend %big-margin;
-  margin-bottom: 2rem;
+  @extend %big-lr;
+  @extend %big-tb;
+  display: flex;
+  flex-direction: column;
 
   & h1 {
     display: none;
@@ -8,9 +10,12 @@
 
   & h2 {
     @extend %text-title;
+    text-align: center;
+    @extend %small-tb;
   }
 
   & p {
     @extend %text-headline;
+    margin-bottom: 0.5rem;
   }
 }

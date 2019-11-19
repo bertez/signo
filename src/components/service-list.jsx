@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 
 export function ServiceList({ services }) {
   return (
-    <section className="client-list">
+    <section className="ly-services">
       <ul>
         {services.map(service => (
           <li key={service.node.fields.slug}>

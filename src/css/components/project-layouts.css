@@ -1,0 +1,17 @@
+.ly-projects-featured {
+  @extend %big-tb;
+
+  & .project {
+    & .project-image {
+      margin-bottom: 1rem;
+    }
+    & .project-info {
+      @extend %big-lr;
+
+      & h2 {
+        margin-bottom: 0.5rem;
+        @extend %text-title;
+      }
+    }
+  }
+}

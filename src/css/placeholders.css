@@ -4,19 +4,24 @@
   grid-template-columns: repeat(6, 1fr);
 }
 
-%small-margin {
+%small-lr {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-%big-margin {
+%big-lr {
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
-%cleanButton {
-  border: 0;
-  background-color: transparent;
+%small-tb {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+%big-tb {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Text */
@@ -24,22 +29,22 @@
 %text-title {
   font-family: Mukta, sans-serif;
   font-weight: 700;
-  font-size: 44px;
-  line-height: 46px;
+  font-size: 34px;
+  line-height: 36px;
 }
 
 %text-headline {
   font-family: Roboto, sans-serif;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 %text-body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 %text-body-bold {
@@ -49,13 +54,40 @@
 
 %text-caption {
   font-family: Roboto, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 %text-caption-bold {
   @extend %text-caption;
   font-weight: 700;
+}
+
+%text-negative {
+  background: var(--dark);
+  color: var(--bright);
+}
+
+/* Elements */
+
+%cleanButton {
+  border: 0;
+  background-color: transparent;
+}
+
+%actionButton {
+  @extend %cleanButton;
+  @extend %text-body-bold;
+
+  padding: 0.5rem 1rem;
+  background: var(--dark);
+  color: var(--bright);
+}
+
+%actionButton-negative {
+  @extend %actionButton;
+  background: var(--bright);
+  color: var(--dark);
 }
 
 /* Animations */

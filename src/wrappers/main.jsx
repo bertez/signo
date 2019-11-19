@@ -120,8 +120,12 @@ export default function MainWrapper({ children }) {
 
       {/* TODO: footer
        */}
-      <footer>
-        <p>(c) Signo, 2019</p>
+      <footer className="main">
+        <h1>
+          <Link to="/">
+            <img src={signo} alt="Signo" />
+          </Link>
+        </h1>
         <nav>
           <ul>
             <li>
@@ -130,18 +134,7 @@ export default function MainWrapper({ children }) {
             <li>
               <Link to="/proyectos">Proyectos</Link>
             </li>
-            <li>
-              Servicios:
-              <ul>
-                {services.map(service => (
-                  <li key={service.node.id}>
-                    <Link to={service.node.fields.slug}>
-                      {service.node.frontmatter.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
+
             <li>
               <Link to="/construcciones-singulares">
                 Construcciones singulares
@@ -150,6 +143,16 @@ export default function MainWrapper({ children }) {
             <li>
               <Link to="/empresa">Sobre Signo</Link>
             </li>
+          </ul>
+
+          <ul>
+            {services.map(service => (
+              <li key={service.node.id}>
+                <Link to={service.node.fields.slug}>
+                  {service.node.frontmatter.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
       </footer>
