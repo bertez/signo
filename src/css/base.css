@@ -11,6 +11,7 @@
 @import 'components/project-layouts.css';
 @import 'components/client-layouts.css';
 @import 'components/service-layouts.css';
+@import 'components/product-layouts.css';
 
 * {
   margin: 0;

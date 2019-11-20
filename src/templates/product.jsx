@@ -45,7 +45,7 @@ export default function Product({ data }) {
         </section>
       </section>
 
-      <section className="product-list">
+      <section className="ly-product-list">
         <ProductListSlider products={products} />
       </section>
     </article>

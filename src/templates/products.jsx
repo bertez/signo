@@ -15,12 +15,12 @@ export default function Products({ data }) {
   return (
     <article className="content content-products">
       <SEO pageData={data.page} />
-      <header>
-        <h1>{frontmatter.title}</h1>
+      <header className="ly-text-header">
+        <h2>{frontmatter.title}</h2>
         <Md>{frontmatter.tagline}</Md>
       </header>
 
-      <section className="featured-products">
+      <section className="ly-products-big">
         <ProductList
           products={products.filter(
             product => product.node.frontmatter.highlight
@@ -28,8 +28,15 @@ export default function Products({ data }) {
         />
       </section>
 
-      <section className="product-list">
-        <ProductListSlider products={products} />
+      <section className="ly-product-list">
+        <header className="ly-text-header">
+          <h2>Otras construcciones</h2>
+        </header>
+        <ProductListSlider
+          products={products.filter(
+            product => !product.node.frontmatter.highlight
+          )}
+        />
       </section>
     </article>
   );

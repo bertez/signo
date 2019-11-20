@@ -1,0 +1,19 @@
+.ly-products-list {
+}
+
+.ly-products-big {
+  @extend %big-tb;
+
+  & .product-info {
+    @extend %big-tb;
+    @extend %big-lr;
+
+    & .description {
+      @extend %small-tb;
+    }
+
+    & .link {
+      @extend %actionButton;
+    }
+  }
+}

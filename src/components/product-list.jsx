@@ -19,8 +19,12 @@ export function ProductList({ products }) {
 
           <section className="product-info">
             <h2>{product.node.frontmatter.title}</h2>
-            <p>{product.node.frontmatter.short_description}</p>
-            <Link to={product.node.fields.slug}>Más info</Link>
+            <p className="description">
+              {product.node.frontmatter.short_description}
+            </p>
+            <Link to={product.node.fields.slug} className="link">
+              Más info
+            </Link>
           </section>
         </li>
       ))}
@@ -31,9 +35,6 @@ export function ProductList({ products }) {
 export function ProductListSlider({ products }) {
   return (
     <>
-      <header className="ly-text-header">
-        <h2>Construcciones singulares</h2>
-      </header>
       <Slider name="products">
         {products.map(product => (
           <div key={product.node.fields.slug}>

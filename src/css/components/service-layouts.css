@@ -60,13 +60,14 @@
 
     & td,
     & th {
-      padding: 0.5rem;
-      border-bottom: 1px solid black;
+      padding: 1rem;
+      border-bottom: 1px solid var(--dark);
     }
 
     & td:first-child,
     & th:first-child {
-      padding-left: 1rem;
+      padding-left: 2rem;
+      font-weight: bold;
     }
   }
 }

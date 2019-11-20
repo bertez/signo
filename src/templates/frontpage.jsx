@@ -65,7 +65,10 @@ export default function Frontpage({ data }) {
         </header>
       </section>
 
-      <section className="product-list">
+      <section className="ly-product-list">
+        <header className="ly-text-header">
+          <h2>Construcciones singulares</h2>
+        </header>
         <ProductListSlider products={products} />
       </section>
     </article>
