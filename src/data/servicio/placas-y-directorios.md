@@ -12,6 +12,10 @@ description: >-
 
 
   Consulte opciones en nuestra tienda online
+details: []
+gallery:
+  - image: /media/img_6553.jpg
+    title: Placa de aluminio composite
 prices: []
 ---
 
