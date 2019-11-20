@@ -2,7 +2,7 @@
 template: service
 title: Placas y Directorios
 picture: /media/callejero-1.jpg
-short_description: Placas y directorios en todo tipo de materiales
+short_description: Placas y directorios personalizados y adaptados a tu negocio
 description: >-
   La placas y directorios son elementos comunicativos de cercanía, que ayudan a
   identificar espacios, oficinas, negocios, ... Las fabricamos personalizadas en
