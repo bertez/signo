@@ -15,11 +15,15 @@ export function FeaturedProject({ project, link, size = 'big', description }) {
         <h2>
           <Link to={project.fields.slug}>{project.frontmatter.title}</Link>
         </h2>
+        <p className="client">{project.fields.client.frontmatter.title}</p>
         {description && (
           <p className="description">{project.frontmatter.short_description}</p>
         )}
-        <p className="client">{project.fields.client.frontmatter.title}</p>
-        {link && <Link to={project.fields.slug}>Más info</Link>}
+        {link && (
+          <Link to={project.fields.slug} className="link">
+            Más info
+          </Link>
+        )}
       </section>
     </>
   );

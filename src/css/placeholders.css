@@ -4,6 +4,11 @@
   grid-template-columns: repeat(6, 1fr);
 }
 
+%tiny-lr {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 %small-lr {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -12,6 +17,11 @@
 %big-lr {
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+%tiny-tb {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 %small-tb {
@@ -73,6 +83,7 @@
 %cleanButton {
   border: 0;
   background-color: transparent;
+  display: block;
 }
 
 %actionButton {

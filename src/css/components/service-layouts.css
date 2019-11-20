@@ -11,3 +11,62 @@
     }
   }
 }
+
+.ly-service-description {
+  @extend %big-tb;
+  @extend %big-lr;
+}
+
+.ly-service-details {
+  @extend %big-tb;
+  @extend %big-lr;
+
+  & li {
+    @extend %small-tb;
+
+    display: flex;
+    flex-wrap: wrap;
+    & h2 {
+      @extend %small-tb;
+      flex-basis: 100%;
+    }
+
+    & figure {
+      flex-basis: calc(40% - 1rem);
+      margin-right: 1rem;
+      margin-top: 0.25rem;
+    }
+
+    & p {
+      flex-basis: 60%;
+    }
+  }
+}
+
+.ly-service-prices {
+  & h2 {
+    @extend %big-tb;
+    @extend %big-lr;
+  }
+
+  & table {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+
+    & thead {
+      text-align: left;
+    }
+
+    & td,
+    & th {
+      padding: 0.5rem;
+      border-bottom: 1px solid black;
+    }
+
+    & td:first-child,
+    & th:first-child {
+      padding-left: 1rem;
+    }
+  }
+}

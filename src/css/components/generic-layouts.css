@@ -21,9 +21,35 @@
     }
 
     & a {
-      display: inline-block;
       @extend %big-tb;
       @extend %actionButton-negative;
+    }
+  }
+}
+
+.ly-block-gallery {
+  @extend %big-tb;
+  @extend %big-lr;
+
+  & h2 {
+    @extend %big-tb;
+  }
+}
+
+.ly-cites {
+  @extend %big-tb;
+  @extend %big-lr;
+
+  & ul {
+    @extend %small-tb;
+    & li {
+      @extend %small-tb;
+      & cite {
+        @extend %text-body-bold;
+        @extend %tiny-tb;
+        display: block;
+        font-style: normal;
+      }
     }
   }
 }

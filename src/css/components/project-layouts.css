@@ -15,3 +15,72 @@
     }
   }
 }
+
+.ly-projects-big {
+  @extend %big-tb;
+
+  & .project-info {
+    @extend %big-tb;
+    @extend %big-lr;
+
+    & .client {
+      @extend %text-body-bold;
+      margin: 0.25rem 0;
+    }
+
+    & .description {
+      @extend %small-tb;
+    }
+
+    & .link {
+      @extend %actionButton;
+    }
+  }
+}
+
+.ly-projects-list {
+  @extend %big-tb;
+  @extend %big-lr;
+
+  & > h2 {
+    @extend %big-tb;
+  }
+  & .project {
+    display: flex;
+
+    & .client {
+      @extend %text-body-bold;
+      @extend %tiny-tb;
+    }
+
+    & .project-image {
+      flex-basis: 25%;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.ly-project-sections {
+  @extend %big-tb;
+  @extend %big-lr;
+
+  & > li {
+    @extend %big-tb;
+
+    &.ly-section-text {
+      & h2 {
+        text-align: center;
+        @extend %small-tb;
+      }
+    }
+
+    &.ly-section-video,
+    &.ly-section-image {
+      & p {
+        @extend %small-tb;
+        @extend %text-body-bold;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@
 
     & h2 {
       @extend %small-tb;
+      margin-bottom: 0;
       @extend %text-headline;
       text-align: center;
     }

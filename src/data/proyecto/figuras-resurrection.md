@@ -9,8 +9,8 @@ related_client: Resurrection Fest Viveiro
 picture: /media/sample-chip.jpg
 short_description: Descripción corta proyecto
 sections:
-  - text: Locamente
-    title: Movida Gorda
+  - text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum autem ex? Exercitationem impedit, sed beatae autem ut quasi totam?
+    title: Lorem ipsum
     type: text
   - text: Lolailo pardo
     type: video
@@ -24,7 +24,12 @@ gallery:
   - image: /media/sample-camera.jpg
     title: Otra foto
 links:
-  - cite: Moi bonito todo
+  - cite: Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum autem ex? Exercitationem impedit, sed beatae autem ut quasi totam?
+    date: 2019-11-05T09:32:03.242Z
+    source: La voz de galicia
+    url: >-
+      https://www.lavozdegalicia.es/noticia/elecciones/2019/11/05/verdades-mentiras-debate/00031572914180193439805.htm
+  - cite: Moi bonito todo otra vez
     date: 2019-11-05T09:32:03.242Z
     source: La voz de galicia
     url: >-

@@ -74,7 +74,7 @@ header.main {
 
       & > ul {
         @extend %fadeIn;
-        @extend %text-headline;
+        @extend %text-title;
         position: fixed;
         top: 0;
         left: 0;
@@ -86,7 +86,6 @@ header.main {
         color: var(--bright);
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
 
         & li {
           @extend %slideIn;

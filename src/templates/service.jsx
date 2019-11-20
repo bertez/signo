@@ -21,23 +21,22 @@ export default function Service({ data }) {
   return (
     <article className="content content-service">
       <SEO pageData={data.page} />
-      <header>
-        <h1>{frontmatter.title}</h1>
-
-        <figure>
-          <Img
-            sizes={frontmatter.picture.childImageSharp.sizes}
-            alt={frontmatter.title}
-          />
-        </figure>
+      <header className="ly-text-header">
+        <h2>{frontmatter.title}</h2>
       </header>
+      <figure>
+        <Img
+          sizes={frontmatter.picture.childImageSharp.sizes}
+          alt={frontmatter.title}
+        />
+      </figure>
 
-      <section className="service-description">
+      <section className="ly-service-description">
         <Md>{frontmatter.description}</Md>
       </section>
 
       {frontmatter.details && (
-        <section className="service-details">
+        <section className="ly-service-details">
           <ul>
             {frontmatter.details.map((detail, index) => (
               <li key={`service_detail_${index}`}>
@@ -49,7 +48,7 @@ export default function Service({ data }) {
       )}
 
       {frontmatter.gallery && (
-        <section className="service-gallery">
+        <section className="ly-block-gallery">
           <h2>Galería</h2>
 
           <Gallery images={frontmatter.gallery} />
@@ -57,13 +56,15 @@ export default function Service({ data }) {
       )}
 
       {frontmatter.prices && (
-        <section className="service-prices">
+        <section className="ly-service-prices">
+          <h2>Tarifas</h2>
+
           <PriceTable prices={frontmatter.prices} />
         </section>
       )}
 
       {projects && (
-        <section className="service-projects">
+        <section className="ly-projects-list">
           <h2>Proyectos relacionados</h2>
           <ProjectList more={false} size="small" projects={projects} />
         </section>
@@ -123,8 +124,8 @@ export const query = graphql`
           text
           image {
             childImageSharp {
-              resolutions(width: 500, height: 500) {
-                ...GatsbyImageSharpResolutions
+              sizes(maxWidth: 700) {
+                ...GatsbyImageSharpSizes
               }
             }
           }

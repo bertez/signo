@@ -17,16 +17,16 @@ export default function Projects({ data }) {
   return (
     <article className="content content-projects">
       <SEO pageData={data.page} />
-      <header>
-        <h1>{frontmatter.title}</h1>
+      <header className="ly-text-header">
+        <h2>{frontmatter.title}</h2>
         <Md>{frontmatter.tagline}</Md>
       </header>
 
-      <section className="clients">
+      <section className="ly-clients">
         <ClientList clients={clients} />
       </section>
 
-      <section className="projects">
+      <section className="ly-projects-big">
         {/* Featured */}
         <ProjectList
           more={false}
@@ -35,7 +35,10 @@ export default function Projects({ data }) {
             .filter(project => project.node.frontmatter.highlight)
             .map(project => project.node)}
         />
+      </section>
 
+      <section className="ly-projects-list">
+        {/* Other */}
         <h2>Otros proyectos</h2>
         <ProjectList
           more={false}
@@ -44,8 +47,6 @@ export default function Projects({ data }) {
             .filter(project => !project.node.frontmatter.highlight)
             .map(project => project.node)}
         />
-
-        {/* Other */}
       </section>
     </article>
   );
@@ -111,6 +112,7 @@ export const query = graphql`
             title
             tagline
             highlight
+            short_description
             picture {
               childImageSharp {
                 big: sizes(maxWidth: 1000) {

@@ -1,20 +1,65 @@
 import React, { Component } from 'react';
 
-import Img from 'gatsby-image';
-import { Link } from 'gatsby';
+import Carousel, { Modal, ModalGateway } from 'react-images';
+
 export class Gallery extends Component {
-  render() {
+  state = {
+    selectedIndex: 0,
+    lightBoxIsOpen: false
+  };
+
+  toggleLightBox = selectedIndex => {
+    this.setState({
+      lightBoxIsOpen: !this.state.lightBoxIsOpen,
+      selectedIndex
+    });
+  };
+
+  render = () => {
     const { images } = this.props;
+
+    const imageList = images.map(i => {
+      return {
+        caption: i.title,
+        source: {
+          thumbnail: i.image.childImageSharp.thumb.src,
+          regular: i.image.childImageSharp.big.src
+        }
+      };
+    });
+
+    const { selectedIndex, lightBoxIsOpen } = this.state;
+
     return (
-      <ul>
-        {images.map(i => (
-          <li key={i.image.childImageSharp.thumb.src}>
-            <a href={i.image.childImageSharp.big.src}>
-              <Img resolutions={i.image.childImageSharp.thumb} alt={i.title} />
-            </a>
-          </li>
-        ))}
-      </ul>
+      <>
+        <ul className="ly-gallery">
+          {imageList.map((i, j) => (
+            <li key={i.source.thumbnail}>
+              <a
+                href={i.source.regular}
+                onClick={e => {
+                  e.preventDefault();
+                  this.toggleLightBox(j);
+                }}
+              >
+                <img src={i.source.thumbnail} alt={i.title} />
+              </a>
+            </li>
+          ))}
+
+          <ModalGateway>
+            {lightBoxIsOpen ? (
+              <Modal onClose={this.toggleLightBox} allowFullscreen={false}>
+                <Carousel
+                  currentIndex={selectedIndex}
+                  views={imageList}
+                  components={{ FooterCount: () => <></> }}
+                />
+              </Modal>
+            ) : null}
+          </ModalGateway>
+        </ul>
+      </>
     );
-  }
+  };
 }

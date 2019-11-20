@@ -26,12 +26,14 @@ function ImageSection({ section }) {
 function VideoSection({ section }) {
   return (
     <>
-      <iframe
-        src={`https://www.youtube.com/embed/${section.video}`}
-        frameborder="0"
-        allowfullscreen
-        title={section.text}
-      ></iframe>
+      <div className="embed-container">
+        <iframe
+          src={`https://www.youtube.com/embed/${section.video}`}
+          frameBorder="0"
+          allowFullScreen
+          title={section.text}
+        ></iframe>
+      </div>
       {section.text && <Md>{section.text}</Md>}
     </>
   );

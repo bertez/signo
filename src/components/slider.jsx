@@ -7,9 +7,9 @@ export default class Slider extends Component {
     const settings = {
       selector: `.signo-slider-${name}`,
       perPage: {
-        480: 2,
-        800: 3,
-        1200: 4
+        480: 3,
+        800: 4,
+        1200: 6
       },
       ...this.props.settings
     };

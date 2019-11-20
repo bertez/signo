@@ -17,22 +17,25 @@ export default function Project({ data }) {
   return (
     <article className="content content-project">
       <SEO pageData={data.page} />
-      <header>
-        <h1>{frontmatter.title}</h1>
+      <header className="ly-text-header">
+        <h2>{frontmatter.title}</h2>
         <Md>{frontmatter.tagline}</Md>
-
-        <figure>
-          <Img
-            sizes={frontmatter.picture.childImageSharp.sizes}
-            alt={frontmatter.title}
-          />
-        </figure>
       </header>
 
+      <figure>
+        <Img
+          sizes={frontmatter.picture.childImageSharp.sizes}
+          alt={frontmatter.title}
+        />
+      </figure>
+
       {frontmatter.sections && (
-        <ul className="project-sections">
+        <ul className="ly-project-sections">
           {frontmatter.sections.map((section, index) => (
-            <li key={`project_section_${index}`}>
+            <li
+              key={`project_section_${index}`}
+              className={`ly-section-${section.type}`}
+            >
               <ProjectSection section={section} />
             </li>
           ))}
@@ -40,7 +43,7 @@ export default function Project({ data }) {
       )}
 
       {frontmatter.gallery && (
-        <section className="project-gallery">
+        <section className="ly-block-gallery">
           <h2>Galería</h2>
 
           <Gallery images={frontmatter.gallery} />
@@ -48,7 +51,7 @@ export default function Project({ data }) {
       )}
 
       {frontmatter.links && (
-        <section className="project-cites">
+        <section className="ly-cites">
           <h2>Referencias en medios y redes sociales</h2>
           <Cites links={frontmatter.links} />
         </section>

@@ -9,7 +9,7 @@ export function ServiceDetail({ detail }) {
       <h2>{detail.title}</h2>
 
       <figure>
-        <Img resolutions={detail.image.childImageSharp.resolutions} />
+        <Img sizes={detail.image.childImageSharp.sizes} />
       </figure>
 
       <Md>{detail.text}</Md>
