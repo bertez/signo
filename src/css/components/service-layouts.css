@@ -2,11 +2,11 @@
   @extend %big-tb;
 
   & li {
-    @extend %small-tb;
+    @extend %big-tb;
     text-align: center;
 
     & h3 {
-      @extend %text-title;
+      @extend %text-headline;
       @extend %small-tb;
     }
   }

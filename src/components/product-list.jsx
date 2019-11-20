@@ -31,7 +31,9 @@ export function ProductList({ products }) {
 export function ProductListSlider({ products }) {
   return (
     <>
-      <h2>Construcciones singulares</h2>
+      <header className="ly-text-header">
+        <h2>Construcciones singulares</h2>
+      </header>
       <Slider name="products">
         {products.map(product => (
           <div key={product.node.fields.slug}>

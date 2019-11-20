@@ -27,7 +27,7 @@ export default function Frontpage({ data }) {
     <article className="content content-frontpage">
       <SEO pageData={data.page} />
 
-      <header className="ly-text-header text-big">
+      <header className="ly-text-header">
         <h1>{frontmatter.title}</h1>
         <Md>{frontmatter.tagline}</Md>
       </header>
