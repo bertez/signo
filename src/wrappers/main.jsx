@@ -60,10 +60,10 @@ export default function MainWrapper({ children }) {
       <header className="main">
         <nav className="utility">
           <ul>
-            <li>
+            <li className="phone">
               <a href={`tel:${headerData.phone}`}>{headerData.phone}</a>
             </li>
-            <li>
+            <li className="dossier">
               <a
                 href={headerData.dossier.file.publicURL}
                 target="_blank"
@@ -173,13 +173,13 @@ export default function MainWrapper({ children }) {
 }
 
 function Menu({ close, services }) {
-  useLayoutEffect(() => {
-    const originalStyle = window.getComputedStyle(document.body).overflow;
-    document.body.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = originalStyle;
-    };
-  }, []);
+  // useLayoutEffect(() => {
+  //   const originalStyle = window.getComputedStyle(document.body).overflow;
+  //   document.body.style.overflow = 'hidden';
+  //   return () => {
+  //     document.body.style.overflow = originalStyle;
+  //   };
+  // }, []);
 
   return (
     <ul onClick={close}>

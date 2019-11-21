@@ -10,6 +10,24 @@
       @extend %small-tb;
     }
   }
+
+  @media (--medium) {
+    & ul {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      & li {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+
+        & figure {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
 }
 
 .ly-service-description {

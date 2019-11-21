@@ -4,9 +4,10 @@ header.main {
   position: relative;
 
   & nav.utility {
-    @extend %small-lr;
+    @extend %big-lr;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     margin-bottom: 2rem;
 
@@ -17,6 +18,19 @@ header.main {
     & ul:first-child {
       & li {
         margin-right: 0.5rem;
+        @media (--small) {
+          background-repeat: no-repeat;
+          background-position: top left;
+          background-size: contain;
+          padding-left: 1.5rem;
+
+          &.phone {
+            background-image: url('../img/phone.svg');
+          }
+          &.dossier {
+            background-image: url('../img/download.svg');
+          }
+        }
       }
     }
 
@@ -27,8 +41,13 @@ header.main {
 
         & a {
           display: block;
-          width: 20px;
-          height: 20px;
+          width: 1.5rem;
+          height: 1.5rem;
+
+          @media (--medium) {
+            width: 2rem;
+            height: 2rem;
+          }
         }
 
         & a.twitter {
@@ -120,6 +139,15 @@ header.main {
           &:hover {
             color: var(--medium);
           }
+        }
+
+        @media (--medium) {
+          position: absolute;
+          left: auto;
+          right: 0.5rem;
+          top: 3rem;
+          width: 30rem;
+          height: auto;
         }
       }
     }

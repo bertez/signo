@@ -2,9 +2,18 @@
   @extend %big-tb;
   @extend %small-lr;
 
-  & .client {
-    @extend %small-lr;
+  & ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
+    & li {
+      flex-basis: 8rem;
+      margin: 0.5rem;
+    }
+  }
+
+  & .client {
     & h2 {
       @extend %small-tb;
       margin-bottom: 0;
