@@ -1,6 +1,7 @@
 ---
 template: client
-title: Cliente 4
+title: Ayuntamiento de San Vicente de la Barquera
 picture: /media/mini-sample-drone.jpg
 visible: true
 ---
+
