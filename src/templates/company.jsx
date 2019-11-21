@@ -14,27 +14,30 @@ export default function Company({ data }) {
   return (
     <article className="company content-company">
       <SEO pageData={data.page} />
-      <header>
-        <h1>{frontmatter.title}</h1>
+      <header className="ly-text-header">
+        <h2>{frontmatter.title}</h2>
         <Md>{frontmatter.tagline}</Md>
       </header>
 
-      <section className="company-contact">
-        <h2>Contacto</h2>
-        <Md>{frontmatter.contact_info}</Md>
-        <div dangerouslySetInnerHTML={{ __html: frontmatter.map }} />
+      <section className="ly-company-contact">
+        <section className="contact">
+          <h2>Contacto</h2>
+          <Md>{frontmatter.contact_info}</Md>
+        </section>
+        <div
+          className="embed-container"
+          dangerouslySetInnerHTML={{ __html: frontmatter.map }}
+        />
       </section>
 
       {frontmatter.team && (
-        <section className="company-team">
+        <section className="ly-company-team">
           <h2>Equipo</h2>
           <ul>
             {frontmatter.team.map(person => (
               <li key={person.email}>
                 <figure>
-                  <Img
-                    resolutions={person.picture.childImageSharp.resolutions}
-                  />
+                  <Img sizes={person.picture.childImageSharp.sizes} />
                   <h3>{person.name}</h3>
                   <p>{person.position}</p>
                 </figure>
@@ -44,7 +47,7 @@ export default function Company({ data }) {
         </section>
       )}
 
-      <section className="company-about">
+      <section className="ly-company-about">
         <h2>Sobre la empresa</h2>
         <Md>{frontmatter.description}</Md>
       </section>
@@ -64,7 +67,7 @@ export default function Company({ data }) {
       )}
 
       {frontmatter.links && (
-        <section className="company-cites">
+        <section className="ly-cites">
           <h2>Signo en los medios de comunicación</h2>
           <Cites links={frontmatter.links} />
         </section>
@@ -99,8 +102,8 @@ export const query = graphql`
           email
           picture {
             childImageSharp {
-              resolutions(width: 300, height: 600) {
-                ...GatsbyImageSharpResolutions
+              sizes(maxWidth: 300) {
+                ...GatsbyImageSharpSizes
               }
             }
           }

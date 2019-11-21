@@ -23,6 +23,8 @@ gallery:
     title: lorem
   - image: /media/sample-phone.jpg
     title: Ipsum
-buy_details: Compra barato vende caro
+buy_details:
+  Phasellus augue ante, imperdiet ut dictum aliquet, cursus vel justo. Duis sed
+  justo id purus fermentum ultrices.
 price: 1233
 ---

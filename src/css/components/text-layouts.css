@@ -1,6 +1,6 @@
 .ly-text-header {
   @extend %big-lr;
-  @extend %big-tb;
+  @extend %small-tb;
   display: flex;
   flex-direction: column;
 

@@ -31,7 +31,7 @@ export default function Service({ data }) {
         />
       </figure>
 
-      <section className="ly-service-description">
+      <section className="ly-text-block">
         <Md>{frontmatter.description}</Md>
       </section>
 

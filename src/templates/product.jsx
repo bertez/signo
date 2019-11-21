@@ -18,34 +18,38 @@ export default function Product({ data }) {
   return (
     <article className="product content-product">
       <SEO pageData={data.page} />
-      <header>
-        <h1>{frontmatter.title}</h1>
-
-        <figure>
-          <Img sizes={frontmatter.picture.childImageSharp.sizes} />
-        </figure>
+      <header className="ly-text-header">
+        <h2>{frontmatter.title}</h2>
       </header>
+      <figure>
+        <Img sizes={frontmatter.picture.childImageSharp.sizes} />
+      </figure>
 
-      <section className="product-description">
+      <section className="ly-text-block">
         <Md>{frontmatter.description}</Md>
       </section>
 
       {frontmatter.gallery && (
-        <section className="product-gallery">
+        <section className="ly-block-gallery">
           <h2>Galería</h2>
           <Gallery images={frontmatter.gallery} />
         </section>
       )}
 
-      <section className="product-buy">
+      <section className="ly-product-buy">
         <Md>{frontmatter.buy_details}</Md>
         <section className="buy-cta">
-          <p>{frontmatter.price}€</p>
-          <button>Comprar</button>
+          <p className="price">{frontmatter.price}€</p>
+          <button onClick={() => alert('Temporalmente sin existencias')}>
+            Comprar
+          </button>
         </section>
       </section>
 
       <section className="ly-product-list">
+        <header className="ly-text-header">
+          <h2>Otras construcciones</h2>
+        </header>
         <ProductListSlider products={products} />
       </section>
     </article>

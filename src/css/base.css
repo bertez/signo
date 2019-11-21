@@ -12,6 +12,7 @@
 @import 'components/client-layouts.css';
 @import 'components/service-layouts.css';
 @import 'components/product-layouts.css';
+@import 'components/company-layouts.css';
 
 * {
   margin: 0;
@@ -31,6 +32,12 @@ body {
 a {
   color: var(--dark);
   text-decoration: none;
+}
+
+br {
+  content: '➖';
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .embed-container {

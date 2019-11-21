@@ -1,0 +1,38 @@
+.ly-company-contact {
+  & .contact {
+    @extend %big-tb;
+    @extend %big-lr;
+
+    & h2 {
+      @extend %small-tb;
+    }
+  }
+}
+
+.ly-company-team {
+  @extend %big-tb;
+  @extend %big-lr;
+
+  & h2 {
+    @extend %small-tb;
+  }
+
+  & ul {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    & li {
+      text-align: center;
+    }
+  }
+}
+
+.ly-company-about {
+  @extend %big-tb;
+  @extend %big-lr;
+
+  & h2 {
+    @extend %small-tb;
+  }
+}

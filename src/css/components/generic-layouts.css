@@ -53,3 +53,8 @@
     }
   }
 }
+
+.ly-text-block {
+  @extend %big-tb;
+  @extend %big-lr;
+}
