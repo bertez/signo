@@ -58,3 +58,23 @@
   @extend %big-tb;
   @extend %big-lr;
 }
+
+.ly-slider-wrapper {
+  & .arrows {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+
+    & button {
+      @extend %actionButton;
+
+      & svg {
+        display: block;
+
+        & path {
+          fill: var(--bright);
+        }
+      }
+    }
+  }
+}

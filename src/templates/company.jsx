@@ -2,8 +2,11 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Img from 'gatsby-image';
+import Slider from '../components/slider.jsx';
+
 import SEO from '../components/SEO.jsx';
 import Md from '../helpers/markdown.jsx';
+
 import { Cites } from '../components/cites.jsx';
 
 export default function Company({ data }) {
@@ -53,16 +56,16 @@ export default function Company({ data }) {
       </section>
 
       {frontmatter.timeline && (
-        <section className="company-timeline">
+        <section className="ly-company-timeline">
           <h2>Historia</h2>
-          <ul>
+          <Slider arrows name="timeline">
             {frontmatter.timeline.map((unit, index) => (
-              <li key={`timeline_${unit}_${index}`}>
+              <div className="year" key={`timeline_${unit}_${index}`}>
                 <h3>{unit.year}</h3>
                 <p>{unit.text}</p>
-              </li>
+              </div>
             ))}
-          </ul>
+          </Slider>
         </section>
       )}
 

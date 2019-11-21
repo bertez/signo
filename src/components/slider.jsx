@@ -28,8 +28,36 @@ export default class Slider extends Component {
   }
 
   render() {
-    const { children, name } = this.props;
+    const { children, name, arrows } = this.props;
 
-    return <div className={`signo-slider-${name}`}>{children}</div>;
+    return (
+      <div className="ly-slider-wrapper">
+        {arrows && (
+          <div className="arrows">
+            <button onClick={() => this.siema.prev()}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+              </svg>
+            </button>
+            <button onClick={() => this.siema.next()}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+              </svg>
+            </button>
+          </div>
+        )}
+        <div className={`signo-slider-${name}`}>{children}</div>
+      </div>
+    );
   }
 }

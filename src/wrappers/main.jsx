@@ -6,6 +6,7 @@ import { Link } from 'gatsby';
 import '../css/base.css';
 
 import signo from '../img/signo.svg';
+import xunta from '../img/xunta.svg';
 
 export default function MainWrapper({ children }) {
   const data = useStaticQuery(graphql`
@@ -127,7 +128,7 @@ export default function MainWrapper({ children }) {
           </Link>
         </h1>
         <nav>
-          <ul>
+          <ul className="ly-footer-main-nav">
             <li>
               <Link to="/">Portada</Link>
             </li>
@@ -154,7 +155,18 @@ export default function MainWrapper({ children }) {
               </li>
             ))}
           </ul>
+
+          <ul>
+            <li>
+              <Link to="/nota-legal">Nota Legal</Link>
+            </li>
+          </ul>
         </nav>
+
+        <section className="legal">
+          <p>Proyecto cofinanciado por:</p>
+          <img src={xunta} alt="Xunta de Galicia" />
+        </section>
       </footer>
     </>
   );

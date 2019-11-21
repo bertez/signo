@@ -35,7 +35,7 @@ export function ProductList({ products }) {
 export function ProductListSlider({ products }) {
   return (
     <>
-      <Slider name="products">
+      <Slider name="products" arrows>
         {products.map(product => (
           <div key={product.node.fields.slug}>
             <Link to={product.node.fields.slug}>

@@ -136,6 +136,31 @@ collections:
           - label: Entradilla
             name: tagline
             widget: markdown
+      - label: Nota Legal
+        name: legal
+        file: src/data/pages/nota-legal.md
+        fields:
+          - label: Template
+            name: template
+            widget: hidden
+            default: legal
+          - label: Título
+            name: title
+            widget: string
+          - label: Descripción SEO
+            name: seo_description
+            widget: string
+            required: false
+          - label: Imagen SEO
+            name: seo_image
+            widget: image
+            required: false
+          - label: Entradilla
+            name: tagline
+            widget: markdown
+          - label: Texto Legal
+            name: text
+            widget: markdown
       - label: Construcciones singulares
         name: products
         file: src/data/pages/construcciones-singulares.md

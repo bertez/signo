@@ -36,3 +36,19 @@
     @extend %small-tb;
   }
 }
+
+.ly-company-timeline {
+  & h2 {
+    @extend %big-tb;
+    @extend %big-lr;
+  }
+
+  & .year {
+    padding: 1rem;
+
+    & h3 {
+      @extend %tiny-tb;
+      @extend %text-title;
+    }
+  }
+}
