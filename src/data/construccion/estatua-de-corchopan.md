@@ -25,7 +25,7 @@ gallery:
     title: lorem
   - image: /media/sample-camera.jpg
     title: Ipsum
-buy_details: No se que poner aquí
-price: 22
+buy_details: Ponte en contacto con nosotros para que fabriquemos algo así para ti.
+price: ''
 ---
 
