@@ -2,11 +2,10 @@
 template: product
 title: Estatua de corchopán
 seo_description: SEO Estatua de corchopán
-seo_image: /media/sample-tablet.jpg
-picture: /media/sample-tablet.jpg
+seo_image: /media/20170617_120926.jpg
 highlight: true
+picture: /media/20170617_120932.jpg
 alt_picture: /media/sample-chip.jpg
-short_description: Lorem ipsum corchopán
 description: >-
   Phasellus augue ante, imperdiet ut dictum aliquet, cursus vel justo. Duis sed
   justo id purus fermentum ultrices. Quisque sit amet quam ex. Nullam ultrices
@@ -18,6 +17,7 @@ description: >-
   Morbi at tellus nunc. Sed ut lacinia libero. Pellentesque in facilisis nunc,
   ac porta lacus. Sed hendrerit, felis eget fermentum pellentesque, est urna
   viverra sapien, a vestibulum dui massa ac risus. Vivamus eu feugiat tellus.
+short_description: Lorem ipsum corchopán
 gallery:
   - image: /media/mini-sample-drone.jpg
     title: lorem
@@ -26,3 +26,4 @@ gallery:
 buy_details: No se que poner aquí
 price: 22
 ---
+
