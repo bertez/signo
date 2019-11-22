@@ -2,23 +2,21 @@
 template: company
 title: Empresa
 seo_description: Página de empresa de signo
-seo_image: /media/sample-chip.jpg
+seo_image: /media/estrellagalicia.jpg
 tagline: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at nibh et ligula
-  blandit finibus. Sed suscipit varius odio at accumsan. Ut in lacus vitae
-  ligula viverra egestas. Quisque lacinia vitae nisi nec sagittis. Sed interdum
-  consectetur feugiat.
+  En Signo encontrarás un equipo de profesionales volcados en desarrollar ideas
+  y proyectos con personalidad propia. Nos gusta lo que hacemos y nos gusta que
+  nuestro trabajo satisfaga las necesidades de nuestros clientes.
 contact_info: |-
-  Viveiro, S/N
+  Barrio Plantío s/n
 
-  27843 - Lugo
+  27863 Celeiro - Viveiro (Lugo)
 
-  981 33 33 33
+  982 989 110 - 658 76 91 26
 map: >-
   <iframe
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1442.8626597602552!2d-7.588407802270183!3d43.674682197681065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd321a950553e0b3%3A0xb14ff8945459f4e5!2sSIGNO%20TALLER%20DEL%20R%C3%93TULO%20(Grupo%20FUTURES)!5e0!3m2!1sen!2ses!4v1573121332642!5m2!1sen!2ses"
-  frameBorder="0" style="border:0;"
-  allowFullscreen=""></iframe>
+  frameBorder="0" style="border:0;" allowFullscreen=""></iframe>
 team:
   - email: alberto@grupofutures.com
     name: Alberto García
@@ -56,3 +54,4 @@ links:
     url: >-
       https://www.lavozdegalicia.es/noticia/ourense/2019/11/06/jacome-propone-construir-ourense-mayor-rascacielos-espana/00031573036556246570366.htm
 ---
+
