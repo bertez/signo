@@ -14,12 +14,12 @@ services_intro: >-
   Nuestros servicios son múltiples y los adaptamos a las necesidades específicas
   de cada cliente.
 company_intro: >-
-  Signo forma parte de la estructura empresarial de Grupo Futures. Signo tiene a
-  sus espaldas más de 25 años de experiencia, avalada por trabajos y resultados.
-  Pese a este bagaje histórico, no somos una empresa clásica, no somos una
-  empresa seca, no somos una empresa aburrida, somos todo lo contrario. Nos
-  gusta experimentar, nos gustan los proyectos diferentes, nos proponer ideas y
-  nos gusta crear cosas  on personalidad.
+  Signo forma parte de la estructura empresarial de Grupo Futures. Con mas de 25
+  años de experiencia, y avalada por trabajos y resultados. Pese a este bagaje
+  histórico, no somos una empresa clásica, no somos una empresa seca, no somos
+  una empresa aburrida, somos todo lo contrario. Nos gusta experimentar, nos
+  gustan los proyectos diferentes, nos gusta proponer ideas y crear cosas  con
+  personalidad.
 company_picture: /media/logo-signo-construcciones-singulares_web.jpg
 ---
 
