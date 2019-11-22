@@ -18,8 +18,8 @@ description: >-
   ac porta lacus. Sed hendrerit, felis eget fermentum pellentesque, est urna
   viverra sapien, a vestibulum dui massa ac risus. Vivamus eu feugiat tellus.
 short_description: >-
-  Escultura calavera reina, fabricada en poliestireno expandido, con capa de
-  resina
+  Hemos fabricado esta calavera en poliestireno tallado a mano. Esta escultura
+  forma parte del decorado de la zona VIP del festival ResurrectionFest
 gallery:
   - image: /media/mini-sample-drone.jpg
     title: lorem
