@@ -7,16 +7,16 @@ highlight: true
 picture: /media/decoracio-n_resu.jpg
 alt_picture: /media/sample-chip.jpg
 description: >-
-  Phasellus augue ante, imperdiet ut dictum aliquet, cursus vel justo. Duis sed
-  justo id purus fermentum ultrices. Quisque sit amet quam ex. Nullam ultrices
-  ipsum in tellus consequat finibus. Sed tincidunt lacinia enim a pharetra.
-  Vivamus consequat commodo velit a posuere. Proin et malesuada mauris. Fusce
-  vehicula, erat ut dapibus tristique, felis tortor sagittis mi, placerat
-  **ornare erat ex feugiat ex. Nullam** faucibus semper elementum. Vestibulum
-  ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-  Morbi at tellus nunc. Sed ut lacinia libero. Pellentesque in facilisis nunc,
-  ac porta lacus. Sed hendrerit, felis eget fermentum pellentesque, est urna
-  viverra sapien, a vestibulum dui massa ac risus. Vivamus eu feugiat tellus.
+  La idea era crear un elemento que destacase sobre otros elementos y fuese
+  visible desde todo el recinto del festival. La reina calavera impone su figura
+  a una altura de once metros, con un tamaño de cinco metros, coronada en
+  hierro. La escultura se fabricó con poliestireno tallado en nuestro taller, y
+  posteriormente cubierto de resina para aportar consistencia y durabilidad.
+  Como detalles finales se iluminaron las cuencas de los ojos y se instaló un
+  equipo de humo en el interior de la mandibula. La calavera corona la zona
+  "Pandemonium" del festival, completada con un cierre en chapa, lonas,
+  corpóreos envejecidos y un nuevo photocall de engranajes que se ha añadido en
+  la zona de acceso.
 short_description: >-
   Hemos fabricado esta calavera en poliestireno tallado a mano. La escultura
   forma parte del decorado de la zona VIP del festival ResurrectionFest
