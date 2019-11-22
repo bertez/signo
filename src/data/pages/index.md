@@ -6,11 +6,8 @@ seo_image: /media/logo-signo-construcciones-singulares_web.jpg
 tagline: >-
   Ideamos, proyectamos, construimos, comercializamos e instalamos todo tipo de
   elementos de comunicación visual. Queremos ser tu equipo creativo y tu centro
-  de producción. Date una vuelta por nuestra web y nuestro trabajo, y si te
+  de producción. Date una vuelta por nuestra web y mira nuestro trabajo, y si te
   apetece déjanos tu opinión.
-
-
-  Gracias
 related_projects:
   - project: Figuras Resurrection Fest
 services_intro: >-
@@ -23,6 +20,6 @@ company_intro: >-
   empresa seca, no somos una empresa aburrida, somos todo lo contrario. Nos
   gusta experimentar, nos gustan los proyectos diferentes, nos proponer ideas y
   nos gusta crear cosas  on personalidad.
-company_picture: /media/20160702_185356.jpg
+company_picture: /media/logo-signo-construcciones-singulares_web.jpg
 ---
 
