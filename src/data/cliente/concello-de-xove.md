@@ -1,7 +1,6 @@
 ---
 template: client
 title: Concello de Xove
-picture: /media/logo.svg
+picture: /media/mini-sample-computer.jpg
 visible: true
 ---
-
