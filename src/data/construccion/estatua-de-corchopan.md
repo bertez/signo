@@ -1,7 +1,7 @@
 ---
 template: product
-title: Estatua de corchopán
-seo_description: SEO Estatua de corchopán
+title: Escultura calavera reina
+seo_description: Escultura calavera para ResurrectionFest
 seo_image: /media/20170617_120926.jpg
 highlight: true
 picture: /media/20170617_120932.jpg
@@ -17,7 +17,9 @@ description: >-
   Morbi at tellus nunc. Sed ut lacinia libero. Pellentesque in facilisis nunc,
   ac porta lacus. Sed hendrerit, felis eget fermentum pellentesque, est urna
   viverra sapien, a vestibulum dui massa ac risus. Vivamus eu feugiat tellus.
-short_description: Lorem ipsum corchopán
+short_description: >-
+  Escultura calavera reina, fabricada en poliestireno expandido, con capa de
+  resina
 gallery:
   - image: /media/mini-sample-drone.jpg
     title: lorem
