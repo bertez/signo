@@ -1,4 +1,5 @@
 .ly-products-list {
+  @extend %big-tb;
 }
 
 .ly-products-big {
@@ -8,12 +9,34 @@
     @extend %big-tb;
     @extend %big-lr;
 
+    & h2 {
+      @extend %text-headline;
+    }
+
     & .description {
       @extend %small-tb;
     }
 
     & .link {
       @extend %actionButton;
+    }
+  }
+
+  @media (--medium) {
+    & li {
+      @extend %small-tb;
+
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 0.75fr 1.25fr;
+
+      & figure {
+        order: 2;
+      }
+
+      & .product-info {
+        @extend %small-tb;
+      }
     }
   }
 }

@@ -29,13 +29,6 @@ export default function Product({ data }) {
         <Md>{frontmatter.description}</Md>
       </section>
 
-      {frontmatter.gallery && (
-        <section className="ly-block-gallery">
-          <h2>Galería</h2>
-          <Gallery images={frontmatter.gallery} />
-        </section>
-      )}
-
       <section className="ly-product-buy">
         <Md>{frontmatter.buy_details}</Md>
         <section className="buy-cta">
@@ -46,7 +39,14 @@ export default function Product({ data }) {
         </section>
       </section>
 
-      <section className="ly-product-list">
+      {frontmatter.gallery && (
+        <section className="ly-block-gallery">
+          <h2>Galería</h2>
+          <Gallery images={frontmatter.gallery} />
+        </section>
+      )}
+
+      <section className="ly-products-list">
         <header className="ly-text-header">
           <h2>Otras construcciones</h2>
         </header>

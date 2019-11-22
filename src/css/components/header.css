@@ -18,11 +18,12 @@ header.main {
     & ul:first-child {
       & li {
         margin-right: 0.5rem;
+
         @media (--small) {
           background-repeat: no-repeat;
           background-position: top left;
           background-size: contain;
-          padding-left: 1.5rem;
+          padding-left: 1.75rem;
 
           &.phone {
             background-image: url('../img/phone.svg');
@@ -30,6 +31,10 @@ header.main {
           &.dossier {
             background-image: url('../img/download.svg');
           }
+        }
+
+        @media (--medium) {
+          margin-right: 1rem;
         }
       }
     }
@@ -144,8 +149,8 @@ header.main {
         @media (--medium) {
           position: absolute;
           left: auto;
-          right: 0.5rem;
-          top: 3rem;
+          right: 2rem;
+          top: 4rem;
           width: 30rem;
           height: auto;
         }

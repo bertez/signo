@@ -28,7 +28,7 @@ export default function Products({ data }) {
         />
       </section>
 
-      <section className="ly-product-list">
+      <section className="ly-products-list">
         <header className="ly-text-header">
           <h2>Otras construcciones</h2>
         </header>

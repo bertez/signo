@@ -8,6 +8,11 @@
     & h3 {
       @extend %text-headline;
       @extend %small-tb;
+      margin-bottom: 1rem;
+    }
+
+    & .service-info {
+      padding: 0 0.5rem;
     }
   }
 
@@ -45,7 +50,8 @@
     display: flex;
     flex-wrap: wrap;
     & h2 {
-      @extend %small-tb;
+      @extend %text-headline;
+      @extend %tiny-tb;
       flex-basis: 100%;
     }
 
@@ -63,8 +69,9 @@
 
 .ly-service-prices {
   & h2 {
-    @extend %big-tb;
+    @extend %small-tb;
     @extend %big-lr;
+    @extend %text-title;
   }
 
   & table {
@@ -86,6 +93,10 @@
     & th:first-child {
       padding-left: 2rem;
       font-weight: bold;
+
+      @media (--medium) {
+        padding-left: 4rem;
+      }
     }
   }
 }

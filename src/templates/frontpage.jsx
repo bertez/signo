@@ -54,7 +54,6 @@ export default function Frontpage({ data }) {
 
       <section className="ly-company-frontpage">
         <header>
-          <h2>Empresa</h2>
           <section className="company-info">
             <Md>{frontmatter.company_intro}</Md>
             <Link to="/empresa">Más info</Link>
@@ -65,7 +64,7 @@ export default function Frontpage({ data }) {
         </header>
       </section>
 
-      <section className="ly-product-list">
+      <section className="ly-products-list">
         <header className="ly-text-header">
           <h2>Construcciones singulares</h2>
         </header>

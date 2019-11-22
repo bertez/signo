@@ -21,9 +21,6 @@ export default function Projects({ data }) {
       </header>
 
       <section className="services">
-        <header className="ly-text-header">
-          <p>{frontmatter.services_intro}</p>
-        </header>
         <ServiceList services={services} />
       </section>
     </article>

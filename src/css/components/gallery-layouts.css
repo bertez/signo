@@ -1,7 +1,19 @@
 .ly-gallery {
-  display: grid;
-  gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 0.5fr)); */
+
+  & li {
+    flex-basis: calc(33.33% - 1rem);
+    margin: 0.5rem;
+  }
+
+  @media (--medium) {
+    & li {
+      flex-basis: calc(20% - 1rem);
+    }
+  }
 
   & img {
     max-width: 100%;

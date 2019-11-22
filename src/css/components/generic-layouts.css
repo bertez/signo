@@ -21,8 +21,24 @@
     }
 
     & a {
-      @extend %big-tb;
+      @extend %small-tb;
       @extend %actionButton-negative;
+    }
+  }
+  @media (--medium) {
+    & header {
+      flex-direction: row;
+      & figure {
+        order: initial;
+        flex-basis: 50%;
+      }
+
+      & .company-info {
+        @extend %big-tb;
+        margin-right: 4rem;
+
+        flex-basis: calc(50% - 4rem);
+      }
     }
   }
 }
@@ -32,13 +48,19 @@
   @extend %big-lr;
 
   & h2 {
-    @extend %big-tb;
+    @extend %small-tb;
+    @extend %text-title;
   }
 }
 
 .ly-cites {
   @extend %big-tb;
   @extend %big-lr;
+
+  & h2 {
+    @extend %small-tb;
+    @extend %text-title;
+  }
 
   & ul {
     @extend %small-tb;
@@ -57,6 +79,10 @@
 .ly-text-block {
   @extend %big-tb;
   @extend %big-lr;
+
+  @media (--medium) {
+    column-count: 2;
+  }
 }
 
 .ly-slider-wrapper {

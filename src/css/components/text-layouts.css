@@ -28,7 +28,9 @@
       margin-right: 2rem;
     }
 
-    & p {
+    & h2 + p {
+      flex-basis: 70%;
+
       margin-top: 0.25rem;
     }
   }
