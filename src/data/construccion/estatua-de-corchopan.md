@@ -4,7 +4,7 @@ title: Escultura calavera reina
 seo_description: Escultura calavera para ResurrectionFest
 seo_image: /media/20170617_120926.jpg
 highlight: true
-picture: /media/20170617_120932.jpg
+picture: /media/decoracio-n_resu.jpg
 alt_picture: /media/sample-chip.jpg
 description: >-
   Phasellus augue ante, imperdiet ut dictum aliquet, cursus vel justo. Duis sed
