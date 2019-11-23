@@ -7,14 +7,14 @@ highlight: true
 picture: /media/decoracio-n_resu.jpg
 alt_picture: /media/sample-chip.jpg
 description: >-
-  La idea era crear un elemento que destacase sobre otros elementos y fuese
-  visible desde todo el recinto del festival. La reina calavera impone su figura
-  a una altura de once metros, con un tamaño de cinco metros, coronada en
-  hierro. La escultura se fabricó con poliestireno tallado en nuestro taller, y
+  La idea era crear un elemento que destacase sobre otros y fuese visible desde
+  todo el recinto del festival. La reina calavera impone su figura a una altura
+  de once metros, con un tamaño de cinco metros, coronada en hierro. La
+  escultura se fabricó con poliestireno tallado en nuestro taller, y
   posteriormente cubierto de resina para aportar consistencia y durabilidad, y
   finalmente se aplicaron los detalles de pintura. Como detalles finales se
   iluminaron las cuencas de los ojos y se instaló un equipo de humo en el
-  interior de la mandibula. La calavera corona la zona "Pandemonium" del
+  interior de la mandíbula. La calavera corona la zona "Pandemonium" del
   festival, completada con un cierre en chapa, lonas, corpóreos envejecidos y un
   nuevo photocall de engranajes que se ha añadido en la zona de acceso.
 short_description: >-
