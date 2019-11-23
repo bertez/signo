@@ -1,12 +1,11 @@
 ---
 template: product
-title: Lampara de metacrilato
+title: Guitarra
 seo_description: SEO lampara metacrilato
 seo_image: /media/mini-sample-drone.jpg
-picture: /media/sample-phone.jpg
 highlight: true
+picture: /media/sample-phone.jpg
 alt_picture: /media/alberto.jpeg
-short_description: Lorem ipsum
 description: >-
   Phasellus augue ante, imperdiet ut dictum aliquet, cursus vel justo. Duis sed
   justo id purus fermentum ultrices. Quisque sit amet quam ex. Nullam ultrices
@@ -18,13 +17,15 @@ description: >-
   Morbi at tellus nunc. Sed ut lacinia libero. Pellentesque in facilisis nunc,
   ac porta lacus. Sed hendrerit, felis eget fermentum pellentesque, est urna
   viverra sapien, a vestibulum dui massa ac risus. Vivamus eu feugiat tellus.
+short_description: Lorem ipsum
 gallery:
   - image: /media/mini-sample-computer.jpg
     title: lorem
   - image: /media/sample-phone.jpg
     title: Ipsum
-buy_details:
+buy_details: >-
   Phasellus augue ante, imperdiet ut dictum aliquet, cursus vel justo. Duis sed
   justo id purus fermentum ultrices.
 price: 1233
 ---
+
