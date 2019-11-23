@@ -1,13 +1,22 @@
 ---
 template: service
-title: Servicio De Signo
-seo_description: Texto seo del servicio
-picture: /media/sample-desktop.jpg
-description: |2-
-   Praesent eleifend massa molestie, dignissim arcu at, vehicula dolor. Aenean finibus bibendum ipsum elementum ultricies. Fusce vel lacus eu dui aliquam tincidunt. Donec metus ligula, posuere vel leo id, suscipit laoreet ante. Fusce luctus lacus ac varius iaculis. Maecenas nisl leo, vestibulum eget sem ac, congue vehicula purus.
+title: Impresión en gran formato
+seo_description: Impresión vinilo y lonas
+picture: /media/impresion-gran-formato.jpg
+short_description: 'Impresión en gran formato de vinilos, lonas y papel.'
+description: >2-
+   Imprimimos lonas , vinilo y papel en todos los tamaños.
 
-   Praesent eleifend massa molestie, dignissim arcu at, vehicula dolor. Aenean finibus bibendum ipsum elementum ultricies. Fusce vel lacus eu dui aliquam tincidunt. Donec metus ligula, posuere vel leo id, suscipit laoreet ante. Fusce luctus lacus ac varius iaculis. Maecenas nisl leo, vestibulum eget sem ac, congue vehicula purus.
-short_description: Servicio genérico
+  La impresión la realizamos con tintas ecosolventes sobre materiales de primera
+  calidad, lo que nos permite ofrecer una garantía sobre todos nuestros trabajos
+  y materiales.
+
+
+  Principalmente trabajamos vinilos de la marca HEXIS, por su alta calidad,
+  compromiso con el medioambiente, y por el contacto directo que podemos
+  mantener con su laboratorio de desarrollo de producto, donde constantemente
+  realizan controles sobre materiales aplicados en distintas superficies y con
+  diferentes condiciones medioambientales.
 details:
   - image: /media/mini-sample-drone.jpg
     text: >-
@@ -45,3 +54,4 @@ prices:
 related_projects:
   - project: Paneles pirolíticos
 ---
+
