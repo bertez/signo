@@ -1,15 +1,17 @@
 ---
 template: project
-title: Figuras Resurrection Fest
-seo_description: Texto seo sobre figuras Resu
-seo_image: /media/mini-sample-drone.jpg
+title: Resurrection Fest
+seo_description: Ambientación y decoración ResurrectionFest
+seo_image: /media/20170623_141558.jpg
 tagline: Lorem ipsum dolor sit amet
 highlight: true
 related_client: Resurrection Fest Viveiro
-picture: /media/sample-chip.jpg
+picture: /media/escultura_festival_Tsunami.jpg
 short_description: Descripción corta proyecto
 sections:
-  - text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum autem ex? Exercitationem impedit, sed beatae autem ut quasi totam?
+  - text: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum
+      autem ex? Exercitationem impedit, sed beatae autem ut quasi totam?
     title: Lorem ipsum
     type: text
   - text: Lolailo pardo
@@ -36,7 +38,9 @@ gallery:
   - image: /media/david.jpg
     title: Otra foto
 links:
-  - cite: Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum autem ex? Exercitationem impedit, sed beatae autem ut quasi totam?
+  - cite: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum
+      autem ex? Exercitationem impedit, sed beatae autem ut quasi totam?
     date: 2019-11-05T09:32:03.242Z
     source: La voz de galicia
     url: >-
@@ -47,3 +51,4 @@ links:
     url: >-
       https://www.lavozdegalicia.es/noticia/elecciones/2019/11/05/verdades-mentiras-debate/00031572914180193439805.htm
 ---
+
