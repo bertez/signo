@@ -1,7 +1,7 @@
 ---
 template: client
 title: Servicio de Salud Principado de Asturias
-picture: /media/mini-sample-drone.jpg
+picture: /media/sespa.jpg
 visible: true
 ---
 
