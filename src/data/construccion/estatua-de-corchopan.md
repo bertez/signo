@@ -26,6 +26,5 @@ gallery:
   - image: /media/sample-camera.jpg
     title: Ipsum
 buy_details: Ponte en contacto con nosotros para que fabriquemos algo así para ti.
-price: ''
+price: 0
 ---
-

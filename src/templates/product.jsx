@@ -29,15 +29,17 @@ export default function Product({ data }) {
         <Md>{frontmatter.description}</Md>
       </section>
 
-      <section className="ly-product-buy">
-        <Md>{frontmatter.buy_details}</Md>
-        <section className="buy-cta">
-          <p className="price">{frontmatter.price}€</p>
-          <button onClick={() => alert('Temporalmente sin existencias')}>
-            Comprar
-          </button>
+      {frontmatter.price > 0 && (
+        <section className="ly-product-buy">
+          <Md>{frontmatter.buy_details}</Md>
+          <section className="buy-cta">
+            <p className="price">{frontmatter.price}€</p>
+            <button onClick={() => alert('Temporalmente sin existencias')}>
+              Comprar
+            </button>
+          </section>
         </section>
-      </section>
+      )}
 
       {frontmatter.gallery && (
         <section className="ly-block-gallery">
