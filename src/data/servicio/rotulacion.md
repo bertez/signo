@@ -2,7 +2,7 @@
 template: service
 title: Rotulación
 seo_description: Trabajos de rotulación
-picture: /media/mini-sample-drone.jpg
+picture: /media/promocion.jpg
 short_description: esta es la descripción corta
 description: ESta es una descripción ampliada
 prices:
