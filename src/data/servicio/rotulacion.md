@@ -3,8 +3,8 @@ template: service
 title: Rotulación
 seo_description: Trabajos de rotulación
 picture: /media/lona-con-refuerzo.jpg
-short_description: esta es la descripción corta
-description: ESta es una descripción ampliada
+short_description: Todo tipo de trabajos de rotulación
+description: Esta es una descripción ampliada
 prices:
   - description: Tarifa de rotulación de vehículos
     name: Vehiculos
