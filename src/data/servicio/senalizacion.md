@@ -2,7 +2,7 @@
 template: service
 title: Señalización
 seo_image: /media/sen-ales-carretera-homologadas.jpg
-picture: /media/sen-ales.jpg
+picture: /media/sen-ales_flecha.jpg
 short_description: Señalización vertical homologada
 description: >-
   Suministraos señales homologadas para obra pública, urbanismo, indicadores,
