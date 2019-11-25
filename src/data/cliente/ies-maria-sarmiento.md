@@ -1,6 +1,7 @@
 ---
 template: client
 title: IES María Sarmiento
-picture: /media/mini-sample-computer.jpg
+picture: /media/logo_iesmasa.jpg
 visible: true
 ---
+
