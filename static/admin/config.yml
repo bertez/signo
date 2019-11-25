@@ -447,6 +447,10 @@ collections:
             name: unit
             widget: string
             default: €
+          - label: Solicitar presupuesto
+            hint: Marcar para que no aparezca el precio sino un botón que abre un formulario de solicitar presupuesto
+            widget: boolean
+            default: false
       - label: Proyectos Destacados
         name: related_projects
         widget: list
