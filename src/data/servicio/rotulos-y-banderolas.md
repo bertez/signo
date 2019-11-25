@@ -3,9 +3,7 @@ template: service
 title: Rótulos y banderolas
 seo_description: ''
 picture: /media/img_6116.jpg
-short_description: >-
-  Fabricación, comercialización e instalación de todo tipo de rótulos y
-  banderolas
+short_description: 'Con y sin iluminación, en múltiples acabados'
 description: >-
   En Signo fabricamos todo tipo de rótulos y plafones, tanto con luz como sin
   luz. Utilizamos materiales de primera calidad para desarrollar el diseño que
