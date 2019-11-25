@@ -1,7 +1,7 @@
 ---
 template: service
 title: Muebles de diseño industrial
-picture: /media/7b42e094-d4b8-44d5-abe9-2aa1ee5c5e92.jpg
+picture: /media/mueble-disen-o.jpg
 short_description: 'Mobiliario estilo industrial, diseño propio'
 description: >-
   Diseñamos y fabricamos mobiliario de estilo industrial, utilizando hierro,
