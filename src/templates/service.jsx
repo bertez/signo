@@ -59,7 +59,7 @@ export default function Service({ data }) {
         <section className="ly-service-prices">
           <h2>Tarifas</h2>
 
-          <PriceTable prices={frontmatter.prices} />
+          <PriceTable service={frontmatter.title} prices={frontmatter.prices} />
         </section>
       )}
 
@@ -148,6 +148,7 @@ export const query = graphql`
           description
           price
           unit
+          budget
         }
       }
     }

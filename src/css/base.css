@@ -63,6 +63,7 @@ br {
 
 :root {
   --dark: #000;
+  --dark-80: rgba(0, 0, 0, 0.8);
   --medium: #999;
   --bright: #ffffff;
 }

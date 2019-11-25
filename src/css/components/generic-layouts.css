@@ -104,3 +104,86 @@
     }
   }
 }
+
+.ly-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--dark-80);
+  display: grid;
+  z-index: 2;
+
+  & .modal-content {
+    align-self: center;
+    justify-self: center;
+    background-color: var(--bright);
+
+    & .message {
+      padding: 2rem;
+    }
+  }
+}
+
+.ly-form {
+  & header {
+    text-align: center;
+    background-color: var(--dark);
+    padding: 1rem;
+
+    & > * {
+      @extend %text-negative;
+      @extend %tiny-tb;
+    }
+
+    & h2 {
+      @extend %text-title;
+      margin-top: 1rem;
+    }
+    & h3 {
+      @extend %text-headline;
+    }
+  }
+
+  & .fields {
+    padding: 1rem;
+
+    & fieldset {
+      border: 0;
+      @extend %small-tb;
+
+      & label {
+        @extend %tiny-tb;
+        display: block;
+      }
+
+      & input,
+      & textarea {
+        @extend %text-body;
+        border: 1px solid var(--dark-80);
+        width: 100%;
+        padding: 0.5rem;
+      }
+
+      & textarea {
+        min-height: 100px;
+      }
+
+      & span {
+        @extend %text-caption;
+      }
+    }
+
+    & button {
+      @extend %actionButton-negative;
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    & button[type='submit'] {
+      @extend %actionButton;
+      display: inline-block;
+    }
+  }
+}
