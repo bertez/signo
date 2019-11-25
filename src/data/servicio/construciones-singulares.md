@@ -1,6 +1,6 @@
 ---
 template: service
-title: Construciones Singulares
+title: Construcciones Singulares
 picture: /media/IMG_2670.JPG
 short_description: 'Ideamos, diseñamos, fabricamos e instalamos'
 description: >-
