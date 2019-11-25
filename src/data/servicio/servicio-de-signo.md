@@ -46,10 +46,12 @@ prices:
   - description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
     name: Panel fotocromado
     price: 12.22
+    undefined: true
     unit: €
   - description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
     name: Panel fotocromado
     price: 12.22
+    undefined: false
     unit: €
 related_projects:
   - project: Paneles pirolíticos
