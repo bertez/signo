@@ -1,7 +1,7 @@
 ---
 template: service
 title: Construciones Singulares
-picture: /media/20170519_122649.jpg
+picture: /media/IMG_2670.JPG
 short_description: 'Ideamos, diseñamos, fabricamos e instalamos'
 description: >-
   Esta es la parte de la empresa que mas nos gusta, porque nos permite hacer
