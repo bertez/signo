@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import { Link } from 'gatsby';
@@ -119,8 +119,6 @@ export default function MainWrapper({ children }) {
 
       <main>{children}</main>
 
-      {/* TODO: footer
-       */}
       <footer className="main">
         <h1>
           <Link to="/">

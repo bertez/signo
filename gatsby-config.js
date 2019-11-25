@@ -66,6 +66,7 @@ module.exports = {
         ]
       }
     },
+    // TODO: enable offline before production
     // 'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-netlify-cms',
