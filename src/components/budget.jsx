@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
 
-export default function Budget({ service, product, description, closeBudget }) {
+export default function Budget({
+  service,
+  product,
+  description,
+  template,
+  closeBudget
+}) {
   const API_ENDPOINT = 'https://api.signorotulacion.com/mail/budget';
 
   const [inputs, setInputs] = useState({
     name: '',
     phone: '',
     email: '',
-    comment: ''
+    comment: template || ''
   });
 
   const [finished, setFinished] = useState(false);
@@ -104,7 +110,9 @@ export default function Budget({ service, product, description, closeBudget }) {
                 />
               </fieldset>
               <fieldset>
-                <label htmlFor="comment">Comentarios: (opcional)</label>
+                <label htmlFor="comment">
+                  Comentarios: {!template && <>(opcional)</>}
+                </label>
                 <textarea
                   name="comment"
                   id="comment"

@@ -33,7 +33,8 @@ export function PriceTable({ prices, service }) {
                       setBudgetInfo({
                         service: service,
                         product: price.name,
-                        description: price.description
+                        description: price.description,
+                        template: price.template
                       });
                     }}
                   >
@@ -54,6 +55,7 @@ export function PriceTable({ prices, service }) {
           service={budgetInfo.service}
           product={budgetInfo.product}
           description={budgetInfo.description}
+          template={budgetInfo.template}
           closeBudget={() => {
             setBudgetActive(false);
           }}

@@ -58,14 +58,7 @@ prices:
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
     name: Panel fotocromado
     price: 12.22
-    template: |-
-      Indicar lo siguiente:
-
-      - Metros cuadrados:
-      - Número de tintas:
-      - Laminado:
     unit: €
 related_projects:
   - project: Paneles pirolíticos
 ---
-
