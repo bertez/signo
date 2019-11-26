@@ -456,7 +456,8 @@ collections:
           - label: Ayuda presupuesto
             name: template
             widget: text
-            hing: Este texto aparecerá en la caja de comentarios del formulario de petición de presupuesto
+            required: false
+            hint: Este texto aparecerá en la caja de comentarios del formulario de petición de presupuesto
       - label: Proyectos Destacados
         name: related_projects
         widget: list
