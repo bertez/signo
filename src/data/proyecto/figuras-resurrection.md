@@ -1,12 +1,12 @@
 ---
 template: project
-title: Resurrection Fest
+title: Escenario Resurrection Fest
 seo_description: Ambientación y decoración ResurrectionFest
 seo_image: /media/20170623_141558.jpg
-tagline: Lorem ipsum dolor sit amet
+tagline: Somos la empresa de ambientación de Resurrection Fest
 highlight: true
 related_client: Resurrection Fest Viveiro
-picture: /media/escultura_festival_Tsunami.jpg
+picture: /media/img_1641.jpg
 short_description: Descripción corta proyecto
 sections:
   - text: >-
@@ -21,22 +21,22 @@ sections:
     text: Lolailo pardo222
     type: image
 gallery:
-  - image: /media/sample-phone.jpg
-    title: Foto
-  - image: /media/sample-camera.jpg
-    title: Otra foto
-  - image: /media/Foto_10.jpg
-    title: Foto
-  - image: /media/Foto_17.jpg
-    title: Otra foto
-  - image: /media/callejero-1.jpg
-    title: Foto
-  - image: /media/capitania.JPG
-    title: Otra foto
-  - image: /media/corporea_3.jpg
-    title: Foto
-  - image: /media/david.jpg
-    title: Otra foto
+  - image: /media/boceto-para-escultura-lobo-resurrectionfest-.jpg
+    title: Boceto Lobo
+  - image: /media/img_1641.jpg
+    title: Proceso de tallado del Lobo
+  - image: /media/tallando-mano-guardian-demonio.jpg
+    title: Tallando mano demonio-guardian
+  - image: /media/cuerpo-con-mano-acoplada.jpg
+    title: Acoplamiento de cuerpo y mano
+  - image: /media/detalle-cabeza-demonio-guardian-resu.jpg
+    title: Detalle cabeza demonio-guardian
+  - image: /media/img_1506.jpg
+    title: Proyectando poliuretano
+  - image: /media/detalle-escenario-demonios-guardianes-resu.jpg
+    title: Lateral escenario ResurrectionFEst
+  - image: /media/pruebas-de-ensamblaje-lobo-mainstage-resurrectio-n-fest-.jpg
+    title: Prueba de ensamblaje lobo
 links:
   - cite: >-
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum
