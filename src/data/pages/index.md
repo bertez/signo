@@ -9,7 +9,7 @@ tagline: >-
   y tu centro de producción. Date una vuelta por nuestra web y mira nuestro
   trabajo, y si te apetece déjanos tu opinión.
 related_projects:
-  - project: Resurrection Fest
+  - project: Escenario Resurrection Fest
 services_intro: >-
   Nuestros servicios son múltiples y los adaptamos a las necesidades específicas
   de cada cliente.
