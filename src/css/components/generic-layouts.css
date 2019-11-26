@@ -185,6 +185,7 @@
       }
 
       & textarea {
+        @extend %text-caption;
         min-height: 100px;
       }
 
