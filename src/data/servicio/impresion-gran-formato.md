@@ -4,7 +4,7 @@ title: Impresión en gran formato
 seo_description: Impresión vinilo y lonas
 picture: /media/impresion-gran-formato.jpg
 short_description: ' Vinilos, lonas y papel'
-description: >2-
+description: >-
   Imprimimos lonas , vinilo y papel en todos los tamaños.
 
   La impresión la realizamos con tintas ecosolventes sobre materiales de primera
@@ -43,16 +43,29 @@ gallery:
   - image: /media/sample-chip.jpg
     title: Trabajo 5
 prices:
-  - description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+  - budget: true
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
     name: Panel fotocromado v2
     price: 12.22
-    budget: true
+    template: |-
+      Indicar lo siguiente:
+
+      - Metros cuadrados:
+      - Número de colores:
+      - Acabado:
     unit: €
-  - description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+  - budget: true
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
     name: Panel fotocromado
     price: 12.22
-    budget: true
+    template: |-
+      Indicar lo siguiente:
+
+      - Metros cuadrados:
+      - Número de tintas:
+      - Laminado:
     unit: €
 related_projects:
   - project: Paneles pirolíticos
 ---
+
