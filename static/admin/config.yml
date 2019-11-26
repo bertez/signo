@@ -453,6 +453,10 @@ collections:
             widget: boolean
             default: false
             required: false
+          - label: Ayuda presupuesto
+            name: template
+            widget: text
+            hing: Este texto aparecerá en la caja de comentarios del formulario de petición de presupuesto
       - label: Proyectos Destacados
         name: related_projects
         widget: list

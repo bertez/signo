@@ -119,6 +119,8 @@
     align-self: center;
     justify-self: center;
     background-color: var(--bright);
+    min-width: 20rem;
+    max-width: 40rem;
 
     & .message {
       padding: 2rem;
@@ -148,17 +150,33 @@
 
   & .fields {
     padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
 
     & fieldset {
       border: 0;
-      @extend %small-tb;
+      @extend %tiny-tb;
+      flex-basis: 100%;
+
+      &.line {
+        flex-basis: calc(50% - 0.5rem);
+        margin-right: 1rem;
+
+        &.end {
+          margin-right: 0;
+        }
+      }
+
+      &:last-of-type {
+        margin-bottom: 1rem;
+      }
 
       & label {
         @extend %tiny-tb;
         display: block;
       }
 
-      & input,
+      & input:not([type='checkbox']),
       & textarea {
         @extend %text-body;
         border: 1px solid var(--dark-80);
@@ -184,6 +202,20 @@
     & button[type='submit'] {
       @extend %actionButton;
       display: inline-block;
+    }
+  }
+
+  & footer {
+    padding: 0 1rem 1rem 1rem;
+
+    & p {
+      display: block;
+      @extend %tiny-tb;
+      @extend %text-caption;
+
+      &.error {
+        color: red;
+      }
     }
   }
 }
