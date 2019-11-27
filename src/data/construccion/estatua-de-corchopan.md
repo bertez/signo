@@ -21,10 +21,8 @@ short_description: >-
   Hemos fabricado esta calavera en poliestireno tallado a mano. La escultura
   forma parte del decorado de la zona VIP del festival ResurrectionFest
 gallery:
-  - image: /media/mini-sample-drone.jpg
-    title: lorem
-  - image: /media/sample-camera.jpg
-    title: Ipsum
+  - image: /media/20170530_144133.jpg
+    title: Pandemonium Resurrection Fest
 buy_details: Ponte en contacto con nosotros para que fabriquemos algo así para ti.
 price: 0
 ---
