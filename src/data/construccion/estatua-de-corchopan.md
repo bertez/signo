@@ -5,7 +5,7 @@ seo_description: Escultura calavera para ResurrectionFest
 seo_image: /media/20170617_120926.jpg
 highlight: true
 picture: /media/decoracio-n_resu.jpg
-alt_picture: /media/20170530_144217.jpg
+alt_picture: /media/estrellagalicia.jpg
 description: >-
   La idea era crear un elemento que destacase sobre otros y fuese visible desde
   todo el recinto del festival. La reina calavera impone su figura a una altura
@@ -28,3 +28,4 @@ gallery:
 buy_details: Ponte en contacto con nosotros para que fabriquemos algo así para ti.
 price: 0
 ---
+
