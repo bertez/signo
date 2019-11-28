@@ -5,6 +5,7 @@ seo_description: SEO lampara metacrilato
 seo_image: /media/mini-sample-drone.jpg
 highlight: true
 active: true
+sku: sku_GGMBNv6BmTxzwZ
 picture: /media/sample-phone.jpg
 alt_picture: /media/alberto.jpeg
 description: >-
@@ -29,3 +30,4 @@ buy_details: >-
   justo id purus fermentum ultrices.
 price: 1233
 ---
+
