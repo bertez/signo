@@ -5,6 +5,7 @@ seo_description: SEO Estatua de corchopán
 seo_image: /media/sample-tablet.jpg
 picture: /media/sample-tablet.jpg
 highlight: false
+active: true
 alt_picture: /media/sample-chip.jpg
 short_description: Lorem ipsum corchopán
 description: >-

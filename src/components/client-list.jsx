@@ -1,8 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
 
-import Slider from './slider.jsx';
-
 export function ClientList({ clients }) {
   return (
     <>

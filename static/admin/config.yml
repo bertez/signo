@@ -496,6 +496,16 @@ collections:
       - label: Destacado
         name: highlight
         widget: boolean
+        default: false
+      - label: Activo
+        name: active
+        widget: boolean
+        default: true
+      - label: Código SKU
+        name: sku
+        widget: string
+        required: false
+        hint: El código SKU está en el panel de control de Stripe asociado a cada producto
       - label: Imagen principal
         name: picture
         widget: image

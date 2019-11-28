@@ -169,7 +169,9 @@ export const query = graphql`
       }
     }
     products: allMarkdownRemark(
-      filter: { frontmatter: { template: { eq: "product" } } }
+      filter: {
+        frontmatter: { template: { eq: "product" }, active: { eq: true } }
+      }
     ) {
       edges {
         node {

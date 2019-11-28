@@ -100,7 +100,10 @@ export const query = graphql`
       }
     }
     products: allMarkdownRemark(
-      filter: { frontmatter: { template: { eq: "product" } }, id: { ne: $id } }
+      filter: {
+        frontmatter: { template: { eq: "product" }, active: { eq: true } }
+        id: { ne: $id }
+      }
     ) {
       edges {
         node {

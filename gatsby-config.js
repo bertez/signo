@@ -71,7 +71,8 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-catch-links',
-    'gatsby-plugin-sitemap'
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-stripe'
   ],
   mapping: {
     'MarkdownRemark.fields.projects': 'MarkdownRemark',

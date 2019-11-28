@@ -6,10 +6,6 @@ export function PriceTable({ prices, service }) {
   const [isBudgetActive, setBudgetActive] = useState(false);
   const [budgetInfo, setBudgetInfo] = useState({});
 
-  const getBudget = e => {
-    setBudgetActive(true);
-  };
-
   return (
     <>
       <table>
