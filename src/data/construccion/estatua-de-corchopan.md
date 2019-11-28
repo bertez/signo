@@ -21,16 +21,16 @@ short_description: >-
   Hemos fabricado esta calavera en poliestireno tallado a mano. La escultura
   forma parte del decorado de la zona VIP del festival ResurrectionFest
 gallery:
+  - image: /media/20170515_122716.jpg
+    title: Primera fase construcción calavera. Resurrection Fest
   - image: /media/20170530_144133.jpg
-    title: Pandemonium Resurrection Fest
+    title: Detalle Pandemonium Resurrection Fest
   - image: /media/20170519_122649.jpg
     title: Tallando calavera Resurrection Fest
   - image: /media/20170609_154111.jpg
     title: Pruebas ensamblaje calavera Pandemonium Resurrection Fest
   - image: /media/20170617_120932.jpg
     title: Ensamblaje de corona. Resurrection Fest
-  - image: /media/20170515_122716.jpg
-    title: Primera fase construcción calavera. Resurrection Fest
 buy_details: Ponte en contacto con nosotros para que fabriquemos algo así para ti.
 price: 0
 ---
