@@ -29,6 +29,8 @@ gallery:
     title: Pruebas ensamblaje calavera Pandemonium Resurrection Fest
   - image: /media/20170617_120932.jpg
     title: Ensamblaje de corona. Resurrection Fest
+  - image: /media/20170515_122716.jpg
+    title: Primera fase construcción calavera. Resurrection Fest
 buy_details: Ponte en contacto con nosotros para que fabriquemos algo así para ti.
 price: 0
 ---
