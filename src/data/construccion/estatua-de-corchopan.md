@@ -4,8 +4,6 @@ title: Escultura calavera
 seo_description: Escultura calavera para ResurrectionFest
 seo_image: /media/20170617_120932.jpg
 highlight: true
-active: true
-sku: sku_GG1JU7L9Egkpoy
 picture: /media/decoracio-n_resu.jpg
 alt_picture: /media/20170617_120926.jpg
 description: >-
@@ -29,6 +27,8 @@ gallery:
     title: Tallando calavera Resurrection Fest
   - image: /media/20170609_154111.jpg
     title: Pruebas ensamblaje calavera Pandemonium Resurrection Fest
+  - image: /media/20170617_120932.jpg
+    title: Ensamblaje de corona. Resurrection Fest
 buy_details: Ponte en contacto con nosotros para que fabriquemos algo así para ti.
 price: 0
 ---
