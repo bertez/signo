@@ -31,6 +31,8 @@ gallery:
     title: Pruebas ensamblaje calavera Pandemonium Resurrection Fest
   - image: /media/20170617_120932.jpg
     title: Ensamblaje de corona. Resurrection Fest
+  - image: /media/20170622_160654.jpg
+    title: Traslado al recinto. Resurrection Fest
 buy_details: Ponte en contacto con nosotros para que fabriquemos algo así para ti.
 price: 0
 ---
