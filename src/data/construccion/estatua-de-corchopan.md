@@ -5,6 +5,7 @@ seo_description: Escultura calavera para ResurrectionFest
 seo_image: /media/20170617_120932.jpg
 highlight: true
 active: true
+sku: sku_GG1JU7L9Egkpoy
 picture: /media/decoracio-n_resu.jpg
 alt_picture: /media/20170617_120926.jpg
 description: >-
@@ -31,3 +32,4 @@ gallery:
 buy_details: Ponte en contacto con nosotros para que fabriquemos algo así para ti.
 price: 0
 ---
+
