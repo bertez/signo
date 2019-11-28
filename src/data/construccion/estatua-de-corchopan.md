@@ -22,7 +22,9 @@ short_description: >-
   forma parte del decorado de la zona VIP del festival ResurrectionFest
 gallery:
   - image: /media/20170515_122716.jpg
-    title: Primera fase construcción calavera. Resurrection Fest
+    title: >-
+      Primera fase construcción calavera. A los mandos de proceso y del cigarro,
+      David. Resurrection Fest
   - image: /media/20170530_144133.jpg
     title: Detalle Pandemonium Resurrection Fest
   - image: /media/20170519_122649.jpg
