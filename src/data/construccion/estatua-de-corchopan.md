@@ -39,6 +39,8 @@ gallery:
     title: Fabricando el rótulo del Pandemonium. Resurrection Fest
   - image: /media/20170702_095531.jpg
     title: Frente Pandemonium. Fabricado en chapa y lona. Resurrection Fest
+  - image: /media/20170703_152117.jpg
+    title: Fabricando cadena. Resurrection Fest
 buy_details: Ponte en contacto con nosotros para que fabriquemos algo así para ti.
 price: 0
 ---
