@@ -11,5 +11,7 @@ sections: []
 gallery:
   - image: /media/20160620_183611.jpg
     title: Primeros pasos
+  - image: /media/20160620_180818.jpg
+    title: Maqueta 3D para tomar medidas y proporciones
 ---
 
