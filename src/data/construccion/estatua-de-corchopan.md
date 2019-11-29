@@ -35,6 +35,8 @@ gallery:
     title: Ensamblaje de corona. Resurrection Fest
   - image: /media/20170622_160654.jpg
     title: Traslado al recinto. Resurrection Fest
+  - image: /media/20170628_194326.jpg
+    title: Fabricando el rótulo del Pandemonium. Resurrection Fest
 buy_details: Ponte en contacto con nosotros para que fabriquemos algo así para ti.
 price: 0
 ---
