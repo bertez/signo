@@ -1,8 +1,10 @@
 ---
 template: projects
-title: Proyectos Pardos
+title: Proyectos diferentes
 seo_description: Página de proyectos de Signo!
 seo_image: /media/sample-computer.jpg
-tagline: Aqui lista de proyectos etcssss
+tagline: >-
+  Aquí te mostramos proyectos singulares, diferentes, trabajos que nos hacen
+  sentir bien.
 ---
 
