@@ -31,14 +31,18 @@ description: >-
   sapien, a vestibulum dui massa ac risus. Vivamus eu feugiat tellus.
 picture: /media/sample-phone.jpg
 timeline:
-  - text: Nace futures en un agujero en el suelo cerca de Galdo.
-    year: 1997
-  - text: Compramos una impresora
+  - text: Nace Futures como centro de formación especializado en CAD
+    year: 1994
+  - text: >-
+      Se crea la sociedad Futures Infgrafía S.L. que ya cuenta con 3 líneas de
+      negocio (venta, reparación y formación)
+    year: 1996
+  - text: Se hace los primeros trabajos de impresión
+    year: 1998
+  - text: Ampliación de plantilla y cambio de instalaciones
     year: 2000
-  - text: Compramos tóner
-    year: 2010
-  - text: Llegamos a Marte
-    year: 2020
+  - text: Ampliamos los servicios de impresión
+    year: 2003
 links:
   - cite: '"Imprimen bien"'
     date: 2019-02-13T10:11:41.674Z
