@@ -23,6 +23,8 @@ gallery:
     title: Carpa bar Estrella Galicia. Resurrection Fest
   - image: /media/carpa-estrella-galicia.jpg
     title: Carpa para bar Estrella Galicia. Resurrection Fest
+  - image: /media/20160527_115955.jpg
+    title: Preparando escultura hebilla. Resurrection Fest
 prices: []
 ---
 
