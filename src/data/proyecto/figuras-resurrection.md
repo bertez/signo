@@ -21,8 +21,8 @@ sections:
   - text: Lolailo pardo
     type: video
     video: kjUpYlKs0nM
-  - image: /media/sample-chip.jpg
-    text: Lolailo pardo222
+  - image: /media/img_0895.jpg
+    text: Detalle de construcción
     type: image
 gallery:
   - image: /media/boceto-para-escultura-lobo-resurrectionfest-.jpg
