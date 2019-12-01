@@ -7,12 +7,16 @@ tagline: Somos la empresa de ambientación de Resurrection Fest
 highlight: true
 related_client: Resurrection Fest Viveiro
 picture: /media/img_1641.jpg
-short_description: Descripción corta proyecto
+short_description: Hemos ambientado el escenario de Resurrection Fest
 sections:
-  - text: >-
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum
-      autem ex? Exercitationem impedit, sed beatae autem ut quasi totam?
-    title: Lorem ipsum
+  - image: /media/img_2805.jpg
+    text: >-
+      Un encargo muy especial para nosotros. Agradecemos muchísimo la confianza
+      para desarrollar un proyecto tan importante como la ambientación del Main
+      Stage en un festival del nivel de Resurrection Fest. Hemos puesto todo
+      nuestro mejor hacer, esfuerzo y toda nuestra creatividad, para desarrollar
+      una de nuestras mejores creaciones. Estamos muy contentos del resultado.
+    title: Escenario
     type: text
   - text: Lolailo pardo
     type: video
