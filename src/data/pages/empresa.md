@@ -29,9 +29,11 @@ description: >-
   tellus nunc. Sed ut lacinia libero. Pellentesque in facilisis nunc, ac porta
   lacus. Sed hendrerit, felis eget fermentum pellentesque, est urna viverra
   sapien, a vestibulum dui massa ac risus. Vivamus eu feugiat tellus.
-picture: /media/sample-phone.jpg
+picture: /media/logo-signo-construcciones-singulares_web.jpg
 timeline:
-  - text: Nace Futures como centro de formación especializado en CAD
+  - text: >-
+      Nace Futures como centro de formación especializado en CAD, con cursos en
+      Burela y Foz
     year: 1994
   - text: >-
       Se crea la sociedad Futures Infgrafía S.L. que ya cuenta con 3 líneas de
@@ -43,6 +45,10 @@ timeline:
     year: 2000
   - text: Ampliamos los servicios de impresión
     year: 2003
+  - text: Ampliamos nuestra cartera de clientes y proveedores
+    year: 2005
+  - text: Abrimos nuestro centro de formación en Viveiro
+    year: 1995
 links:
   - cite: '"Imprimen bien"'
     date: 2019-02-13T10:11:41.674Z
