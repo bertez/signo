@@ -15,6 +15,12 @@ description: >-
 
   Si tienes un proyecto, una idea, un reto, habla con nosotros, seguro que te
   podemos sorprender y tu idea será una realidad perdurable en el tiempo.
+details: []
+gallery:
+  - image: /media/escultura_festival_Tsunami.jpg
+    title: Escultura. Tsunami Festival
+  - image: /media/img-4284.jpg
+    title: Carpa bar Estrella Galicia. Resurrection Fest
 prices: []
 ---
 
