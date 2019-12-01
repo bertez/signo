@@ -21,6 +21,8 @@ gallery:
     title: Escultura. Tsunami Festival
   - image: /media/img-4284.jpg
     title: Carpa bar Estrella Galicia. Resurrection Fest
+  - image: /media/carpa-estrella-galicia.jpg
+    title: Carpa para bar Estrella Galicia. Resurrection Fest
 prices: []
 ---
 
