@@ -26,5 +26,7 @@ gallery:
   - image: /media/20160527_115955.jpg
     title: Preparando escultura hebilla. Resurrection Fest
 prices: []
+related_projects:
+  - project: Guitarra SteamPunk
 ---
 
