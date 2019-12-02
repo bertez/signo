@@ -65,11 +65,6 @@ export const query = graphql`
     page: markdownRemark(id: { eq: $id }) {
       fields {
         slug
-        client {
-          frontmatter {
-            title
-          }
-        }
       }
       frontmatter {
         title

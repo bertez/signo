@@ -14,10 +14,7 @@ import { ProductListSlider } from '../components/product-list.jsx';
 
 export default function Frontpage({ data }) {
   const {
-    page: {
-      fields: { projects },
-      frontmatter
-    },
+    page: { frontmatter },
     clients: { edges: clients },
     services: { edges: services },
     products: { edges: products }
@@ -33,7 +30,10 @@ export default function Frontpage({ data }) {
       </header>
 
       <section className="ly-projects-featured">
-        <ProjectList projects={projects} description={false} />
+        <ProjectList
+          projects={frontmatter.related_projects.map(r => r.project)}
+          description={false}
+        />
       </section>
 
       <section className="ly-clients">
@@ -78,32 +78,32 @@ export const query = graphql`
   query($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       fields {
-        projects {
-          fields {
-            slug
-            client {
-              frontmatter {
-                title
-              }
+        slug
+      }
+      frontmatter {
+        related_projects {
+          project {
+            fields {
+              slug
             }
-          }
-          frontmatter {
-            title
-            short_description
-            picture {
-              childImageSharp {
-                big: sizes(maxWidth: 1440) {
-                  ...GatsbyImageSharpSizes
+            frontmatter {
+              title
+              short_description
+              related_client {
+                frontmatter {
+                  title
+                }
+              }
+              picture {
+                childImageSharp {
+                  big: sizes(maxWidth: 1440) {
+                    ...GatsbyImageSharpSizes
+                  }
                 }
               }
             }
           }
         }
-      }
-      fields {
-        slug
-      }
-      frontmatter {
         title
         seo_description
         seo_image {

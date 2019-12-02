@@ -75,7 +75,9 @@ module.exports = {
     'gatsby-plugin-stripe'
   ],
   mapping: {
-    'MarkdownRemark.fields.projects': 'MarkdownRemark',
-    'MarkdownRemark.fields.client': 'MarkdownRemark'
+    'MarkdownRemark.frontmatter.related_projects.project':
+      'MarkdownRemark.frontmatter.title',
+    'MarkdownRemark.frontmatter.related_client':
+      'MarkdownRemark.frontmatter.title'
   }
 };

@@ -3,7 +3,12 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 
-export function FeaturedProject({ project, link, size = 'big', description }) {
+export const FeaturedProject = React.memo(function FeaturedProject({
+  project,
+  link,
+  size = 'big',
+  description
+}) {
   return (
     <>
       <figure className="project-image">
@@ -15,7 +20,9 @@ export function FeaturedProject({ project, link, size = 'big', description }) {
         <h2>
           <Link to={project.fields.slug}>{project.frontmatter.title}</Link>
         </h2>
-        <p className="client">{project.fields.client.frontmatter.title}</p>
+        <p className="client">
+          {project.frontmatter.related_client.frontmatter.title}
+        </p>
         {description && (
           <p className="description">{project.frontmatter.short_description}</p>
         )}
@@ -27,9 +34,9 @@ export function FeaturedProject({ project, link, size = 'big', description }) {
       </section>
     </>
   );
-}
+});
 
-export function ProjectList({
+export const ProjectList = React.memo(function ProjectList({
   projects,
   more = false,
   link = false,
@@ -53,4 +60,4 @@ export function ProjectList({
       {more && <Link to="/proyectos">Más proyectos</Link>}
     </>
   );
-}
+});

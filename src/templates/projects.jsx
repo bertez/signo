@@ -99,20 +99,17 @@ export const query = graphql`
         node {
           fields {
             slug
-            client {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
-            }
           }
           frontmatter {
             title
             tagline
             highlight
             short_description
+            related_client {
+              frontmatter {
+                title
+              }
+            }
             picture {
               childImageSharp {
                 big: sizes(maxWidth: 1000) {

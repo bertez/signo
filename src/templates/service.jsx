@@ -18,6 +18,8 @@ export default function Service({ data }) {
     }
   } = data;
 
+  console.log(data);
+
   return (
     <article className="content content-service">
       <SEO pageData={data.page} />
@@ -35,7 +37,7 @@ export default function Service({ data }) {
         <Md>{frontmatter.description}</Md>
       </section>
 
-      {frontmatter.details && (
+      {frontmatter.details.length > 0 && (
         <section className="ly-service-details">
           <ul>
             {frontmatter.details.map((detail, index) => (
@@ -47,7 +49,7 @@ export default function Service({ data }) {
         </section>
       )}
 
-      {frontmatter.gallery && (
+      {frontmatter.gallery.length > 0 && (
         <section className="ly-block-gallery">
           <h2>Galería</h2>
 
@@ -55,7 +57,7 @@ export default function Service({ data }) {
         </section>
       )}
 
-      {frontmatter.prices.length && (
+      {frontmatter.prices.length > 0 && (
         <section className="ly-service-prices">
           <h2>Tarifas</h2>
 
@@ -78,27 +80,6 @@ export const query = graphql`
     page: markdownRemark(id: { eq: $id }) {
       fields {
         slug
-        projects {
-          fields {
-            slug
-            client {
-              frontmatter {
-                title
-              }
-            }
-          }
-          frontmatter {
-            title
-            short_description
-            picture {
-              childImageSharp {
-                small: sizes(maxWidth: 300) {
-                  ...GatsbyImageSharpSizes
-                }
-              }
-            }
-          }
-        }
       }
       frontmatter {
         title
