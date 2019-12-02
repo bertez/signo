@@ -45,7 +45,11 @@
   @extend %big-tb;
   @extend %big-lr;
 
-  display: flex;
+  & h2 {
+    @extend %small-tb;
+    @extend %text-title;
+  }
+
   & > p {
     @extend %text-headline;
   }

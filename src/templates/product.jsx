@@ -29,15 +29,11 @@ export default function Product({ data, addToCart }) {
         <Md>{frontmatter.description}</Md>
       </section>
 
-      {frontmatter.price > 0 && (
-        <section className="ly-product-buy">
-          <Md>{frontmatter.buy_details}</Md>
-          <section className="buy-cta">
-            <p className="price">{frontmatter.price}€</p>
-            <button onClick={() => addToCart(frontmatter.sku)}>Comprar</button>
-          </section>
-        </section>
-      )}
+      <section className="ly-product-buy">
+        <h2>Cómo comprar</h2>
+
+        <Md>{frontmatter.buy_details}</Md>
+      </section>
 
       {frontmatter.gallery && (
         <section className="ly-block-gallery">
@@ -81,8 +77,6 @@ export const query = graphql`
         }
         description
         buy_details
-        price
-        sku
         gallery {
           title
           image {

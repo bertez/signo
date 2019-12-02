@@ -12,13 +12,8 @@ import { ProjectList } from '../components/project-list.jsx';
 
 export default function Service({ data }) {
   const {
-    page: {
-      fields: { projects },
-      frontmatter
-    }
+    page: { frontmatter }
   } = data;
-
-  console.log(data);
 
   return (
     <article className="content content-service">
@@ -37,7 +32,7 @@ export default function Service({ data }) {
         <Md>{frontmatter.description}</Md>
       </section>
 
-      {frontmatter.details.length > 0 && (
+      {frontmatter.details && frontmatter.details.length > 0 && (
         <section className="ly-service-details">
           <ul>
             {frontmatter.details.map((detail, index) => (
@@ -49,7 +44,7 @@ export default function Service({ data }) {
         </section>
       )}
 
-      {frontmatter.gallery.length > 0 && (
+      {frontmatter.gallery && frontmatter.gallery.length > 0 && (
         <section className="ly-block-gallery">
           <h2>Galería</h2>
 
@@ -57,7 +52,7 @@ export default function Service({ data }) {
         </section>
       )}
 
-      {frontmatter.prices.length > 0 && (
+      {frontmatter.prices && frontmatter.prices.length > 0 && (
         <section className="ly-service-prices">
           <h2>Tarifas</h2>
 
@@ -65,10 +60,14 @@ export default function Service({ data }) {
         </section>
       )}
 
-      {projects && (
+      {frontmatter.related_projects && frontmatter.related_projects.length > 0 && (
         <section className="ly-projects-list">
           <h2>Proyectos relacionados</h2>
-          <ProjectList more={false} size="small" projects={projects} />
+          <ProjectList
+            more={false}
+            size="small"
+            projects={frontmatter.related_projects.map(r => r.project)}
+          />
         </section>
       )}
     </article>
@@ -93,6 +92,30 @@ export const query = graphql`
         }
         description
         short_description
+        related_projects {
+          project {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              short_description
+              related_client {
+                frontmatter {
+                  title
+                }
+              }
+              picture {
+                childImageSharp {
+                  small: sizes(maxWidth: 400) {
+                    ...GatsbyImageSharpSizes
+                  }
+                }
+              }
+            }
+          }
+        }
+
         picture {
           childImageSharp {
             sizes(maxWidth: 1440) {

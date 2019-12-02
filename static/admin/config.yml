@@ -501,11 +501,6 @@ collections:
         name: active
         widget: boolean
         default: true
-      - label: Código SKU
-        name: sku
-        widget: string
-        required: false
-        hint: El código SKU está en el panel de control de Stripe asociado a cada producto
       - label: Imagen principal
         name: picture
         widget: image
@@ -531,8 +526,3 @@ collections:
       - label: Detalles compra
         name: buy_details
         widget: markdown
-      - label: Precio
-        name: price
-        widget: number
-        valueType: float
-        required: false

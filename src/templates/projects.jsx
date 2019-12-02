@@ -115,7 +115,7 @@ export const query = graphql`
                 big: sizes(maxWidth: 1000) {
                   ...GatsbyImageSharpSizes
                 }
-                small: sizes(maxWidth: 300) {
+                small: sizes(maxWidth: 400) {
                   ...GatsbyImageSharpSizes
                 }
               }

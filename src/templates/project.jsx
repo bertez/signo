@@ -29,7 +29,7 @@ export default function Project({ data }) {
         />
       </figure>
 
-      {frontmatter.sections && (
+      {frontmatter.sections && frontmatter.sections.length > 0 && (
         <ul className="ly-project-sections">
           {frontmatter.sections.map((section, index) => (
             <li
@@ -42,7 +42,7 @@ export default function Project({ data }) {
         </ul>
       )}
 
-      {frontmatter.gallery && (
+      {frontmatter.gallery && frontmatter.gallery.length > 0 && (
         <section className="ly-block-gallery">
           <h2>Galería</h2>
 
@@ -50,7 +50,7 @@ export default function Project({ data }) {
         </section>
       )}
 
-      {frontmatter.links && (
+      {frontmatter.links && frontmatter.links.length > 0 && (
         <section className="ly-cites">
           <h2>Referencias en medios y redes sociales</h2>
           <Cites links={frontmatter.links} />

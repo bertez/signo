@@ -3,7 +3,8 @@ template: product
 title: Escultura calavera
 seo_description: Escultura calavera para ResurrectionFest
 seo_image: /media/20170617_120932.jpg
-highlight: true
+highlight: false
+active: true
 picture: /media/decoracio-n_resu.jpg
 alt_picture: /media/20170617_120926.jpg
 description: >-
@@ -44,6 +45,4 @@ gallery:
   - image: /media/20170622_171621.jpg
     title: Instalación en torre Pandemonium. Resurrection Fest
 buy_details: Ponte en contacto con nosotros para que fabriquemos algo así para ti.
-price: 0
 ---
-
