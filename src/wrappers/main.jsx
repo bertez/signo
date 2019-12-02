@@ -8,6 +8,8 @@ import '../css/base.css';
 import signo from '../img/signo.svg';
 import xunta from '../img/xunta.svg';
 
+import { Cart } from '../components/cart';
+
 export default function MainWrapper({ children }) {
   const data = useStaticQuery(graphql`
     {
@@ -54,10 +56,20 @@ export default function MainWrapper({ children }) {
   } = data;
 
   const [menuVisible, toggleMenu] = useState(false);
+  const [cartVisible, toggleCart] = useState(false);
+  const [cart, updateCart] = useState([]);
+
+  const addToCart = product => {
+    updateCart([...cart, product]);
+  };
 
   return (
     <>
       <header className="main">
+        <section className={`ly-cart${cartVisible ? ' visible' : ''}`}>
+          <Cart toggleCart={toggleCart} />
+        </section>
+
         <nav className="utility">
           <ul>
             <li className="phone">
@@ -96,8 +108,12 @@ export default function MainWrapper({ children }) {
             </Link>
           </h1>
           <nav>
+            <button className="cart" onClick={() => toggleCart(!cartVisible)}>
+              Cart
+              {cart.length ? <span>{cart.length}</span> : null}
+            </button>
             <button
-              className={`hamburger hamburger--spin ${
+              className={`menu hamburger hamburger--spin ${
                 menuVisible ? 'is-active' : ''
               }`}
               type="button"
@@ -117,7 +133,7 @@ export default function MainWrapper({ children }) {
         </section>
       </header>
 
-      <main>{children}</main>
+      <main>{React.cloneElement(children, { addToCart })}</main>
 
       <footer className="main">
         <h1>

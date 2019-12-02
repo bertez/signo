@@ -1,0 +1,15 @@
+.ly-cart {
+  position: fixed;
+  left: 100vw;
+  top: 0;
+  width: 300px;
+  min-height: 100vh;
+  transition: transform 500ms;
+  background: var(--dark);
+  @extend %text-negative;
+  z-index: 3;
+
+  &.visible {
+    transform: translateX(-300px);
+  }
+}

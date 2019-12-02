@@ -5,6 +5,7 @@
 @import 'deps/hamburgers.css';
 @import 'components/header.css';
 @import 'components/footer.css';
+@import 'components/cart-layout.css';
 @import 'components/generic-layouts.css';
 @import 'components/gallery-layouts.css';
 @import 'components/text-layouts.css';

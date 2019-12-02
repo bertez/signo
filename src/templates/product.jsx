@@ -9,7 +9,7 @@ import Md from '../helpers/markdown.jsx';
 import { Gallery } from '../components/gallery.jsx';
 import { ProductListSlider } from '../components/product-list.jsx';
 
-export default function Product({ data }) {
+export default function Product({ data, addToCart }) {
   const {
     page: { frontmatter },
     products: { edges: products }
@@ -34,9 +34,7 @@ export default function Product({ data }) {
           <Md>{frontmatter.buy_details}</Md>
           <section className="buy-cta">
             <p className="price">{frontmatter.price}€</p>
-            <button onClick={() => alert('Temporalmente sin existencias')}>
-              Comprar
-            </button>
+            <button onClick={() => addToCart(frontmatter.sku)}>Comprar</button>
           </section>
         </section>
       )}
@@ -84,6 +82,7 @@ export const query = graphql`
         description
         buy_details
         price
+        sku
         gallery {
           title
           image {
