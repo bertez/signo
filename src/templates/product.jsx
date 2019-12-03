@@ -9,7 +9,7 @@ import Md from '../helpers/markdown.jsx';
 import { Gallery } from '../components/gallery.jsx';
 import { ProductListSlider } from '../components/product-list.jsx';
 
-export default function Product({ data, addToCart }) {
+export default function Product({ data }) {
   const {
     page: { frontmatter },
     products: { edges: products }

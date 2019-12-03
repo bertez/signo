@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+});
+
 module.exports = {
   siteMetadata: {
     title: 'Signo',
@@ -72,7 +76,15 @@ module.exports = {
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-stripe'
+    'gatsby-plugin-stripe',
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ['Product', 'Sku'],
+        secretKey: process.env.STRIPE_KEY,
+        downloadFiles: true
+      }
+    }
   ],
   mapping: {
     'MarkdownRemark.frontmatter.related_projects.project':

@@ -136,6 +136,28 @@ collections:
           - label: Entradilla
             name: tagline
             widget: markdown
+      - label: Tienda Online
+        name: shop
+        file: src/data/pages/tienda.md
+        fields:
+          - label: Template
+            name: template
+            widget: hidden
+            default: shop
+          - label: Título
+            name: title
+            widget: string
+          - label: Descripción SEO
+            name: seo_description
+            widget: string
+            required: false
+          - label: Imagen SEO
+            name: seo_image
+            widget: image
+            required: false
+          - label: Entradilla
+            name: tagline
+            widget: markdown
       - label: Nota Legal
         name: legal
         file: src/data/pages/nota-legal.md
@@ -506,6 +528,61 @@ collections:
         widget: image
       - label: Imagen listados
         name: alt_picture
+        widget: image
+      - label: Descripción
+        name: description
+        widget: markdown
+      - label: Descripción listados
+        name: short_description
+        widget: string
+      - label: Galería
+        name: gallery
+        widget: list
+        fields:
+          - label: Título
+            name: title
+            widget: string
+          - label: Imagen
+            name: image
+            widget: image
+      - label: Detalles compra
+        name: buy_details
+        widget: markdown
+  - label: Productos Tienda
+    name: shopitems
+    folder: src/data/tienda
+    editor:
+      preview: false
+    create: true
+    fields:
+      - label: Template
+        name: template
+        widget: hidden
+        default: shopitem
+      - label: Código Stripe
+        name: stripe_code
+        widget: string
+      - label: Título
+        name: title
+        widget: string
+      - label: Descripción SEO
+        name: seo_description
+        widget: string
+        required: false
+      - label: Imagen SEO
+        name: seo_image
+        widget: image
+        required: false
+      - label: Destacado
+        name: highlight
+        widget: boolean
+        default: false
+      - label: Activo
+        name: active
+        widget: boolean
+        default: true
+      - label: Imagen principal
+        name: picture
         widget: image
       - label: Descripción
         name: description
