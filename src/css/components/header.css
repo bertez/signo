@@ -165,6 +165,10 @@ header.main {
           &:nth-child(5) {
             animation-delay: 450ms;
           }
+
+          &:nth-child(6) {
+            animation-delay: 500ms;
+          }
         }
 
         & a {

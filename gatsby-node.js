@@ -13,6 +13,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
             }
             frontmatter {
               template
+              stripe_code
             }
           }
         }
@@ -27,17 +28,17 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       node: {
         id,
         fields: { slug },
-        frontmatter: { template }
+        frontmatter: { template, stripe_code }
       }
     } = page;
 
     if (template && template !== 'client') {
-      // if (template && template === 'frontpage') {
       createPage({
         path: slug,
         component: require.resolve(`./src/templates/${template}.jsx`),
         context: {
-          id
+          id,
+          stripe_code
         }
       });
     }

@@ -1,5 +1,5 @@
 ---
-template: shopitem
+template: shop-product
 stripe_code: prod_GHseWxx3Kn8hJ7
 title: Letras luminosas
 seo_description: Descripción letras luminosas
@@ -23,4 +23,3 @@ description: >-
 short_description: Letras luminosas muy bonitas
 buy_details: Se te pedirá subir un fichero con el diseño al finalizar el proceso de compra.
 ---
-

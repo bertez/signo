@@ -4,18 +4,18 @@ import { graphql } from 'gatsby';
 import SEO from '../components/SEO.jsx';
 import Md from '../helpers/markdown.jsx';
 
-import { ShopProduct } from '../components/shop-product.jsx';
+import { ShopItemList } from '../components/shop-item.jsx';
 
 export default function Projects({ data, addToCart }) {
   const {
     page: { frontmatter },
-    items: { group: items }
+    items: { edges: items }
   } = data;
 
   console.log(items);
 
   return (
-    <article className="content content-services">
+    <article className="content content-shop">
       <SEO pageData={data.page} />
       <header className="ly-text-header">
         <h2>{frontmatter.title}</h2>
@@ -24,10 +24,7 @@ export default function Projects({ data, addToCart }) {
 
       <section>
         <h2>Products</h2>
-
-        {items.map(item => (
-          <ShopProduct key={item.fieldValue} item={item} />
-        ))}
+        <ShopItemList items={items} />
       </section>
     </article>
   );
@@ -52,22 +49,18 @@ export const query = graphql`
         tagline
       }
     }
-    items: allStripeSku {
-      group(field: product___name) {
-        edges {
-          node {
-            attributes {
-              name
-            }
-            image
-            currency
-            price
-            product {
-              metadata {
-                material
-              }
-            }
-            localFiles {
+    items: allMarkdownRemark(
+      filter: { frontmatter: { template: { eq: "shop-product" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            short_description
+            picture {
               childImageSharp {
                 sizes(maxWidth: 400) {
                   ...GatsbyImageSharpSizes
@@ -76,7 +69,6 @@ export const query = graphql`
             }
           }
         }
-        fieldValue
       }
     }
   }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import { Link } from 'gatsby';
@@ -8,7 +8,8 @@ import '../css/base.css';
 import signo from '../img/signo.svg';
 import xunta from '../img/xunta.svg';
 
-import { Cart } from '../components/cart';
+import { CartProvider, CartContext } from '../provider/CartContext.jsx';
+import { Cart, CartIcon } from '../components/cart';
 
 export default function MainWrapper({ children }) {
   const data = useStaticQuery(graphql`
@@ -56,19 +57,11 @@ export default function MainWrapper({ children }) {
   } = data;
 
   const [menuVisible, toggleMenu] = useState(false);
-  const [cartVisible, toggleCart] = useState(false);
-  const [cart, updateCart] = useState([]);
-
-  const addToCart = product => {
-    updateCart([...cart, product]);
-  };
 
   return (
-    <>
+    <CartProvider>
       <header className="main">
-        <section className={`ly-cart${cartVisible ? ' visible' : ''}`}>
-          <Cart toggleCart={toggleCart} />
-        </section>
+        <Cart />
 
         <nav className="utility">
           <ul>
@@ -108,10 +101,7 @@ export default function MainWrapper({ children }) {
             </Link>
           </h1>
           <nav>
-            <button className="cart" onClick={() => toggleCart(!cartVisible)}>
-              Cart
-              {cart.length ? <span>{cart.length}</span> : null}
-            </button>
+            <CartIcon />
             <button
               className={`menu hamburger hamburger--spin ${
                 menuVisible ? 'is-active' : ''
@@ -133,7 +123,7 @@ export default function MainWrapper({ children }) {
         </section>
       </header>
 
-      <main>{React.cloneElement(children, { addToCart })}</main>
+      <main>{children}</main>
 
       <footer className="main">
         <h1>
@@ -154,6 +144,9 @@ export default function MainWrapper({ children }) {
               <Link to="/construcciones-singulares">
                 Construcciones singulares
               </Link>
+            </li>
+            <li>
+              <Link to="/tienda">Tienda Online</Link>
             </li>
             <li>
               <Link to="/empresa">Sobre Signo</Link>
@@ -182,7 +175,7 @@ export default function MainWrapper({ children }) {
           <img src={xunta} alt="Xunta de Galicia" />
         </section>
       </footer>
-    </>
+    </CartProvider>
   );
 }
 
@@ -208,6 +201,9 @@ function Menu({ close, services }) {
       </li>
       <li>
         <Link to="/construcciones-singulares">Construcciones singulares</Link>
+      </li>
+      <li>
+        <Link to="/tienda">Tienda Online</Link>
       </li>
       <li>
         <Link to="/empresa">Sobre Signo</Link>

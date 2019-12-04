@@ -2,37 +2,37 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import SEO from '../components/SEO.jsx';
-
 import Img from 'gatsby-image';
 import Md from '../helpers/markdown.jsx';
 
 import { Gallery } from '../components/gallery.jsx';
-import { ProductListSlider } from '../components/product-list.jsx';
+import { ShopItemSkuList } from '../components/shop-item.jsx';
 
-export default function Product({ data }) {
+export default function ShopProduct({ data }) {
   const {
     page: { frontmatter },
-    products: { edges: products }
+    skus: { edges: skus }
   } = data;
 
   return (
-    <article className="product content-product">
+    <article className="content content-shop-product">
       <SEO pageData={data.page} />
       <header className="ly-text-header">
         <h2>{frontmatter.title}</h2>
       </header>
       <figure>
-        <Img sizes={frontmatter.picture.childImageSharp.sizes} />
+        <Img
+          sizes={frontmatter.picture.childImageSharp.sizes}
+          alt={frontmatter.title}
+        />
       </figure>
 
       <section className="ly-text-block">
         <Md>{frontmatter.description}</Md>
       </section>
 
-      <section className="ly-product-buy">
-        <h2>Cómo comprar</h2>
-
-        <Md>{frontmatter.buy_details}</Md>
+      <section className="skus">
+        <ShopItemSkuList skus={skus} />
       </section>
 
       {frontmatter.gallery && frontmatter.gallery.length > 0 && (
@@ -41,19 +41,12 @@ export default function Product({ data }) {
           <Gallery images={frontmatter.gallery} />
         </section>
       )}
-
-      <section className="ly-products-list">
-        <header className="ly-text-header">
-          <h2>Otras construcciones</h2>
-        </header>
-        <ProductListSlider products={products} />
-      </section>
     </article>
   );
 }
 
 export const query = graphql`
-  query($id: String!) {
+  query($id: String!, $stripe_code: String!) {
     page: markdownRemark(id: { eq: $id }) {
       fields {
         slug
@@ -68,15 +61,14 @@ export const query = graphql`
             }
           }
         }
+        description
         picture {
           childImageSharp {
-            sizes(maxWidth: 1440) {
+            sizes(maxWidth: 800) {
               ...GatsbyImageSharpSizes
             }
           }
         }
-        description
-        buy_details
         gallery {
           title
           image {
@@ -92,36 +84,22 @@ export const query = graphql`
         }
       }
     }
-    products: allMarkdownRemark(
-      filter: {
-        frontmatter: { template: { eq: "product" }, active: { eq: true } }
-        id: { ne: $id }
-      }
-    ) {
+    skus: allStripeSku(filter: { product: { id: { eq: $stripe_code } } }) {
       edges {
         node {
-          fields {
-            slug
+          currency
+          price
+          attributes {
+            name
           }
-          frontmatter {
-            title
-            short_description
-            highlight
-            alt_picture {
-              childImageSharp {
-                sizes(maxWidth: 400) {
-                  ...GatsbyImageSharpSizes
-                }
-              }
-            }
-            picture {
-              childImageSharp {
-                sizes(maxWidth: 1440) {
-                  ...GatsbyImageSharpSizes
-                }
+          localFiles {
+            childImageSharp {
+              fluid(maxWidth: 400) {
+                src
               }
             }
           }
+          id
         }
       }
     }
