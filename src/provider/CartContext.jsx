@@ -16,7 +16,9 @@ export const CartProvider = ({ children }) => {
   const [cart, updateCart] = useState({ visible: true, items: initialCart });
 
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(cart.items));
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(cart.items));
+    }
   }, [cart.items]);
 
   // Cart functions
