@@ -7,7 +7,7 @@ const STORAGE_KEY = 'signo_cart';
 export const CartProvider = ({ children }) => {
   let initialCart = [];
 
-  if (typeof window !== undefined) {
+  if (typeof window !== 'undefined') {
     const storedState = localStorage.getItem(STORAGE_KEY);
 
     initialCart = storedState ? JSON.parse(storedState) : [];

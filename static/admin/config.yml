@@ -158,6 +158,20 @@ collections:
           - label: Entradilla
             name: tagline
             widget: markdown
+      - label: Checkout
+        name: checkout
+        file: src/data/pages/checkout.md
+        fields:
+          - label: Template
+            name: template
+            widget: hidden
+            default: checkout
+          - label: Título
+            name: title
+            widget: string
+          - label: Entradilla
+            name: tagline
+            widget: markdown
       - label: Nota Legal
         name: legal
         file: src/data/pages/nota-legal.md
