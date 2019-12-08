@@ -58,6 +58,8 @@ timeline:
       instalaciones, nueva maquinaria, nuevos servicios y productos
       comercializados.
     year: 2008
+  - text: Ampliamos la gama de servicios y la plantilla crece
+    year: 2010
 links:
   - cite: '"Imprimen bien"'
     date: 2019-02-13T10:11:41.674Z
