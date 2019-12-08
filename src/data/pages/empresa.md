@@ -64,6 +64,10 @@ timeline:
       Incorporamos la marca SIGNO a nuestra estructura y posteriormente empieza
       nuestro trabajo para Resurrection Fest
     year: 2014
+  - text: >-
+      Trasladamos nuestra producción a las nuevas dependencias en Barrio Plantío
+      s/n 27863, Celeiro - Viveiro.
+    year: 2016
 links:
   - cite: '"Imprimen bien"'
     date: 2019-02-13T10:11:41.674Z
