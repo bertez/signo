@@ -23,16 +23,18 @@ team:
     picture: /media/david.jpg
     position: Diseñador
 description: >-
-  Phasellus augue ante, imperdiet ut dictum aliquet, cursus vel justo. Duis sed
-  justo id purus fermentum ultrices. Quisque sit amet quam ex. Nullam ultrices
-  ipsum in tellus consequat finibus. Sed tincidunt lacinia enim a pharetra.
-  Vivamus consequat commodo velit a posuere. Proin et malesuada mauris. Fusce
-  vehicula, erat ut dapibus tristique, felis tortor sagittis mi, placerat ornare
-  erat ex feugiat ex. Nullam faucibus semper elementum. Vestibulum ante ipsum
-  primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi at
-  tellus nunc. Sed ut lacinia libero. Pellentesque in facilisis nunc, ac porta
-  lacus. Sed hendrerit, felis eget fermentum pellentesque, est urna viverra
-  sapien, a vestibulum dui massa ac risus. Vivamus eu feugiat tellus.
+  Grupo Futures se alimenta principalmente del buen hacer de dos divisiones bien
+  diferenciadas. Futures informática y Signo Taller del Rótulo.
+
+
+  **Futures Informática**, cuenta con una importante cartera de clientes y lleva
+  25 años ofreciendo sus servicios, tanto a particulares, como empresas,
+  oficinas, despachos, comercio, hostelería.
+
+
+  Signo Rotulación, es la parte responsable de desarrollar los productos de
+  comunicación visual, elementos decorativos, construcciones singulares,
+  rotulación.
 picture: /media/logo-signo-construcciones-singulares_web.jpg
 timeline:
   - text: >-
