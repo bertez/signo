@@ -39,6 +39,8 @@ timeline:
       Nace Futures como centro de formación especializado en CAD, con cursos en
       Burela y Foz
     year: 1994
+  - text: Abrimos nuestro centro de formación en Viveiro
+    year: 1995
   - text: >-
       Se crea la sociedad Futures Infgrafía S.L. que ya cuenta con 3 líneas de
       negocio (venta, reparación y formación)
@@ -51,8 +53,11 @@ timeline:
     year: 2003
   - text: Ampliamos nuestra cartera de clientes y proveedores
     year: 2005
-  - text: Abrimos nuestro centro de formación en Viveiro
-    year: 1995
+  - text: >-
+      Ampliamos y reforzamos nuestro departamento de Comunicación Visual. Nuevas
+      instalaciones, nueva maquinaria, nuevos servicios y productos
+      comercializados.
+    year: 2008
 links:
   - cite: '"Imprimen bien"'
     date: 2019-02-13T10:11:41.674Z
