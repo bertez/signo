@@ -12,8 +12,6 @@ export default function Projects({ data, addToCart }) {
     items: { edges: items }
   } = data;
 
-  console.log(items);
-
   return (
     <article className="content content-shop">
       <SEO pageData={data.page} />

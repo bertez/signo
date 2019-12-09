@@ -604,6 +604,11 @@ collections:
       - label: Descripción listados
         name: short_description
         widget: string
+      - label: Necesidad de materiales
+        name: materials
+        widget: markdown
+        required: false
+        hint: Indicar aquí que ficheros es necesario subir (logos, diseños, etc...) para hacer el pedido
       - label: Galería
         name: gallery
         widget: list

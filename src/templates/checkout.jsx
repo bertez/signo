@@ -1,9 +1,17 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React, { useContext } from 'react';
+import { graphql, navigate } from 'gatsby';
+
+import { CartContext } from '../provider/CartContext.jsx';
 
 import Md from '../helpers/markdown.jsx';
 
 export default function Projects({ data }) {
+  const cartCtxt = useContext(CartContext);
+
+  if (cartCtxt.cart.items.length === 0) {
+    navigate('/tienda');
+  }
+
   const {
     page: { frontmatter }
   } = data;
