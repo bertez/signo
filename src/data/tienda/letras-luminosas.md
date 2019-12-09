@@ -21,5 +21,7 @@ description: >-
   id. Vivamus mauris justo, posuere eu risus sed, eleifend feugiat elit.
   Maecenas imperdiet sapien nisi, tincidunt auctor erat eleifend et.
 short_description: Letras luminosas muy bonitas
+materials: Logo en formato vectorial
 buy_details: Se te pedirá subir un fichero con el diseño al finalizar el proceso de compra.
 ---
+
