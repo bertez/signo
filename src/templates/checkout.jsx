@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { graphql, navigate } from 'gatsby';
 
 import { CartContext } from '../provider/CartContext.jsx';
@@ -11,6 +11,12 @@ export default function Projects({ data }) {
   if (cartCtxt.cart.items.length === 0) {
     navigate('/tienda');
   }
+
+  useEffect(() => {
+    if (cartCtxt.cart.items.length === 0) {
+      navigate('/tienda');
+    }
+  }, [cartCtxt.cart.items]);
 
   const {
     page: { frontmatter }
