@@ -8,10 +8,6 @@ import Md from '../helpers/markdown.jsx';
 export default function Projects({ data }) {
   const cartCtxt = useContext(CartContext);
 
-  if (cartCtxt.cart.items.length === 0) {
-    navigate('/tienda');
-  }
-
   useEffect(() => {
     if (cartCtxt.cart.items.length === 0) {
       navigate('/tienda');
