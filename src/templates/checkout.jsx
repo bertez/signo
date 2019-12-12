@@ -43,6 +43,7 @@ export default function Projects({ data }) {
         `${process.env.GATSBY_BACKEND_SHOP}/shop/checkout`,
         {
           method: 'POST',
+          mode: 'cors',
           body: data
         }
       );
