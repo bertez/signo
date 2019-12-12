@@ -32,7 +32,7 @@ export default function ShopProduct({ data }) {
       </section>
 
       <section className="skus">
-        <ShopItemSkuList skus={skus} />
+        <ShopItemSkuList materials={frontmatter.materials} skus={skus} />
       </section>
 
       {frontmatter.gallery && frontmatter.gallery.length > 0 && (
@@ -69,6 +69,7 @@ export const query = graphql`
             }
           }
         }
+        materials
         gallery {
           title
           image {

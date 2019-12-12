@@ -29,7 +29,7 @@ function CartTable() {
               <td>
                 <input
                   type="number"
-                  defaultValue={item.count}
+                  defaultValue={item.quantity}
                   min="1"
                   onInput={e =>
                     cartCtxt.updateItemCount(item.sku, e.target.value)

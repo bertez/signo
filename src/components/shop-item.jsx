@@ -7,7 +7,7 @@ import Img from 'gatsby-image';
 import { formatPrice } from '../helpers/currency';
 import { CartContext } from '../provider/CartContext.jsx';
 
-export function ShopItemSkuList({ skus }) {
+export function ShopItemSkuList({ skus, materials }) {
   const cartCtxt = useContext(CartContext);
 
   return (
@@ -27,7 +27,8 @@ export function ShopItemSkuList({ skus }) {
                   sku: node.id,
                   name: node.attributes.name,
                   price: node.price,
-                  currency: node.currency
+                  currency: node.currency,
+                  materials
                 })
               }
             >
