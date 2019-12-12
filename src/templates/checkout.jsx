@@ -39,10 +39,13 @@ export default function Projects({ data }) {
 
     try {
       setSending(true);
-      const request = await fetch('http://localhost:3000/shop/checkout', {
-        method: 'POST',
-        body: data
-      });
+      const request = await fetch(
+        `${process.env.GATSBY_BACKEND_SHOP}/shop/checkout`,
+        {
+          method: 'POST',
+          body: data
+        }
+      );
 
       const response = await request.json();
 
