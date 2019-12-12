@@ -13,7 +13,7 @@ export const CartProvider = ({ children }) => {
     const storedState = localStorage.getItem(STORAGE_KEY);
 
     initialCart = storedState ? JSON.parse(storedState) : [];
-    stripe = window.Stripe(process.env.STRIPE_PUBLIC);
+    stripe = window.Stripe(process.env.GATSBY_STRIPE_PUBLIC);
   }
 
   // Initialise state with stored cart
@@ -75,8 +75,8 @@ export const CartProvider = ({ children }) => {
     //items, successURL, cancelURL
     const payload = {
       items: cart.items.map(({ sku, quantity }) => ({ sku, quantity })),
-      successUrl: `${process.env.BACKEND_SHOP}/shop/confirm/${orderID}`,
-      cancelUrl: `${process.env.BACKEND_SHOP}/shop/remove/${orderID}`,
+      successUrl: `${process.env.GATSBY_BACKEND_SHOP}/shop/confirm/${orderID}`,
+      cancelUrl: `${process.env.GATSBY_BACKEND_SHOP}/shop/remove/${orderID}`,
       customerEmail
     };
 

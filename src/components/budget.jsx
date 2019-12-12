@@ -7,7 +7,7 @@ export default function Budget({
   template,
   closeBudget
 }) {
-  const API_ENDPOINT = process.env.BUDGET_ENDPOINT;
+  const API_ENDPOINT = process.env.GATSBY_BUDGET_ENDPOINT;
 
   const [inputs, setInputs] = useState({
     name: '',
