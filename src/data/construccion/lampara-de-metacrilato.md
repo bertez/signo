@@ -5,7 +5,7 @@ seo_description: Guitarra gigante
 seo_image: /media/mini-sample-drone.jpg
 highlight: true
 active: true
-picture: /media/sample-phone.jpg
+picture: /media/guitarra-resu.jpg
 alt_picture: /media/guitarra-resu.jpg
 description: >-
   Hemos fabricado esta guitarra totalmente de hierro, con una altura de 4.7m y
