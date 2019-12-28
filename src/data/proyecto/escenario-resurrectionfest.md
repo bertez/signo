@@ -41,6 +41,8 @@ gallery:
     title: Lateral escenario ResurrectionFEst
   - image: /media/pruebas-de-ensamblaje-lobo-mainstage-resurrectio-n-fest-.jpg
     title: Prueba de ensamblaje lobo
+  - image: /media/cuerpo_guardian.jpg
+    title: Ensamblaje parte superior cuerpo guardian
 links:
   - cite: >-
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum
