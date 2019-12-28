@@ -1,6 +1,6 @@
 ---
 template: project
-title: Escenario Resurrection Fest
+title: Resurrection Fest
 seo_description: Ambientación y decoración ResurrectionFest
 seo_image: /media/20170623_141558.jpg
 tagline: Somos la empresa de ambientación de Resurrection Fest
