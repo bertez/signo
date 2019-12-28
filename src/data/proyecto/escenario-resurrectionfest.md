@@ -43,6 +43,8 @@ gallery:
     title: Prueba de ensamblaje lobo
   - image: /media/cuerpo_guardian.jpg
     title: Ensamblaje parte superior cuerpo guardian
+  - image: /media/mano_guardian.jpg
+    title: 'Detalle mano guardián, primera capa de pintura'
 links:
   - cite: >-
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum
