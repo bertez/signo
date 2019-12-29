@@ -12,7 +12,7 @@ description: >-
   totalmente funcionales o simplemente elementos decorativos.
 gallery:
   - image: /media/LAMPARA.jpg
-    title: Lámpara
+    title: Lámpara exclusiva
 prices: []
 ---
 
