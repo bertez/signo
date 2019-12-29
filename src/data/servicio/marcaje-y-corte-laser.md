@@ -14,6 +14,14 @@ description: >-
 gallery:
   - image: /media/fullsizerender-1-.jpg
     title: Corte y marcaje en DM
-prices: []
+prices:
+  - budget: true
+    description: Llaveros de madera cortados en láser
+    name: Llaveros
+    price: 2.5
+    template: >-
+      Dinos qué necesitas y la cantidad, para que podamos hacerte la mejor
+      oferta.
+    unit: €
 ---
 
