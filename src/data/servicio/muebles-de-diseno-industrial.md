@@ -10,7 +10,9 @@ description: >-
 
   Pensados para comercio, hostelería, decoración en el hogar, ... Muebles
   totalmente funcionales o simplemente elementos decorativos.
-gallery: []
+gallery:
+  - image: /media/LAMPARA.jpg
+    title: Lámpara
 prices: []
 ---
 
