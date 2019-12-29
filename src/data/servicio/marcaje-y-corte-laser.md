@@ -30,6 +30,8 @@ gallery:
     title: Detalle empresa. Metacrilato y madera
   - image: /media/detalle-en-madera.jpg
     title: Detalle empresa grabado láser en rodaja de madera
+  - image: /media/posavasos.jpg
+    title: Posavasos madera
 prices:
   - budget: true
     description: Llaveros de madera cortados en láser
