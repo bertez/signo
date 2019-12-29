@@ -26,6 +26,8 @@ gallery:
     title: Corte y marcaje en DM
   - image: /media/img-7404.jpg
     title: Caja DM
+  - image: /media/detalle-empresa.jpg
+    title: Detalle empresa. Metacrilato y madera
 prices:
   - budget: true
     description: Llaveros de madera cortados en láser
