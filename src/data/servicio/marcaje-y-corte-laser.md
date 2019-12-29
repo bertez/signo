@@ -28,6 +28,8 @@ gallery:
     title: Caja DM
   - image: /media/detalle-empresa.jpg
     title: Detalle empresa. Metacrilato y madera
+  - image: /media/detalle-en-madera.jpg
+    title: Detalle empresa grabado láser en rodaja de madera
 prices:
   - budget: true
     description: Llaveros de madera cortados en láser
