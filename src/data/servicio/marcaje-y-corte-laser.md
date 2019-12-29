@@ -11,6 +11,16 @@ description: >-
 
   Grabamos y cortamos detalles personalizados, placas conmemorativas y de
   homenajes, trofeos, maderas, caucho, cuero, etc.
+details:
+  - image: /media/llavero_metacrilato.jpg
+    text: >-
+      Podemos realizar todo tipo de diseños. Los entregamos en bolsa individual,
+      junto con la anilla (no montada)
+
+
+      Los plazos de entrega varían en función de los diseños, pero lo habitual
+      es entregar los pedidos en un plazo de 1 semana.
+    title: Grabado y corte en metacrilato
 gallery:
   - image: /media/fullsizerender-1-.jpg
     title: Corte y marcaje en DM
