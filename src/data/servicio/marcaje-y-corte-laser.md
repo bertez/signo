@@ -24,6 +24,8 @@ details:
 gallery:
   - image: /media/fullsizerender-1-.jpg
     title: Corte y marcaje en DM
+  - image: /media/img-7404.jpg
+    title: Caja DM
 prices:
   - budget: true
     description: Llaveros de madera cortados en láser
