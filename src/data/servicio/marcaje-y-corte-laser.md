@@ -13,7 +13,7 @@ description: >-
   homenajes, trofeos, maderas, caucho, cuero, etc.
 gallery:
   - image: /media/fullsizerender-1-.jpg
-    title: Láser
+    title: Corte y marcaje en DM
 prices: []
 ---
 
