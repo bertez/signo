@@ -9,7 +9,7 @@ tagline: >-
   y tu centro de producción. Date una vuelta por nuestra web y mira nuestro
   trabajo, y si te apetece déjanos tu opinión.
 related_projects:
-  - project: Escenario Resurrection Fest
+  - project: Resurrection Fest
 services_intro: >-
   Nuestros servicios son múltiples y los adaptamos a las necesidades específicas
   de cada cliente.
@@ -22,4 +22,3 @@ company_intro: >-
   personalidad.
 company_picture: /media/logo-signo-construcciones-singulares_web.jpg
 ---
-
