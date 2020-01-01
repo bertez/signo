@@ -18,6 +18,16 @@ gallery:
     title: Guitarra
   - image: /media/img_4293.jpg
     title: Guitarra
+  - image: /media/img_2310.jpg
+    title: Guitarra
+  - image: /media/img_2359.jpg
+    title: Guitarra
+  - image: /media/img_2419.jpg
+    title: Guitarra
+  - image: /media/img_4037.jpg
+    title: Guitarra
+  - image: /media/img_2496.jpg
+    title: Guitarra
 buy_details: >-
   Si quieres una guitarra de un tamaño inferior, igual o superior, con el estilo
   y diseño que tu quieras, no tienes más que ponerte en contacto con nosotros,
