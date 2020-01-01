@@ -14,10 +14,10 @@ description: >-
   necesites.
 short_description: Guitarra gigante
 gallery:
-  - image: /media/mini-sample-computer.jpg
-    title: lorem
-  - image: /media/sample-phone.jpg
-    title: Ipsum
+  - image: /media/img_4292.jpg
+    title: Guitarra
+  - image: /media/img_4293.jpg
+    title: Guitarra
 buy_details: >-
   Si quieres una guitarra de un tamaño inferior, igual o superior, con el estilo
   y diseño que tu quieras, no tienes más que ponerte en contacto con nosotros,
