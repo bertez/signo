@@ -18,6 +18,8 @@ short_description: 'Diseñamos y fabricamos mobiliario a medida, de estilo indus
 gallery:
   - image: /media/img_9460.jpg
     title: Mobiliario original de estilo industrial
+  - image: /media/img_9481.jpg
+    title: Mobiliario original de estilo industrial
 buy_details: Pídenos información
 ---
 
