@@ -15,6 +15,24 @@ short_description: Microfono SteamPunk
 gallery:
   - image: /media/img-2789.jpg
     title: Microfono Monster
+  - image: /media/1f8aea49-5ae3-4f1f-96fb-9b4e826b5115.jpg
+    title: Microfono Monster
+  - image: /media/img_3121.jpg
+    title: Microfono Monster
+  - image: /media/img_3277.jpg
+    title: Microfono Monster
+  - image: /media/img_3993.jpg
+    title: Microfono Monster
+  - image: /media/img_3993.jpg
+    title: Microfono Monster
+  - image: /media/img_2862.jpg
+    title: Microfono Monster
+  - image: /media/img_2777.jpg
+    title: Microfono Monster
+  - image: /media/img_3035.jpg
+    title: Microfono Monster
+  - image: /media/img_3443.jpg
+    title: Microfono Monster
 buy_details: >-
   Podemos fabricar todo tipo de elementos de estética SteamPunk. Pídenos
   información.
