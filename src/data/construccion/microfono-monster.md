@@ -23,7 +23,7 @@ gallery:
     title: Microfono Monster
   - image: /media/img_3993.jpg
     title: Microfono Monster
-  - image: /media/img_3993.jpg
+  - image: /media/img_3139.jpg
     title: Microfono Monster
   - image: /media/img_2862.jpg
     title: Microfono Monster
