@@ -9,7 +9,7 @@ picture: /media/guitarra-resu.jpg
 alt_picture: /media/guitarra-resu.jpg
 description: >-
   Hemos fabricado esta guitarra totalmente de hierro, con una altura de 4.7m y
-  todo tipo de detalles. ES altamente resistente y perfecta para la ambientación
+  todo tipo de detalles. Es altamente resistente y perfecta para la ambientación
   en festivales. Podemos fabricar otros modelos y adaptarlos al estilo que
   necesites.
 short_description: Guitarra gigante
