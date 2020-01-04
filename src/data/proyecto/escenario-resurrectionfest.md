@@ -21,7 +21,7 @@ sections:
   - text: Detalle construcción guardianes escenario
     title: Tallando poliestireno
     type: video
-    video: zh5DVNxQISU
+    video: zh5DVNxQlSU
   - image: /media/img_0895.jpg
     text: Detalle de construcción
     type: image
