@@ -1,7 +1,8 @@
 ---
 template: product
-title: Escenario ResurrectionFest
-seo_description: Decoración escenario ResurrectionFest
+title: Escultura Jägermeister
+seo_description: Escultura de ambientación para Jägermeister
+seo_image: /media/img_4776.jpg
 highlight: true
 active: true
 picture: /media/img_7665.jpg
