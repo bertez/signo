@@ -19,6 +19,7 @@ sections:
     title: Escenario
     type: text
   - text: Detalle construcción guardianes escenario
+    title: Tallando poliestireno
     type: video
     video: zh5DVNxQISU
   - image: /media/img_0895.jpg
