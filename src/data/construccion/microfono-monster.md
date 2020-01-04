@@ -34,7 +34,10 @@ gallery:
   - image: /media/img_3443.jpg
     title: Microfono Monster
 buy_details: >-
-  Podemos fabricar todo tipo de elementos de estética SteamPunk. Pídenos
-  información.
+  Podemos fabricar todo tipo de elementos de estética SteamPunk. Detallanos tu
+  idea o háblanos de tu festival/evento/espacio, y nos pondremos en contacto
+  contigo para ver distintas opciones. Buscaremos algo que encaje en tu
+  perspectiva y seguro que podemos trabajar juntos. Te estamos esperando,
+  pídenos información.
 ---
 
