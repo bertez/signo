@@ -18,9 +18,9 @@ sections:
       una de nuestras mejores creaciones. Estamos muy contentos del resultado.
     title: Escenario
     type: text
-  - text: Lolailo pardo
+  - text: Detalle construcción guardianes escenario
     type: video
-    video: kjUpYlKs0nM
+    video: zh5DVNxQISU
   - image: /media/img_0895.jpg
     text: Detalle de construcción
     type: image
