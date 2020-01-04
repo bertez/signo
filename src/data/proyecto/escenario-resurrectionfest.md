@@ -25,6 +25,7 @@ sections:
   - image: /media/img_0895.jpg
     text: Detalle de construcción
     type: image
+    video: vlRJgVsqjVA
 gallery:
   - image: /media/boceto-para-escultura-lobo-resurrectionfest-.jpg
     title: Boceto Lobo
