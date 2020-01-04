@@ -1,38 +1,47 @@
 ---
 template: product
-title: Microfono Monster
+title: Escenario ResurrectionFest
+seo_description: Decoración escenario ResurrectionFest
 highlight: true
 active: true
-picture: /media/microfono-monster.jpg
-alt_picture: /media/microfono-monster.jpg
+picture: /media/img_7665.jpg
+alt_picture: /media/img_7665.jpg
 description: >-
-  Microfono gigante fabricado en poliestireno, con base de hierro y acabado
-  steampunk. Esta figura se fabricó para Monster y se utiliza cada año en la
-  ambientación de Resurrection Fest, donde es uno de los elementos mas
-  fotografiados del festival y un punto de encuentro visible desde todo el
-  recinto.
-short_description: Microfono SteamPunk
+  Escultura ciervo Jägermeister fabricada en hierro, con base/pedestal acabado
+  en efecto hormigón.
+
+
+  Esta pieza fabricada para Jäger se ha utilizado en varios festivales durante
+  los últimos tres años. Con un estilo "MadMax", es siempre uno de los elementos
+  mas destacados en las ambientaciones, con un perfecto encaje para los selfies
+  y punto de encuentro en los recintos.
+
+
+  Esta figura, como muchas otras de las que fabricamos, puede adaptarse a
+  distintos momentos y eventos, "maquillando" su estética original, para buscar
+  encajes en otras ubicaciones y estéticas.
+short_description: Escultura Jägermeister
 gallery:
-  - image: /media/img-2789.jpg
-    title: Microfono Monster
-  - image: /media/1f8aea49-5ae3-4f1f-96fb-9b4e826b5115.jpg
-    title: Microfono Monster
-  - image: /media/img_3121.jpg
-    title: Microfono Monster
-  - image: /media/img_3277.jpg
-    title: Microfono Monster
-  - image: /media/img_3993.jpg
-    title: Microfono Monster
-  - image: /media/img_3139.jpg
-    title: Microfono Monster
-  - image: /media/img_2862.jpg
-    title: Microfono Monster
-  - image: /media/img_2777.jpg
-    title: Microfono Monster
-  - image: /media/img_3035.jpg
-    title: Microfono Monster
-  - image: /media/img_3443.jpg
-    title: Microfono Monster
+  - image: /media/97e3c248-e6e2-4677-8138-fd6f77a5438a.jpg
+    title: Escultura Jägermeister
+  - image: /media/img_3437.jpg
+    title: Escultura Jägermeister
+  - image: /media/img_4212.jpg
+    title: Escultura Jägermeister
+  - image: /media/img_4364.jpg
+    title: Escultura Jägermeister
+  - image: /media/img_4375.jpg
+    title: Escultura Jägermeister
+  - image: /media/img_4386.jpg
+    title: Escultura Jägermeister
+  - image: /media/img_4449.jpg
+    title: Escultura Jägermeister
+  - image: /media/img_4566.jpg
+    title: Escultura Jägermeister
+  - image: /media/img_4775.jpg
+    title: Escultura Jägermeister
+  - image: /media/img_4669.jpg
+    title: Escultura Jägermeister
 buy_details: >-
   Podemos fabricar todo tipo de elementos de estética SteamPunk. Detallanos tu
   idea o háblanos de tu festival/evento/espacio, y nos pondremos en contacto
