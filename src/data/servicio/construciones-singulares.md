@@ -25,6 +25,14 @@ gallery:
     title: Carpa para bar Estrella Galicia. Resurrection Fest
   - image: /media/20160527_115955.jpg
     title: Preparando escultura hebilla. Resurrection Fest
+  - image: /media/img-20160704-wa0006.jpg
+    title: Escultura MötorHead
+  - image: /media/20170702_095531.jpg
+    title: Pandemonium ResurrectionFest
+  - image: /media/decoracio-n-puerta-acceso-resu.jpg
+    title: Puerta principal ResurrectionFest
+  - image: /media/1f8aea49-5ae3-4f1f-96fb-9b4e826b5115.jpg
+    title: Micrófono gigante Monster
 prices: []
 related_projects:
   - project: Guitarra SteamPunk
