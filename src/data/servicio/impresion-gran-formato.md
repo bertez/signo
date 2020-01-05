@@ -48,16 +48,22 @@ prices:
     name: 'Lona microperforada (Precio desde:)'
     price: 8
     template: |-
-      Necesitamos saber:
+      Entre otras cosas, necesitamos saber:
 
       - Largo:
       - Alto:
       - Refuerzo para exterior?:
     unit: €
   - budget: true
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-    name: Panel fotocromado
-    price: 12.22
+    description: 'Lona de alta calidad, apta para múltiples eventos, campañas, ...'
+    name: 'Lona frotlite (Precio desde:)'
+    price: 8
+    template: |-
+      Entre otras cosas, necesitamos saber:
+
+      - Largo:
+      - Alto:
+      - Refuerzo para exterior?:
     unit: €
 related_projects:
   - project: Paneles pirolíticos
