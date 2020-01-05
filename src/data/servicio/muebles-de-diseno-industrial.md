@@ -5,7 +5,8 @@ picture: /media/mueble-disen-o.jpg
 short_description: 'Mobiliario estilo industrial, diseño propio'
 description: >-
   Diseñamos y fabricamos mobiliario de estilo industrial, utilizando hierro,
-  madera, elementos reciclados, etc...
+  madera, elementos reciclados, etc... Diseños únicos, con una estética
+  diferente, que sin duda resaltaran en su ubicación.
 
 
   Pensados para comercio, hostelería, decoración en el hogar, ... Muebles
@@ -19,6 +20,8 @@ gallery:
     title: Mueble auxiliar cocina
   - image: /media/img_9469.jpg
     title: Mueble bajo expositor comercial
+  - image: /media/img_0214.jpg
+    title: Mueble bajo comercial
 prices: []
 ---
 
