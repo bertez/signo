@@ -12,6 +12,22 @@ description: >-
   El corpóreo es un elemento con gran fuerza visual, muy utilizado en todos los
   ámbitos, photocalls, decoración, ambientación de eventos, cine y televisión,
   ...
+details:
+  - image: /media/img_2382.jpg
+    text: >-
+      Hemos tenido el privilegio de fabricar dos rótulos para la película "Quién
+      a Hierro Mata", de la productora Vaca Films, protagonizada por Luis Tosar
+      y dirigida por Paco Plaza.
+
+
+      Los rótulos fabricados uno en PVC (para el geriátrico donde trabaja el
+      protagonista) y otro en Poliuretano acabado con efecto oro envejecido,
+      para la nave de los chinos.
+
+
+      Un trabajo realizado en tiempo record, para cumplir con las exigencias del
+      plan de grabación, y que resultó un éxito.
+    title: Rótulo para la película "Quien a Hierro Mata"
 gallery:
   - image: /media/20160702_185356.jpg
     title: Letras gigantes de hierro con leds
