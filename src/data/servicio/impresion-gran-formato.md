@@ -50,7 +50,7 @@ gallery:
 prices:
   - budget: true
     description: 'Lona mesh, especial para eventos en exterior, escenarios, fachadas, ...'
-    name: 'Lona microperforada (Precio desde:)'
+    name: Lona microperforada
     price: 8
     template: |-
       Entre otras cosas, necesitamos saber:
@@ -61,7 +61,7 @@ prices:
     unit: €
   - budget: true
     description: 'Lona de alta calidad, apta para múltiples eventos, campañas, ...'
-    name: 'Lona frotlite (Precio desde:)'
+    name: Lona frotlite
     price: 8
     template: |-
       Entre otras cosas, necesitamos saber:
