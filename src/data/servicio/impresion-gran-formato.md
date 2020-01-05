@@ -23,13 +23,16 @@ description: >-
   acabados reforzados para su uso en cualquier situación (festivales, fachadas,
   eventos, ...).
 details:
-  - image: /media/sample-chip.jpg
+  - image: /media/img_0523.jpg
     text: >-
-      Praesent eleifend massa molestie, dignissim arcu at, vehicula dolor.
-      Aenean finibus bibendum ipsum elementum ultricies. Fusce vel lacus eu dui
-      aliquam tincidunt. Donec metus ligula, posuere vel leo id, suscipit
-      laoreet ante. Fusce luctus lacus ac varius iaculis. Maecenas nisl leo,
-      vestibulum eget sem ac, congue vehicula purus.
+      Lona fabricada para CORETI. La lona funciona como muro promocional y a su
+      vez hace las funciones de cortina para separación de ambientes, entre la
+      zona de producción y el almacenaje.
+
+
+      Esta lona se imprimió con equipos eco-solventes, utilizando lona fundida
+      para la unión de los paños. Las dimensiones finales fueron 80m de largo
+      por 9,80m de alto, con un peso total de 380kg.
     title: Trabajos guaises
   - image: /media/sample-computer.jpg
     text: >-
