@@ -17,6 +17,11 @@ description: >-
   mantener con su laboratorio de desarrollo de producto, donde constantemente
   realizan controles sobre materiales aplicados en distintas superficies y con
   diferentes condiciones medioambientales.
+
+
+  Fabricamos lonas de todos los tamaños, tanto microperforada como lisa. Con
+  acabados reforzados para su uso en cualquier situación (festivales, fachadas,
+  eventos, ...).
 details:
   - image: /media/sample-chip.jpg
     text: >-
