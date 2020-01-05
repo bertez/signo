@@ -33,6 +33,10 @@ gallery:
     title: Puerta principal ResurrectionFest
   - image: /media/1f8aea49-5ae3-4f1f-96fb-9b4e826b5115.jpg
     title: Micrófono gigante Monster
+  - image: /media/IMG_1752.JPG
+    title: Guitarra
+  - image: /media/img_2805.jpg
+    title: Escenario
 prices: []
 related_projects:
   - project: Guitarra gigante
