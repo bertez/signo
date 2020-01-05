@@ -32,27 +32,27 @@ details:
       Aenean finibus bibendum ipsum elementum ultricies.
     title: Rotulos sin fin
 gallery:
-  - image: /media/sample-desktop.jpg
-    title: Trabajo 1
-  - image: /media/sample-camera.jpg
-    title: Trabajo 2
-  - image: /media/sample-phone.jpg
-    title: Trabajo 3
-  - image: /media/sample-tablet.jpg
-    title: Trabajo 4
-  - image: /media/sample-chip.jpg
-    title: Trabajo 5
+  - image: /media/img_0486.jpg
+    title: Lona
+  - image: /media/img_0490.jpg
+    title: Lona
+  - image: /media/img_0493.jpg
+    title: Lona
+  - image: /media/img_0491.jpg
+    title: Lona
+  - image: /media/img_0510.jpg
+    title: Lona
 prices:
   - budget: true
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
-    name: Panel fotocromado v2
-    price: 12.22
+    description: 'Lona mesh, especial para eventos en exterior, escenarios, fachadas, ...'
+    name: 'Lona microperforada (Precio desde:)'
+    price: 8
     template: |-
-      Indicar lo siguiente:
+      Necesitamos saber:
 
-      - Metros cuadrados:
-      - Número de colores:
-      - Acabado:
+      - Largo:
+      - Alto:
+      - Refuerzo para exterior?:
     unit: €
   - budget: true
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
@@ -62,3 +62,4 @@ prices:
 related_projects:
   - project: Paneles pirolíticos
 ---
+
