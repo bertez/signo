@@ -2,7 +2,7 @@
 template: service
 title: Corpóreos
 picture: /media/img-2063.jpg
-short_description: 'En PVC, corcho, madera, ...'
+short_description: 'En PVC, corcho, madera, metal, ...'
 description: >-
   Fabricamos rótulos y logotipos corpóreos en múltiples materiales y acabados.
   Tanto para su utilización en interior como en exterior, con posibilidad de
@@ -12,6 +12,17 @@ description: >-
   El corpóreo es un elemento con gran fuerza visual, muy utilizado en todos los
   ámbitos, photocalls, decoración, ambientación de eventos, cine y televisión,
   ...
+gallery:
+  - image: /media/20160702_185356.jpg
+    title: Letras gigantes de hierro con leds
+  - image: /media/Foto_17.jpg
+    title: Letras gigantes de bombillas
+  - image: /media/corporea_3.jpg
+    title: Letras en aluminio con carátula luminosa
+  - image: /media/img_5810.jpg
+    title: Letras de PVC
+  - image: /media/img_5636.jpg
+    title: Letras de inox
 prices: []
 ---
 
