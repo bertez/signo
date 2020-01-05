@@ -35,6 +35,6 @@ gallery:
     title: Micrófono gigante Monster
 prices: []
 related_projects:
-  - project: Guitarra SteamPunk
+  - project: Guitarra gigante
 ---
 
