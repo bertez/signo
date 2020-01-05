@@ -3,7 +3,9 @@ template: project
 title: Escultura MötorHead
 tagline: >-
   Escultura homenaje MötorHead, fabricada para la ambientación de Resurrection
-  Fest
+  Fest. Para su fabricación hemos utilizado bloques de poliestireno, sobre los
+  que se ha esbozado la figura, para posteriormente tallar las formas. En el
+  siguiente paso se aplicó una capa de fibra y se remató con pintura.
 highlight: true
 related_client: Resurrection Fest Viveiro
 picture: /media/img_20160705_162931.jpg
@@ -24,7 +26,7 @@ gallery:
     title: Escultura MötorHead
   - image: /media/20160622_124510.jpg
     title: Escultura MötorHead
-  - image: /media/20160622_124510.jpg
+  - image: /media/img_20160623_173219.jpg
     title: Escultura MötorHead
   - image: /media/20160623_141423.jpg
     title: Escultura MötorHead
