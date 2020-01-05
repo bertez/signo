@@ -33,12 +33,25 @@ details:
       Esta lona se imprimió con equipos eco-solventes, utilizando lona fundida
       para la unión de los paños. Las dimensiones finales fueron 80m de largo
       por 9,80m de alto, con un peso total de 380kg.
-    title: Trabajos guaises
-  - image: /media/sample-computer.jpg
+    title: Lona interior
+  - image: /media/img_0124.jpg
     text: >-
-      Praesent eleifend massa molestie, dignissim arcu at, vehicula dolor.
-      Aenean finibus bibendum ipsum elementum ultricies.
-    title: Rotulos sin fin
+      El club de futbol Real Oviedo, de Asturias, nos pidió instalar unas lonas
+      promocionales alrededor de la pantalla gigante y video marcador ubicado en
+      uno de los fondos del estadio.
+
+
+      Optamos por una lona fundida, con doble refuerzo perimetral y ollaos TIR.
+
+
+      Para su instalación fue necesaria la colaboración de un técnico en
+      escalada y trabajos en altura, que se descolgó desde la parte superior de
+      la estructura.
+
+
+      En este estadio también instalamos toda la franja promocional del primer
+      anfiteatro y paneles publicitarios  pié de campo.
+    title: Lona marcador
 gallery:
   - image: /media/img_0486.jpg
     title: Lona
