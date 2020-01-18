@@ -24,14 +24,15 @@ sections:
     title: Tallando poliestireno
     type: video
     video: zh5DVNxQlSU
-  - image: /media/img_0895.jpg
-    text: Detalle de construcción
-    type: image
-    video: vlRJgVsqjVA
   - text: Tallando la mano de uno de los guardianes.
     title: Tallando poliestireno con cuchillo eléctrico
     type: video
-    video: 'https://www.youtube.com/watch?v=vlRJgVsqjVA'
+    video: vlRJgVsqjVA
+  - image: /media/img_0895.jpg
+    text: Despiece de uno de los guardianes
+    title: Despiece de uno de los guardianes
+    type: image
+    video: vlRJgVsqjVA
 gallery:
   - image: /media/boceto-para-escultura-lobo-resurrectionfest-.jpg
     title: Boceto Lobo
