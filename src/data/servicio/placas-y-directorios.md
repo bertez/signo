@@ -16,6 +16,8 @@ details: []
 gallery:
   - image: /media/img_6553.jpg
     title: Placa de aluminio composite
+  - image: /media/numeros_hotel_luz.jpg
+    title: Placa de metacrilato para hotel
 prices: []
 ---
 
