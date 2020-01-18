@@ -28,6 +28,9 @@ sections:
     text: Detalle de construcción
     type: image
     video: vlRJgVsqjVA
+  - text: Tallando la mano de uno de los guardianes.
+    type: video
+    video: 'https://www.youtube.com/watch?v=vlRJgVsqjVA'
 gallery:
   - image: /media/boceto-para-escultura-lobo-resurrectionfest-.jpg
     title: Boceto Lobo
