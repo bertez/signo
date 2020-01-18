@@ -20,6 +20,12 @@ gallery:
     title: Placa de metacrilato para hotel
   - image: /media/img-7523.jpg
     title: Placa de inox grabada láser
+  - image: /media/placa-inox-y-vinilo.jpg
+    title: Placa inox y vinilo
+  - image: /media/dscf0482.jpg
+    title: Placa metacrilato y corpóreas
+  - image: /media/placa-de-aluminio.jpg
+    title: Placa de aluminio
 prices: []
 ---
 
