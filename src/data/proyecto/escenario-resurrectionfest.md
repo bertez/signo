@@ -29,6 +29,7 @@ sections:
     type: image
     video: vlRJgVsqjVA
   - text: Tallando la mano de uno de los guardianes.
+    title: Tallando poliestireno con cuchillo eléctrico
     type: video
     video: 'https://www.youtube.com/watch?v=vlRJgVsqjVA'
 gallery:
