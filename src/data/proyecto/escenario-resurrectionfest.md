@@ -3,7 +3,9 @@ template: project
 title: Resurrection Fest
 seo_description: Ambientación y decoración ResurrectionFest
 seo_image: /media/20170623_141558.jpg
-tagline: Somos la empresa de ambientación de Resurrection Fest
+tagline: >-
+  Somos la empresa de ambientación de Resurrection Fest. Proponemos ideas,
+  desarrollamos el proyecto y lo instalamos.
 highlight: true
 related_client: Resurrection Fest Viveiro
 picture: /media/img_1641.jpg
