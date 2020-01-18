@@ -58,7 +58,7 @@ links:
     source: El progreso de Lugo
     url: >-
       https://www.elprogreso.es/articulo/noticias/el-resurrection-espera-un-millon-de-euros-mas-de-negocio-en-esta-duodecima-edicion/20170617000000408223.html
-  - cite: Moi bonito todo otra vez
+  - cite: Empresas como el Grupo Futures dan vida a la Resurrection Fest City
     date: 2016-05-06T22:00:00.000Z
     source: La voz de galicia
     url: >-
