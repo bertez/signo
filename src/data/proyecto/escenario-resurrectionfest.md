@@ -51,14 +51,14 @@ gallery:
     title: 'Detalle mano guardián, primera capa de pintura'
 links:
   - cite: Somos la empresa de decoración y ambientación en Resurrection Fest
-    date: 2019-11-05T09:32:03.242Z
+    date: 2017-06-17T08:32:03.242Z
     source: El progreso de Lugo
     url: >-
       https://www.elprogreso.es/articulo/noticias/el-resurrection-espera-un-millon-de-euros-mas-de-negocio-en-esta-duodecima-edicion/20170617000000408223.html
   - cite: Moi bonito todo otra vez
-    date: 2019-11-05T09:32:03.242Z
+    date: 2016-05-06T22:00:00.000Z
     source: La voz de galicia
     url: >-
-      https://www.lavozdegalicia.es/noticia/elecciones/2019/11/05/verdades-mentiras-debate/00031572914180193439805.htm
+      https://www.lavozdegalicia.es/noticia/amarina/2016/07/05/viveiro-territorio-resu/0003_201607X5C2991.htm
 ---
 
