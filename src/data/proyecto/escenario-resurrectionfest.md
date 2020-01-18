@@ -50,13 +50,11 @@ gallery:
   - image: /media/mano_guardian.jpg
     title: 'Detalle mano guardián, primera capa de pintura'
 links:
-  - cite: >-
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatum
-      autem ex? Exercitationem impedit, sed beatae autem ut quasi totam?
+  - cite: Somos la empresa de decoración y ambientación en Resurrection Fest
     date: 2019-11-05T09:32:03.242Z
-    source: La voz de galicia
+    source: El progreso de Lugo
     url: >-
-      https://lavozdegalicia.es/noticia/elecciones/2019/11/05/verdades-mentiras-debate/00031572914180193439805.htm
+      https://www.elprogreso.es/articulo/noticias/el-resurrection-espera-un-millon-de-euros-mas-de-negocio-en-esta-duodecima-edicion/20170617000000408223.html
   - cite: Moi bonito todo otra vez
     date: 2019-11-05T09:32:03.242Z
     source: La voz de galicia
