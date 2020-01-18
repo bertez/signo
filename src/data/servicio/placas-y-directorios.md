@@ -18,6 +18,8 @@ gallery:
     title: Placa de aluminio composite
   - image: /media/numeros_hotel_luz.jpg
     title: Placa de metacrilato para hotel
+  - image: /media/img-7523.jpg
+    title: Placa de inox grabada láser
 prices: []
 ---
 
