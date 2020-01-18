@@ -7,7 +7,8 @@ tagline: >-
   Somos Signo. Ideamos, proyectamos, construimos, comercializamos e instalamos
   todo tipo de elementos de comunicación visual. Queremos ser tu equipo creativo
   y tu centro de producción. Date una vuelta por nuestra web y mira nuestro
-  trabajo, y si te apetece déjanos tu opinión.
+  trabajo. Si te gusta, y crees que podemos hacer algo bonito para ti, puedes
+  ponerte en contacto con nosotros y en breve estaremos hablado de tu proyecto.
 related_projects:
   - project: Resurrection Fest
 services_intro: >-
@@ -22,3 +23,4 @@ company_intro: >-
   personalidad.
 company_picture: /media/logo-signo-construcciones-singulares_web.jpg
 ---
+
