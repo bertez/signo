@@ -13,11 +13,12 @@ short_description: Hemos ambientado el escenario de Resurrection Fest
 sections:
   - image: /media/img_2805.jpg
     text: >-
-      Un encargo muy especial para nosotros. Agradecemos muchísimo la confianza
-      para desarrollar un proyecto tan importante como la ambientación del Main
-      Stage en un festival del nivel de Resurrection Fest. Hemos puesto todo
-      nuestro mejor hacer, esfuerzo y toda nuestra creatividad, para desarrollar
-      una de nuestras mejores creaciones. Estamos muy contentos del resultado.
+      Un encargo muy especial para nosotros. Tener la confianza de la dirección
+      del festival, para desarrollar un proyecto tan importante como la
+      ambientación del Main Stage, en un festival del nivel internacional como
+      de Resurrection Fest, es un orgullo y un reto. Hemos puesto todo nuestro
+      mejor hacer, esfuerzo y toda nuestra creatividad, para desarrollar una de
+      nuestras mejores creaciones. Estamos muy contentos con el resultado.
     title: Escenario
     type: text
   - text: Detalle construcción guardianes escenario
