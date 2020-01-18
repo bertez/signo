@@ -13,7 +13,7 @@ related_projects:
   - project: Resurrection Fest
 services_intro: >-
   Nuestros servicios son múltiples y los adaptamos a las necesidades específicas
-  de cada cliente.
+  de cada cliente. Háblanos de lo que tu necesitas.
 company_intro: >-
   Signo forma parte de la estructura empresarial de Grupo Futures. Con mas de 25
   años de experiencia, y avalada por trabajos y resultados. Pese a este bagaje
