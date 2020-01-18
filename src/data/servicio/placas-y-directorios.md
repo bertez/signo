@@ -26,6 +26,10 @@ gallery:
     title: Placa metacrilato y corpóreas
   - image: /media/placa-de-aluminio.jpg
     title: Placa de aluminio
+  - image: /media/plano-xeral-situado-en-recepcio-n.jpg
+    title: Directorio de metacrilato
+  - image: /media/20150907_180249.jpg
+    title: Placa de madera fresada
 prices: []
 ---
 
