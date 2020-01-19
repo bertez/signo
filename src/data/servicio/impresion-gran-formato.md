@@ -63,6 +63,14 @@ gallery:
     title: Lona
   - image: /media/img_0510.jpg
     title: Lona
+  - image: /media/20150525_185115.jpg
+    title: Vinilo pared
+  - image: /media/rotulacio-n-de-pared.jpg
+    title: Vinilo de pared
+  - image: /media/valla-molineros.jpg
+    title: Valla rotulada con vinilo
+  - image: /media/20141021_095719.jpg
+    title: Vinilo impreso
 prices:
   - budget: true
     description: 'Lona mesh, especial para eventos en exterior, escenarios, fachadas, ...'
