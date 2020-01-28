@@ -11,6 +11,9 @@ description: >-
   también con otros fabricantes, pensando siempre en la mejor solución para
   nuestros clientes y en la mayor garantía en función de las diferentes
   aplicaciones.
+gallery:
+  - image: /media/7suwl.jpg
+    title: Rotulación de vehículos
 prices: []
 related_projects:
   - project: Guitarra SteamPunk
