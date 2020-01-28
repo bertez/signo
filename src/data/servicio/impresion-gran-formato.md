@@ -94,7 +94,6 @@ prices:
       - Alto:
       - Refuerzo para exterior?:
     unit: €
-related_projects:
-  - project: Paneles pirolíticos
+related_projects: []
 ---
 
