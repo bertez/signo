@@ -14,8 +14,9 @@ description: >-
 gallery:
   - image: /media/7suwl.jpg
     title: Rotulación de vehículos
+  - image: /media/20150525_185115.jpg
+    title: Rotulación pared interior
 prices: []
-related_projects:
-  - project: Guitarra SteamPunk
+related_projects: []
 ---
 
