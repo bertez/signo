@@ -16,6 +16,8 @@ gallery:
     title: Rotulación de vehículos
   - image: /media/20150525_185115.jpg
     title: Rotulación pared interior
+  - image: /media/rotulacio-n-vinilo-texturizado.jpg
+    title: Rotulación con vinilo texturizado
 prices: []
 related_projects: []
 ---
