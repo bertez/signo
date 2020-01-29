@@ -25,6 +25,10 @@ gallery:
     title: Banderola de lona
   - image: /media/banner_3.jpg
     title: Rótulo poliuretano + PVC
+  - image: /media/corpo-reo-interior-en-pvc.jpg
+    title: Corporeo de PVC
+  - image: /media/logo-en-inox.jpg
+    title: Corpóreo en inox
 prices: []
 ---
 
