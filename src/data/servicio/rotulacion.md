@@ -18,6 +18,8 @@ gallery:
     title: Rotulación pared interior
   - image: /media/rotulacio-n-vinilo-texturizado.jpg
     title: Rotulación con vinilo texturizado
+  - image: /media/rotulacio-n-integral.jpg
+    title: Rotulación integral
 prices: []
 related_projects: []
 ---
