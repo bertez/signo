@@ -21,6 +21,10 @@ gallery:
     title: Caja de luz en aluminio composite
   - image: /media/20151111_142235.jpg
     title: Rótulo fresado en madera
+  - image: /media/bandelora-de-lona.jpg
+    title: Banderola de lona
+  - image: /media/banner_3.jpg
+    title: Rótulo poliuretano + PVC
 prices: []
 ---
 
