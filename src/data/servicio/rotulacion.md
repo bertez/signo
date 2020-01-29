@@ -20,6 +20,8 @@ gallery:
     title: Rotulación con vinilo texturizado
   - image: /media/rotulacio-n-integral.jpg
     title: Rotulación integral
+  - image: /media/rotulacio-n-oficina-recepcio-n-1.jpg
+    title: Rotulación oficina recepción
 prices: []
 related_projects: []
 ---
