@@ -40,5 +40,9 @@ gallery:
 prices: []
 related_projects:
   - project: Guitarra gigante
+  - project: Escultura MötorHead
+  - project: Escenario Festival Resurrection Fest
+  - project: Resurrection Fest
+  - project: Guitarra SteamPunk
 ---
 
