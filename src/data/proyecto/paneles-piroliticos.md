@@ -12,18 +12,11 @@ tagline: >-
 highlight: false
 related_client: Resurrection Fest Viveiro
 picture: /media/img-2826.jpg
-short_description: Descripción corta proyecto paneles
+short_description: Detalles de la fabricación del main stage de ResurrectionFest
 sections:
   - image: /media/sample-tablet.jpg
     type: image
-gallery:
-  - image: /media/sample-chip.jpg
-    title: foto
-links:
-  - cite: '"Grandes movidas locas"'
-    date: 2019-02-12T10:15:22.394Z
-    source: El pais
-    url: >-
-      https://elpais.com/internacional/2019/11/04/actualidad/1572897982_577464.html
+gallery: []
+links: []
 ---
 
