@@ -37,6 +37,35 @@ gallery:
     title: Guitarra
   - image: /media/img_2805.jpg
     title: Escenario
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_1.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_2.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_3.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_4.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_5.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_6.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_7.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_8.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_9.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_10.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_11.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_12.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_13.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_14.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_15.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_16.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_17.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_18.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_19.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_20.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_21.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_22.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_23.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_24.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_25.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_26.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_27.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_28.jpg
+  - image: /media/Construcciones_Singulares/Construcciones_Singulares_29.jpg
 prices: []
 related_projects:
   - project: Guitarra gigante
@@ -45,4 +74,3 @@ related_projects:
   - project: Resurrection Fest
   - project: Guitarra SteamPunk
 ---
-

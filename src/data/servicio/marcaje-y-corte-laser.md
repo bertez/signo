@@ -32,6 +32,15 @@ gallery:
     title: Detalle empresa grabado láser en rodaja de madera
   - image: /media/posavasos.jpg
     title: Posavasos madera
+  - image: /media/Marcarje_Corte_Laser/Marcarje_Corte_Laser_1.jpg
+  - image: /media/Marcarje_Corte_Laser/Marcarje_Corte_Laser_2.jpg
+  - image: /media/Marcarje_Corte_Laser/Marcarje_Corte_Laser_3.jpg
+  - image: /media/Marcarje_Corte_Laser/Marcarje_Corte_Laser_4.jpg
+  - image: /media/Marcarje_Corte_Laser/Marcarje_Corte_Laser_5.jpg
+  - image: /media/Marcarje_Corte_Laser/Marcarje_Corte_Laser_6.jpg
+  - image: /media/Marcarje_Corte_Laser/Marcarje_Corte_Laser_7.jpg
+  - image: /media/Marcarje_Corte_Laser/Marcarje_Corte_Laser_8.jpg
+  - image: /media/Marcarje_Corte_Laser/Marcarje_Corte_Laser_9.jpg
 prices:
   - budget: true
     description: Llaveros de madera cortados en láser
@@ -42,4 +51,3 @@ prices:
       oferta.
     unit: €
 ---
-

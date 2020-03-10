@@ -22,6 +22,7 @@ gallery:
     title: Mueble bajo expositor comercial
   - image: /media/img_0214.jpg
     title: Mueble bajo comercial
+  - image: /media/Muebles/Muebles_1.jpg
+  - image: /media/Muebles/Muebles_2.jpg
 prices: []
 ---
-

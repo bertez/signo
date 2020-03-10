@@ -49,7 +49,14 @@ gallery:
     title: Corpóreo de poliuretano pintado
   - image: /media/IMG_3728.JPG
     title: Letras de poliuretano alta densidad acabado metálico
+  - image: /media/Corporeos/Corporeos_2.jpg
+  - image: /media/Corporeos/Corporeos_3.jpg
+  - image: /media/Corporeos/Corporeos_4.jpg
+  - image: /media/Corporeos/Corporeos_5.jpg
+  - image: /media/Corporeos/Corporeos_6.jpg
+  - image: /media/Corporeos/Corporeos_7.jpg
+  - image: /media/Corporeos/Corporeos_8.jpg
+  - image: /media/Corporeos/Corporeos_9.jpg
 prices: []
 related_projects: []
 ---
-
