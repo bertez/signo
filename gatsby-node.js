@@ -32,7 +32,13 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       }
     } = page;
 
-    if (template && template !== 'client') {
+    if (
+      template &&
+      template !== 'client' &&
+      template !== 'shop-product' &&
+      template !== 'checkout' &&
+      template !== 'shop'
+    ) {
       createPage({
         path: slug,
         component: require.resolve(`./src/templates/${template}.jsx`),
