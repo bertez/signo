@@ -11,7 +11,12 @@ related_client: Resurrection Fest Viveiro
 picture: /media/img_20160705_162931.jpg
 short_description: >-
   Escultura MötorHead fabricada para la ambientación del festival
-  ResurrectionFest
+  ResurrectionFest. Todo un reto para nosotros. Nuestro primer trabajo a esta
+  dimensión, sin espacio, sin medios, solamente con una idea y un gran equipo.
+  Después de muchas horas de trabajo el resultado fue espectacular, y fue justo
+  en ese momento, cuando nos dimos cuenta de que no cabía por la puerta de la
+  nave. Gracias ala pericia de Jorge con la carretilla, conseguimos sacarla
+  fuera sin necesidad de desmontar los cuernos.
 sections: []
 gallery:
   - image: /media/20160620_183611.jpg
