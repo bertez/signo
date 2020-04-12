@@ -15,8 +15,8 @@ short_description: >-
   dimensión, sin espacio, sin medios, solamente con una idea y un gran equipo.
   Después de muchas horas de trabajo el resultado fue espectacular, y fue justo
   en ese momento, cuando nos dimos cuenta de que no cabía por la puerta de la
-  nave. Gracias ala pericia de Jorge con la carretilla, conseguimos sacarla
-  fuera sin necesidad de desmontar los cuernos.
+  nave. Gracias a la pericia del "Gran Jorge" con la carretilla, conseguimos
+  sacarla fuera sin necesidad de desmontar los cuernos.
 sections: []
 gallery:
   - image: /media/20160620_183611.jpg
