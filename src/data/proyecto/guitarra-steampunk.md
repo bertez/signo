@@ -32,7 +32,7 @@ sections:
     text: Guitarra
     title: Guitarras
     type: video
-    video: 'https://youtu.be/VQCF2whOvY4'
+    video: VQCF2whOvY4
 gallery:
   - image: /media/Guitarra_SteamPunk/Guitarra_SteamPunk_1.jpg
     title: Guitarra steampunk
