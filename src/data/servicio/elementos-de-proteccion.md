@@ -15,6 +15,8 @@ description: >-
 gallery:
   - image: /media/ugfx9127.jpg
     title: Mampara COVID-19
+  - image: /media/img_8319.jpg
+    title: Mampara COVID-19
 prices: []
 ---
 
