@@ -2,7 +2,7 @@
 template: service
 title: Elementos de protección
 picture: /media/ugfx9127.jpg
-short_description: 'Mamparas, pantallas separadoras fabricadas a medida para todo tipo de negocios'
+short_description: Mamparas y pantallas separadoras fabricadas a medida
 description: >-
   Desde el principio de la pandemia provocada por el COVID-19, nos hemos volcado
   en la fabricación de elementos de protección, señalización y separación de
