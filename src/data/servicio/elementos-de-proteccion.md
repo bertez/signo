@@ -17,6 +17,8 @@ gallery:
     title: Mampara COVID-19
   - image: /media/img_8319.jpg
     title: Mampara COVID-19
+  - image: /media/img_8348.jpg
+    title: Vinilos señalización distancia mínima
 prices: []
 ---
 
