@@ -8,9 +8,9 @@ tagline: >-
   y proyectos con personalidad propia. Nos gusta lo que hacemos y nos gusta que
   nuestro trabajo satisfaga las necesidades de nuestros clientes.
 contact_info: |-
-  Barrio Plantío s/n
+  Poligono de Camba, Parcela 55
 
-  27863 Celeiro - Viveiro (Lugo)
+  27870 Xuances, Xove (Lugo)
 
   982 989 110 - 658 76 91 26
 map: >-
