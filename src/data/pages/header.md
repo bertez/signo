@@ -6,13 +6,12 @@ dossier:
   title: Dossier 2020
 social:
   - handle: '@grupofutures'
-    network: twitter
-    url: 'https://twitter.com/grupofutures'
+    network: youtube
+    url: 'https://www.youtube.com/channel/UCyU6pdNzQoPi_YogGm8pqDQ'
   - handle: grupofutures
     network: instagram
     url: 'https://instagram.com/grupofutures'
   - handle: '@grupofutures'
     network: facebook
-    url: facebook.com/grupofutures.com
+    url: https://facebook.com/grupofutures
 ---
-

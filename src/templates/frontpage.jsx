@@ -17,7 +17,7 @@ export default function Frontpage({ data }) {
     page: { frontmatter },
     clients: { edges: clients },
     services: { edges: services },
-    products: { edges: products }
+    products: { edges: products },
   } = data;
 
   return (
@@ -31,13 +31,9 @@ export default function Frontpage({ data }) {
 
       <section className="ly-projects-featured">
         <ProjectList
-          projects={frontmatter.related_projects.map(r => r.project)}
+          projects={frontmatter.related_projects.map((r) => r.project)}
           description={false}
         />
-      </section>
-
-      <section className="ly-clients">
-        <ClientList clients={clients} />
       </section>
 
       {/* Services intro */}
@@ -62,6 +58,10 @@ export default function Frontpage({ data }) {
             <Img sizes={frontmatter.company_picture.childImageSharp.sizes} />
           </figure>
         </header>
+      </section>
+
+      <section className="ly-clients">
+        <ClientList clients={clients} />
       </section>
 
       <section className="ly-products-list">

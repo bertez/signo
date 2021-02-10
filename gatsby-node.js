@@ -28,8 +28,8 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       node: {
         id,
         fields: { slug },
-        frontmatter: { template, stripe_code }
-      }
+        frontmatter: { template, stripe_code },
+      },
     } = page;
 
     if (
@@ -44,18 +44,23 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
         component: require.resolve(`./src/templates/${template}.jsx`),
         context: {
           id,
-          stripe_code
-        }
+          stripe_code,
+        },
       });
     }
   }
+
+  createPage({
+    path: '/covid19',
+    component: require.resolve('./src/templates/covid.jsx'),
+  });
 };
 
 exports.onCreateNode = ({
   node,
   getNode,
   getNodes,
-  actions: { createNodeField }
+  actions: { createNodeField },
 }) => {
   fmImagesToRelative(node);
 
@@ -66,7 +71,7 @@ exports.onCreateNode = ({
     createNodeField({
       node,
       name: 'slug',
-      value: slug
+      value: slug,
     });
   }
 };

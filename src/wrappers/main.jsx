@@ -10,7 +10,8 @@ import xunta from '../img/xunta.svg';
 
 import { Cart, CartIcon } from '../components/cart';
 
-export default function MainWrapper({ children }) {
+export default function MainWrapper({ path, children }) {
+  console.log(path);
   const data = useStaticQuery(graphql`
     {
       header: markdownRemark(fileAbsolutePath: { regex: "/header.md/" }) {
@@ -19,9 +20,7 @@ export default function MainWrapper({ children }) {
           phone
           address
           dossier {
-            file {
-              publicURL
-            }
+            file
             title
           }
           social {
@@ -52,13 +51,18 @@ export default function MainWrapper({ children }) {
 
   const {
     header: { frontmatter: headerData },
-    services: { edges: services }
+    services: { edges: services },
   } = data;
 
   const [menuVisible, toggleMenu] = useState(false);
 
   return (
     <>
+      {path !== '/covid19' && (
+        <div className="covid-banner">
+          Especial protección COVID-19 <a href="/covid19">Ver productos</a>
+        </div>
+      )}
       <header className="main">
         <nav className="utility">
           <ul>
@@ -67,7 +71,7 @@ export default function MainWrapper({ children }) {
             </li>
             <li className="dossier">
               <a
-                href={headerData.dossier.file.publicURL}
+                href={headerData.dossier.file}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -77,7 +81,7 @@ export default function MainWrapper({ children }) {
           </ul>
 
           <ul>
-            {headerData.social.map(social => (
+            {headerData.social.map((social) => (
               <li key={social.url}>
                 <a
                   href={social.url}
@@ -150,7 +154,7 @@ export default function MainWrapper({ children }) {
           </ul>
 
           <ul>
-            {services.map(service => (
+            {services.map((service) => (
               <li key={service.node.id}>
                 <Link to={service.node.fields.slug}>
                   {service.node.frontmatter.title}

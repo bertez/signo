@@ -11,7 +11,7 @@ export default function Projects({ data }) {
   const {
     page: { frontmatter },
     projects: { edges: projects },
-    clients: { edges: clients }
+    clients: { edges: clients },
   } = data;
 
   return (
@@ -22,19 +22,19 @@ export default function Projects({ data }) {
         <Md>{frontmatter.tagline}</Md>
       </header>
 
-      <section className="ly-clients">
-        <ClientList clients={clients} />
-      </section>
-
       <section className="ly-projects-big">
         {/* Featured */}
         <ProjectList
           more={false}
           link={true}
           projects={projects
-            .filter(project => project.node.frontmatter.highlight)
-            .map(project => project.node)}
+            .filter((project) => project.node.frontmatter.highlight)
+            .map((project) => project.node)}
         />
+      </section>
+
+      <section className="ly-clients">
+        <ClientList clients={clients} />
       </section>
 
       <section className="ly-projects-list">
@@ -44,8 +44,8 @@ export default function Projects({ data }) {
           more={false}
           size="small"
           projects={projects
-            .filter(project => !project.node.frontmatter.highlight)
-            .map(project => project.node)}
+            .filter((project) => !project.node.frontmatter.highlight)
+            .map((project) => project.node)}
         />
       </section>
     </article>
