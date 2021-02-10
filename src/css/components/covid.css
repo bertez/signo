@@ -1,0 +1,23 @@
+.content-covid {
+  & .covid-download {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    & a {
+      background: black;
+      text-align: center;
+      color: white;
+      display: inline-block;
+      margin: 0 auto;
+      padding: 1rem;
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      font-weight: bold;
+    }
+  }
+
+  & figure img {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+}
