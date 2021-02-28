@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 import SEO from '../components/SEO.jsx';
 import Md from '../helpers/markdown.jsx';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 import { ProjectSection } from '../components/project-section.jsx';
 import { Gallery } from '../components/gallery.jsx';
@@ -11,7 +11,7 @@ import { Cites } from '../components/cites.jsx';
 
 export default function Project({ data }) {
   const {
-    page: { frontmatter }
+    page: { frontmatter },
   } = data;
 
   return (
@@ -23,7 +23,7 @@ export default function Project({ data }) {
       </header>
 
       <figure>
-        <Img
+        <GatsbyImage
           sizes={frontmatter.picture.childImageSharp.sizes}
           alt={frontmatter.title}
         />

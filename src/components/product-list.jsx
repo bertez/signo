@@ -1,18 +1,22 @@
 import React from 'react';
 
 import { Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Slider from './slider.jsx';
 
 export function ProductList({ products }) {
   return (
     <ul>
-      {products.map(product => (
+      {products.map((product) => (
         <li key={product.node.fields.slug}>
           <figure>
             <Link to={product.node.fields.slug}>
-              <Img
-                sizes={product.node.frontmatter.picture.childImageSharp.sizes}
+              <GatsbyImage
+                alt={product.node.frontmatter.title}
+                image={
+                  product.node.frontmatter.picture.childImageSharp
+                    .gatsbyImageData
+                }
               />
             </Link>
           </figure>
@@ -36,12 +40,13 @@ export function ProductListSlider({ products }) {
   return (
     <>
       <Slider name="products" arrows>
-        {products.map(product => (
+        {products.map((product) => (
           <div key={product.node.fields.slug}>
             <Link to={product.node.fields.slug}>
-              <Img
-                sizes={
-                  product.node.frontmatter.alt_picture.childImageSharp.sizes
+              <GatsbyImage
+                image={
+                  product.node.frontmatter.alt_picture.childImageSharp
+                    .gatsbyImageData
                 }
                 alt={product.node.frontmatter.title}
               />
