@@ -6,7 +6,7 @@ import Md from '../helpers/markdown.jsx';
 
 export default function Projects({ data }) {
   const {
-    page: { frontmatter }
+    page: { frontmatter },
   } = data;
 
   return (

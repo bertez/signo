@@ -8,10 +8,9 @@ import '../css/base.css';
 import signo from '../img/signo.svg';
 import xunta from '../img/xunta.svg';
 
-import { Cart, CartIcon } from '../components/cart';
+//import { Cart, CartIcon } from '../components/cart';
 
 export default function MainWrapper({ path, children }) {
-  console.log(path);
   const data = useStaticQuery(graphql`
     {
       header: markdownRemark(fileAbsolutePath: { regex: "/header.md/" }) {
@@ -20,7 +19,9 @@ export default function MainWrapper({ path, children }) {
           phone
           address
           dossier {
-            file
+            file {
+              publicURL
+            }
             title
           }
           social {
@@ -71,7 +72,7 @@ export default function MainWrapper({ path, children }) {
             </li>
             <li className="dossier">
               <a
-                href={headerData.dossier.file}
+                href={headerData.dossier.file.publicURL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -144,9 +145,6 @@ export default function MainWrapper({ path, children }) {
               <Link to="/construcciones-singulares">
                 Construcciones singulares
               </Link>
-            </li>
-            <li>
-              <Link to="/tienda">Tienda Online</Link>
             </li>
             <li>
               <Link to="/empresa">Sobre Signo</Link>

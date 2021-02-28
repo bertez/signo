@@ -67,4 +67,3 @@ links:
     url: >-
       https://www.lavozdegalicia.es/noticia/amarina/2016/07/05/viveiro-territorio-resu/0003_201607X5C2991.htm
 ---
-

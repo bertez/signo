@@ -9,7 +9,7 @@ import { ProductList, ProductListSlider } from '../components/product-list';
 export default function Products({ data }) {
   const {
     page: { frontmatter },
-    products: { edges: products }
+    products: { edges: products },
   } = data;
 
   return (
@@ -23,7 +23,7 @@ export default function Products({ data }) {
       <section className="ly-products-big">
         <ProductList
           products={products.filter(
-            product => product.node.frontmatter.highlight
+            (product) => product.node.frontmatter.highlight
           )}
         />
       </section>
@@ -34,7 +34,7 @@ export default function Products({ data }) {
         </header>
         <ProductListSlider
           products={products.filter(
-            product => !product.node.frontmatter.highlight
+            (product) => !product.node.frontmatter.highlight
           )}
         />
       </section>

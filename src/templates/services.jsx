@@ -9,7 +9,7 @@ import { ServiceList } from '../components/service-list.jsx';
 export default function Projects({ data }) {
   const {
     page: { frontmatter },
-    services: { edges: services }
+    services: { edges: services },
   } = data;
 
   return (

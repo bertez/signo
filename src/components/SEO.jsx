@@ -26,15 +26,15 @@ const SEO = ({ pageData }) => {
         titleTemplate,
         defaultDescription,
         url,
-        defaultImage
-      }
-    }
+        defaultImage,
+      },
+    },
   } = data;
 
   //Page data
   const {
     fields: { slug },
-    frontmatter: { title, seo_description: description, seo_image: image }
+    frontmatter: { title, seo_description: description, seo_image: image },
   } = pageData;
 
   const SEO_title = title || defaultTitle;

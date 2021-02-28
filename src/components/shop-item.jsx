@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 
 import { Link } from 'gatsby';
 
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import { formatPrice } from '../helpers/currency';
 import { CartContext } from '../provider/CartContext.jsx';
@@ -50,7 +50,7 @@ export function ShopItemList({ items }) {
             <h3>{node.frontmatter.title}</h3>
             <figure>
               <Link to={node.fields.slug}>
-                <Img sizes={node.frontmatter.picture.childImageSharp.sizes} />
+                <GatsbyImage sizes={node.frontmatter.picture.childImageSharp.sizes} />
               </Link>
             </figure>
           </header>

@@ -18,7 +18,7 @@ export default function Covid() {
         <img src="/media/distancia.jpg" alt="Especial COVID19" />
       </figure>
 
-      <section class="covid-download">
+      <section className="covid-download">
         <a href="/media/signo-covid.pdf">
           Descarga oferta de productos de protección
         </a>

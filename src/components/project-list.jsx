@@ -1,19 +1,22 @@
 import React from 'react';
 
 import { Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 export const FeaturedProject = React.memo(function FeaturedProject({
   project,
   link,
   size = 'big',
-  description
+  description,
 }) {
   return (
     <>
       <figure className="project-image">
         <Link to={project.fields.slug}>
-          <Img sizes={project.frontmatter.picture.childImageSharp[size]} />
+          <GatsbyImage
+            image={project.frontmatter.picture.childImageSharp.gatsbyImageData}
+            alt={project.frontmatter.title}
+          />
         </Link>
       </figure>
       <section className="project-info">
@@ -41,12 +44,12 @@ export const ProjectList = React.memo(function ProjectList({
   more = false,
   link = false,
   description = true,
-  size = 'big'
+  size = 'big',
 }) {
   return (
     <>
       <ul>
-        {projects.map(project => (
+        {projects.map((project) => (
           <li className="project" key={project.fields.slug}>
             <FeaturedProject
               project={project}

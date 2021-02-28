@@ -1,14 +1,17 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 export function ClientList({ clients }) {
   return (
     <>
       <ul>
-        {clients.map(client => (
+        {clients.map((client) => (
           <li className="client" key={client.node.fields.slug}>
-            <Img
-              sizes={client.node.frontmatter.picture.childImageSharp.sizes}
+            <GatsbyImage
+              alt={client.node.frontmatter.title}
+              image={
+                client.node.frontmatter.picture.childImageSharp.gatsbyImageData
+              }
             />
             {/* <h2>{client.node.frontmatter.title}</h2> */}
           </li>

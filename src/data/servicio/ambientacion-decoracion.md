@@ -1,7 +1,7 @@
 ---
 template: service
 title: 'Ambientación, decoración'
-seo_image: ''
+seo_image: null
 picture: /media/ambientacion-decoracion.jpg
 short_description: 'Ambientación, decoración'
 description: >-
@@ -12,4 +12,3 @@ description: >-
   te encaja, empezamos a trabajar.
 prices: []
 ---
-

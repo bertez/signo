@@ -5,7 +5,7 @@ import SEO from '../components/SEO.jsx';
 import Md from '../helpers/markdown.jsx';
 
 import { Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 import { ProjectList } from '../components/project-list.jsx';
 import { ClientList } from '../components/client-list.jsx';
@@ -55,7 +55,12 @@ export default function Frontpage({ data }) {
             <Link to="/empresa">Más info</Link>
           </section>
           <figure>
-            <Img sizes={frontmatter.company_picture.childImageSharp.sizes} />
+            <GatsbyImage
+              alt={frontmatter.company_name}
+              image={
+                frontmatter.company_picture.childImageSharp.gatsbyImageData
+              }
+            />
           </figure>
         </header>
       </section>
@@ -96,9 +101,7 @@ export const query = graphql`
               }
               picture {
                 childImageSharp {
-                  big: sizes(maxWidth: 1440) {
-                    ...GatsbyImageSharpSizes
-                  }
+                  gatsbyImageData(layout: CONSTRAINED)
                 }
               }
             }
@@ -116,11 +119,10 @@ export const query = graphql`
         tagline
         services_intro
         company_intro
+        company_name
         company_picture {
           childImageSharp {
-            sizes(maxWidth: 800) {
-              ...GatsbyImageSharpSizes
-            }
+            gatsbyImageData(layout: CONSTRAINED, width: 800)
           }
         }
       }
@@ -137,9 +139,7 @@ export const query = graphql`
             title
             picture {
               childImageSharp {
-                sizes(maxWidth: 300) {
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }
@@ -159,9 +159,7 @@ export const query = graphql`
             short_description
             picture {
               childImageSharp {
-                sizes(maxWidth: 800) {
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }
@@ -183,9 +181,7 @@ export const query = graphql`
             short_description
             alt_picture {
               childImageSharp {
-                sizes(maxWidth: 400) {
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }

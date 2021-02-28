@@ -32,7 +32,10 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       },
     } = page;
 
+    //    console.log(slug);
+
     if (
+      // slug === '/covid'
       template &&
       template !== 'client' &&
       template !== 'shop-product' &&

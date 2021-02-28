@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Slider from '../components/slider.jsx';
 
 import SEO from '../components/SEO.jsx';
@@ -11,7 +11,7 @@ import { Cites } from '../components/cites.jsx';
 
 export default function Company({ data }) {
   const {
-    page: { frontmatter }
+    page: { frontmatter },
   } = data;
 
   return (
@@ -37,10 +37,10 @@ export default function Company({ data }) {
         <section className="ly-company-team">
           <h2>Equipo</h2>
           <ul>
-            {frontmatter.team.map(person => (
+            {frontmatter.team.map((person) => (
               <li key={person.email}>
                 <figure>
-                  <Img sizes={person.picture.childImageSharp.sizes} />
+                  <GatsbyImage sizes={person.picture.childImageSharp.sizes} />
                   <h3>{person.name}</h3>
                   <p>{person.position}</p>
                 </figure>

@@ -1,6 +1,6 @@
 ---
 title: 'Especial proteccción COVID19'
-seo_image: ''
+seo_image: null
 picture: /media/ambientacion-decoracion.jpg
 short_description: 'Ambientación, decoración'
 description: >-

@@ -87,6 +87,9 @@ collections:
             name: services_intro
             widget: markdown
           - label: Entradilla empresa
+            name: company_name
+            widget: string
+          - label: Entradilla empresa
             name: company_intro
             widget: markdown
           - label: Imagen empresa

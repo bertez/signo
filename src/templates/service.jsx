@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import SEO from '../components/SEO.jsx';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Md from '../helpers/markdown.jsx';
 
 import { ServiceDetail } from '../components/service-detail.jsx';
@@ -12,7 +12,7 @@ import { ProjectList } from '../components/project-list.jsx';
 
 export default function Service({ data }) {
   const {
-    page: { frontmatter }
+    page: { frontmatter },
   } = data;
 
   return (
@@ -22,7 +22,7 @@ export default function Service({ data }) {
         <h2>{frontmatter.title}</h2>
       </header>
       <figure>
-        <Img
+        <GatsbyImage
           sizes={frontmatter.picture.childImageSharp.sizes}
           alt={frontmatter.title}
         />
@@ -66,7 +66,7 @@ export default function Service({ data }) {
           <ProjectList
             more={false}
             size="small"
-            projects={frontmatter.related_projects.map(r => r.project)}
+            projects={frontmatter.related_projects.map((r) => r.project)}
           />
         </section>
       )}
@@ -115,7 +115,6 @@ export const query = graphql`
             }
           }
         }
-
         picture {
           childImageSharp {
             sizes(maxWidth: 1440) {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Md from '../helpers/markdown.jsx';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 function TextSection({ section }) {
   return (
@@ -13,14 +13,12 @@ function TextSection({ section }) {
 }
 
 function ImageSection({ section }) {
-  return (
-    <>
-      <figure>
-        <Img sizes={section.image.childImageSharp.sizes} />
-      </figure>
-      {section.text && <Md>{section.text}</Md>}
-    </>
-  );
+  return <>
+    <figure>
+      <GatsbyImage sizes={section.image.childImageSharp.sizes} />
+    </figure>
+    {section.text && <Md>{section.text}</Md>}
+  </>;
 }
 
 function VideoSection({ section }) {

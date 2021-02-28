@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 import Slider from './slider.jsx';
 
@@ -10,10 +10,13 @@ export function ClientList({ clients }) {
         name="clients"
         settings={{ perPage: { 360: 2, 600: 4, 1200: 6 } }}
       >
-        {clients.map(client => (
+        {clients.map((client) => (
           <div className="client" key={client.node.fields.slug}>
-            <Img
-              sizes={client.node.frontmatter.picture.childImageSharp.sizes}
+            <GatsbyImage
+              alt={client.node.frontmatter.title}
+              image={
+                client.node.frontmatter.picture.childImageSharp.gatsbyImageData
+              }
             />
             {/* <h2>{client.node.frontmatter.title}</h2> */}
           </div>

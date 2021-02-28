@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 import SEO from '../components/SEO.jsx';
 
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import Md from '../helpers/markdown.jsx';
 
 import { Gallery } from '../components/gallery.jsx';
@@ -12,7 +12,7 @@ import { ProductListSlider } from '../components/product-list.jsx';
 export default function Product({ data }) {
   const {
     page: { frontmatter },
-    products: { edges: products }
+    products: { edges: products },
   } = data;
 
   return (
@@ -22,7 +22,7 @@ export default function Product({ data }) {
         <h2>{frontmatter.title}</h2>
       </header>
       <figure>
-        <Img sizes={frontmatter.picture.childImageSharp.sizes} />
+        <GatsbyImage sizes={frontmatter.picture.childImageSharp.sizes} />
       </figure>
 
       <section className="ly-text-block">
