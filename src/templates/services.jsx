@@ -59,9 +59,7 @@ export const query = graphql`
             short_description
             picture {
               childImageSharp {
-                sizes(maxWidth: 800) {
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }

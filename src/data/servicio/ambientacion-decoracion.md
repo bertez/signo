@@ -1,9 +1,9 @@
 ---
 template: service
-title: 'Ambientación, decoración'
-seo_image: null
-picture: /media/ambientacion-decoracion.jpg
-short_description: 'Ambientación, decoración'
+title: Ambientación, decoración
+seo_image: /media/ad.jpg
+picture: /media/ad.jpg
+short_description: Ambientación, decoración
 description: >-
   Ambientamos y decoramos locales comerciales, hostelería, ... Si te apetece un
   cambio de imagen, añadir un zona diferente, crear un nuevo ambiente o

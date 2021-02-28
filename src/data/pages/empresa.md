@@ -71,10 +71,9 @@ timeline:
       s/n 27863, Celeiro - Viveiro.
     year: 2016
 links:
-  - cite: '"Imprimen bien"'
+  - cite: '"Estos negocios se reinventaron con la pandemia y les va bien"'
     date: 2019-02-13T10:11:41.674Z
     source: La voz de galicia
     url: >-
-      https://www.lavozdegalicia.es/noticia/ourense/2019/11/06/jacome-propone-construir-ourense-mayor-rascacielos-espana/00031573036556246570366.htm
+      https://www.lavozdegalicia.es/noticia/amarina/2020/04/29/futures-vuelve-fabricar-mamparas-mes-incendio-arraso-nave/0003_202004X29C3996.htm
 ---
-

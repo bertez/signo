@@ -83,9 +83,7 @@ export const query = graphql`
             title
             picture {
               childImageSharp {
-                sizes(maxWidth: 400) {
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }
@@ -112,12 +110,7 @@ export const query = graphql`
             }
             picture {
               childImageSharp {
-                big: sizes(maxWidth: 1000) {
-                  ...GatsbyImageSharpSizes
-                }
-                small: sizes(maxWidth: 400) {
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }

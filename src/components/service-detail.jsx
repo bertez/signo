@@ -1,16 +1,21 @@
 import React from 'react';
 
 import Md from '../helpers/markdown.jsx';
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 export function ServiceDetail({ detail }) {
-  return <>
-    <h2>{detail.title}</h2>
+  return (
+    <>
+      <h2>{detail.title}</h2>
 
-    <figure>
-      <GatsbyImage sizes={detail.image.childImageSharp.sizes} />
-    </figure>
+      <figure>
+        <GatsbyImage
+          alt={detail.title}
+          image={detail.image.childImageSharp.gatsbyImageData}
+        />
+      </figure>
 
-    <Md>{detail.text}</Md>
-  </>;
+      <Md>{detail.text}</Md>
+    </>
+  );
 }

@@ -77,16 +77,12 @@ export const query = graphql`
             highlight
             alt_picture {
               childImageSharp {
-                sizes(maxWidth: 400) {
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
             picture {
               childImageSharp {
-                sizes(maxWidth: 1440) {
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }

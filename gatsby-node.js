@@ -13,7 +13,6 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
             }
             frontmatter {
               template
-              stripe_code
             }
           }
         }
@@ -28,7 +27,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
       node: {
         id,
         fields: { slug },
-        frontmatter: { template, stripe_code },
+        frontmatter: { template },
       },
     } = page;
 
@@ -47,7 +46,6 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
         component: require.resolve(`./src/templates/${template}.jsx`),
         context: {
           id,
-          stripe_code,
         },
       });
     }

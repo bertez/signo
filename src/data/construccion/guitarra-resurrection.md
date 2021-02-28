@@ -2,7 +2,7 @@
 template: product
 title: Guitarra
 seo_description: Guitarra gigante
-seo_image: /media/mini-sample-drone.jpg
+seo_image: /media/guitarra-resu.jpg
 highlight: true
 active: true
 picture: /media/guitarra-resu.jpg
@@ -38,4 +38,3 @@ buy_details: >-
   necesitas, nosotros podemos gestionar el transporte y la instalación.
   Consúltanos.
 ---
-

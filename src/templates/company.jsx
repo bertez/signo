@@ -40,7 +40,10 @@ export default function Company({ data }) {
             {frontmatter.team.map((person) => (
               <li key={person.email}>
                 <figure>
-                  <GatsbyImage sizes={person.picture.childImageSharp.sizes} />
+                  <GatsbyImage
+                    alt={person.name}
+                    image={person.picture.childImageSharp.gatsbyImageData}
+                  />
                   <h3>{person.name}</h3>
                   <p>{person.position}</p>
                 </figure>
@@ -105,9 +108,7 @@ export const query = graphql`
           email
           picture {
             childImageSharp {
-              sizes(maxWidth: 300) {
-                ...GatsbyImageSharpSizes
-              }
+              gatsbyImageData(layout: CONSTRAINED)
             }
           }
         }

@@ -1,7 +1,7 @@
 ---
 template: project
-title: Escenario Festival Resurrection Fest
-seo_description: Escenario Resurrection Fest
+title: Main stage de Resurrection Fest
+seo_description: Main stage de Resurrection Fest
 tagline: >-
   Decoración del Main stage de Resurrection Fest, con esculturas fabricadas en
   poliestireno, endurecidas con poliuretano proyectado y acabado en pintura.
@@ -19,4 +19,3 @@ sections:
 gallery: []
 links: []
 ---
-

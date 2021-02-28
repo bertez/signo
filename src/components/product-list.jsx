@@ -37,6 +37,7 @@ export function ProductList({ products }) {
 }
 
 export function ProductListSlider({ products }) {
+  console.log(products);
   return (
     <>
       <Slider name="products" arrows>

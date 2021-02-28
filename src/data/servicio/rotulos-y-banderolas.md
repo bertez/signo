@@ -1,7 +1,7 @@
 ---
 template: service
 title: Rótulos y banderolas
-seo_description: ''
+seo_description: Rótulos y banderolas
 picture: /media/img_6116.jpg
 short_description: 'Con y sin iluminación, en múltiples acabados'
 description: >-

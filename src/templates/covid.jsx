@@ -1,8 +1,5 @@
 import React from 'react';
 
-import SEO from '../components/SEO.jsx';
-import Md from '../helpers/markdown.jsx';
-
 export default function Covid() {
   return (
     <article className="content content-covid">

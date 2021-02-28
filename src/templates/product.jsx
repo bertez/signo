@@ -22,7 +22,10 @@ export default function Product({ data }) {
         <h2>{frontmatter.title}</h2>
       </header>
       <figure>
-        <GatsbyImage sizes={frontmatter.picture.childImageSharp.sizes} />
+        <GatsbyImage
+          alt={frontmatter.title}
+          image={frontmatter.picture.childImageSharp.gatsbyImageData}
+        />
       </figure>
 
       <section className="ly-text-block">
@@ -70,9 +73,7 @@ export const query = graphql`
         }
         picture {
           childImageSharp {
-            sizes(maxWidth: 1440) {
-              ...GatsbyImageSharpSizes
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         description
@@ -109,16 +110,12 @@ export const query = graphql`
             highlight
             alt_picture {
               childImageSharp {
-                sizes(maxWidth: 400) {
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
             picture {
               childImageSharp {
-                sizes(maxWidth: 1440) {
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }

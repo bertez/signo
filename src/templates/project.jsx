@@ -24,7 +24,7 @@ export default function Project({ data }) {
 
       <figure>
         <GatsbyImage
-          sizes={frontmatter.picture.childImageSharp.sizes}
+          image={frontmatter.picture.childImageSharp.gatsbyImageData}
           alt={frontmatter.title}
         />
       </figure>
@@ -79,9 +79,7 @@ export const query = graphql`
         tagline
         picture {
           childImageSharp {
-            sizes(maxWidth: 1440) {
-              ...GatsbyImageSharpSizes
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         sections {
@@ -91,9 +89,7 @@ export const query = graphql`
           video
           image {
             childImageSharp {
-              sizes(maxWidth: 1440) {
-                ...GatsbyImageSharpSizes
-              }
+              gatsbyImageData(layout: CONSTRAINED)
             }
           }
         }

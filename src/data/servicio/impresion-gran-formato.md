@@ -2,8 +2,9 @@
 template: service
 title: Impresión en gran formato
 seo_description: Impresión vinilo y lonas
+seo_image: /media/impresion-gran-formato.jpg
 picture: /media/impresion-gran-formato.jpg
-short_description: ' Vinilos, lonas y papel'
+short_description: Vinilos, lonas y papel
 description: >-
   Imprimimos lonas , vinilo y papel en todos los tamaños.
 
@@ -96,4 +97,3 @@ prices:
     unit: €
 related_projects: []
 ---
-

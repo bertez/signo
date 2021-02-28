@@ -12,13 +12,15 @@ export function ServiceList({ services }) {
             <li key={service.node.fields.slug}>
               <figure>
                 <Link to={service.node.fields.slug}>
-                  <GatsbyImage
-                    image={
-                      service.node.frontmatter.picture.childImageSharp
-                        .gatsbyImageData
-                    }
-                    alt={service.node.frontmatter.title}
-                  />
+                  {service.node.frontmatter.picture && (
+                    <GatsbyImage
+                      image={
+                        service.node.frontmatter.picture.childImageSharp
+                          .gatsbyImageData
+                      }
+                      alt={service.node.frontmatter.title}
+                    />
+                  )}
                 </Link>
               </figure>
               <section className="service-info">

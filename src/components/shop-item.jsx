@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 
 import { Link } from 'gatsby';
 
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 import { formatPrice } from '../helpers/currency';
 import { CartContext } from '../provider/CartContext.jsx';
@@ -16,7 +16,7 @@ export function ShopItemSkuList({ skus, materials }) {
         <li key={node.id}>
           <h3>{node.attributes.name}</h3>
           <p>Precio: {formatPrice(node.price, node.currency)}</p>
-          {cartCtxt.cart.items.find(i => i.sku === node.id) ? (
+          {cartCtxt.cart.items.find((i) => i.sku === node.id) ? (
             <button onClick={() => cartCtxt.toggleCart()}>
               ya en la cesta
             </button>
@@ -28,7 +28,7 @@ export function ShopItemSkuList({ skus, materials }) {
                   name: node.attributes.name,
                   price: node.price,
                   currency: node.currency,
-                  materials
+                  materials,
                 })
               }
             >
@@ -50,7 +50,10 @@ export function ShopItemList({ items }) {
             <h3>{node.frontmatter.title}</h3>
             <figure>
               <Link to={node.fields.slug}>
-                <GatsbyImage sizes={node.frontmatter.picture.childImageSharp.sizes} />
+                <GatsbyImage
+                  alt={node.frontmatter.title}
+                  sizes={node.frontmatter.picture.childImageSharp.GatsbyImage}
+                />
               </Link>
             </figure>
           </header>

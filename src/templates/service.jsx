@@ -23,7 +23,7 @@ export default function Service({ data }) {
       </header>
       <figure>
         <GatsbyImage
-          sizes={frontmatter.picture.childImageSharp.sizes}
+          image={frontmatter.picture.childImageSharp.gatsbyImageData}
           alt={frontmatter.title}
         />
       </figure>
@@ -107,9 +107,7 @@ export const query = graphql`
               }
               picture {
                 childImageSharp {
-                  small: sizes(maxWidth: 400) {
-                    ...GatsbyImageSharpSizes
-                  }
+                  gatsbyImageData(layout: CONSTRAINED)
                 }
               }
             }
@@ -117,9 +115,7 @@ export const query = graphql`
         }
         picture {
           childImageSharp {
-            sizes(maxWidth: 1440) {
-              ...GatsbyImageSharpSizes
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
         details {
@@ -127,9 +123,7 @@ export const query = graphql`
           text
           image {
             childImageSharp {
-              sizes(maxWidth: 700) {
-                ...GatsbyImageSharpSizes
-              }
+              gatsbyImageData(layout: CONSTRAINED)
             }
           }
         }

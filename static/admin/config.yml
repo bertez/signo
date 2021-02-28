@@ -576,9 +576,6 @@ collections:
         name: template
         widget: hidden
         default: shop-product
-      - label: Código Stripe
-        name: stripe_code
-        widget: string
       - label: Título
         name: title
         widget: string
