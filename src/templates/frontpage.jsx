@@ -1,16 +1,16 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 
-import SEO from '../components/SEO.jsx';
-import Md from '../helpers/markdown.jsx';
+import SEO from "../components/SEO.jsx";
+import Md from "../helpers/markdown.jsx";
 
-import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { Link } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
-import { ProjectList } from '../components/project-list.jsx';
-import { ClientList } from '../components/client-list.jsx';
-import { ServiceList } from '../components/service-list.jsx';
-import { ProductListSlider } from '../components/product-list.jsx';
+import { ProjectList } from "../components/project-list.jsx";
+import { ClientList } from "../components/client-list.jsx";
+import { ServiceList } from "../components/service-list.jsx";
+import { ProductListSlider } from "../components/product-list.jsx";
 
 export default function Frontpage({ data }) {
   const {

@@ -1,13 +1,13 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 
-import SEO from '../components/SEO.jsx';
-import Md from '../helpers/markdown.jsx';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import SEO from "../components/SEO.jsx";
+import Md from "../helpers/markdown.jsx";
+import { GatsbyImage } from "gatsby-plugin-image";
 
-import { ProjectSection } from '../components/project-section.jsx';
-import { Gallery } from '../components/gallery.jsx';
-import { Cites } from '../components/cites.jsx';
+import { ProjectSection } from "../components/project-section.jsx";
+import { Gallery } from "../components/gallery.jsx";
+import { Cites } from "../components/cites.jsx";
 
 export default function Project({ data }) {
   const {

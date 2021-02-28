@@ -1,7 +1,6 @@
 ---
 title: Especial proteccción COVID19
 seo_image: null
-picture: /media/ambientacion-decoracion.jpg
 short_description: Especial proteccción COVID19
 description: >-
   Elementos de protección y prevención relacionados con las nuevas

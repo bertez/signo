@@ -1,13 +1,13 @@
-import React, { useContext } from 'react';
-import { CartContext } from '../provider/CartContext.jsx';
-import { formatPrice } from '../helpers/currency';
-import { Link } from 'gatsby';
+import React, { useContext } from "react";
+import { CartContext } from "../provider/CartContext.jsx";
+import { formatPrice } from "../helpers/currency";
+import { Link } from "gatsby";
 
 function CartTable() {
   const cartCtxt = useContext(CartContext);
 
   const {
-    cart: { items }
+    cart: { items },
   } = cartCtxt;
 
   return (
@@ -21,7 +21,7 @@ function CartTable() {
           </tr>
         </thead>
         <tbody>
-          {items.map(item => (
+          {items.map((item) => (
             <tr key={item.sku}>
               <td>
                 {item.name}, {formatPrice(item.price, item.currency)}
@@ -31,7 +31,7 @@ function CartTable() {
                   type="number"
                   defaultValue={item.quantity}
                   min="1"
-                  onInput={e =>
+                  onInput={(e) =>
                     cartCtxt.updateItemCount(item.sku, e.target.value)
                   }
                 />
@@ -78,7 +78,7 @@ export function CartIcon() {
 export function Cart() {
   const cartCtxt = useContext(CartContext);
   return (
-    <section className={`ly-cart${cartCtxt.cart.visible ? ' visible' : ''}`}>
+    <section className={`ly-cart${cartCtxt.cart.visible ? " visible" : ""}`}>
       <h2>Tu compra</h2>
       {cartCtxt.cart.items.length > 0 ? <CartTable /> : <p>No hay productos</p>}
       <button onClick={() => cartCtxt.toggleCart()}>Volver</button>

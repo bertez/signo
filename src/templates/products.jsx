@@ -1,10 +1,10 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 
-import SEO from '../components/SEO.jsx';
-import Md from '../helpers/markdown.jsx';
+import SEO from "../components/SEO.jsx";
+import Md from "../helpers/markdown.jsx";
 
-import { ProductList, ProductListSlider } from '../components/product-list';
+import { ProductList, ProductListSlider } from "../components/product-list";
 
 export default function Products({ data }) {
   const {

@@ -1,42 +1,42 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 export default function Budget({
   service,
   product,
   description,
   template,
-  closeBudget
+  closeBudget,
 }) {
   const API_ENDPOINT = process.env.GATSBY_BUDGET_ENDPOINT;
 
   const [inputs, setInputs] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    comment: template || ''
+    name: "",
+    phone: "",
+    email: "",
+    comment: template || "",
   });
 
   const [finished, setFinished] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
-  const handleInputChange = e => {
+  const handleInputChange = (e) => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
   };
 
-  const handleFormSubmit = async e => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    setError('');
+    setError("");
 
     const payload = { service, product, description, ...inputs };
 
     try {
       const request = await fetch(API_ENDPOINT, {
-        method: 'POST',
-        mode: 'cors',
+        method: "POST",
+        mode: "cors",
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(payload),
       });
 
       if (request.ok) {
@@ -54,8 +54,8 @@ export default function Budget({
   return (
     <section
       className="ly-modal"
-      onClick={e => {
-        if (e.target.matches('.ly-modal')) {
+      onClick={(e) => {
+        if (e.target.matches(".ly-modal")) {
           closeBudget();
         }
       }}
@@ -129,7 +129,7 @@ export default function Budget({
               {error && <p className="error">{error}</p>}
 
               <p>
-                Al pulsar enviar aceptas las{' '}
+                Al pulsar enviar aceptas las{" "}
                 <a href="/nota-legal" target="_blank" rel="noopener noreferrer">
                   condiciones de servicio de Signo.
                 </a>

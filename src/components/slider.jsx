@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Siema from 'siema';
+import React, { Component } from "react";
+import Siema from "siema";
 
 export default class Slider extends Component {
   componentDidMount() {
@@ -9,9 +9,9 @@ export default class Slider extends Component {
       perPage: {
         480: 3,
         800: 4,
-        1200: 6
+        1200: 6,
       },
-      ...this.props.settings
+      ...this.props.settings,
     };
 
     this.siema = new Siema(settings);

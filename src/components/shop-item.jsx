@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 
-import { Link } from 'gatsby';
+import { Link } from "gatsby";
 
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
-import { formatPrice } from '../helpers/currency';
-import { CartContext } from '../provider/CartContext.jsx';
+import { formatPrice } from "../helpers/currency";
+import { CartContext } from "../provider/CartContext.jsx";
 
 export function ShopItemSkuList({ skus, materials }) {
   const cartCtxt = useContext(CartContext);

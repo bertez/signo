@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import Md from '../helpers/markdown.jsx';
+import Md from "../helpers/markdown.jsx";
 
 export function Cites({ links }) {
   return (

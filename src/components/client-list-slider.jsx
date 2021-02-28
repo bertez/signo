@@ -1,7 +1,7 @@
-import React from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
 
-import Slider from './slider.jsx';
+import Slider from "./slider.jsx";
 
 export function ClientList({ clients }) {
   return (

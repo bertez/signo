@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
-import Slider from './slider.jsx';
+import { Link } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
+import Slider from "./slider.jsx";
 
 export function ProductList({ products }) {
   return (
@@ -37,7 +37,6 @@ export function ProductList({ products }) {
 }
 
 export function ProductListSlider({ products }) {
-  console.log(products);
   return (
     <>
       <Slider name="products" arrows>

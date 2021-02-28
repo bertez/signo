@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import React, { useState } from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
-import { Link } from 'gatsby';
+import { Link } from "gatsby";
 
-import '../css/base.css';
+import "../css/base.css";
 
-import signo from '../img/signo.svg';
-import xunta from '../img/xunta.svg';
+import signo from "../img/signo.svg";
+import xunta from "../img/xunta.svg";
 
 //import { Cart, CartIcon } from '../components/cart';
 
@@ -59,7 +59,7 @@ export default function MainWrapper({ path, children }) {
 
   return (
     <>
-      {path !== '/covid19' && (
+      {path !== "/covid19" && (
         <div className="covid-banner">
           Especial protección COVID-19 <a href="/covid19">Ver productos</a>
         </div>
@@ -105,7 +105,7 @@ export default function MainWrapper({ path, children }) {
           <nav>
             <button
               className={`menu hamburger hamburger--spin ${
-                menuVisible ? 'is-active' : ''
+                menuVisible ? "is-active" : ""
               }`}
               type="button"
               onClick={() => toggleMenu(!menuVisible)}

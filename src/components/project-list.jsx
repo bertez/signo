@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { Link } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export const FeaturedProject = React.memo(function FeaturedProject({
   project,
   link,
-  size = 'big',
   description,
 }) {
   return (
@@ -44,7 +43,6 @@ export const ProjectList = React.memo(function ProjectList({
   more = false,
   link = false,
   description = true,
-  size = 'big',
 }) {
   return (
     <>
@@ -54,7 +52,6 @@ export const ProjectList = React.memo(function ProjectList({
             <FeaturedProject
               project={project}
               link={link}
-              size={size}
               description={description}
             />
           </li>

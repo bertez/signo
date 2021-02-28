@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import Budget from './budget.jsx';
+import Budget from "./budget.jsx";
 
 export function PriceTable({ prices, service }) {
   const [isBudgetActive, setBudgetActive] = useState(false);
@@ -30,7 +30,7 @@ export function PriceTable({ prices, service }) {
                         service: service,
                         product: price.name,
                         description: price.description,
-                        template: price.template
+                        template: price.template,
                       });
                     }}
                   >

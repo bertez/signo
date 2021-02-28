@@ -1,11 +1,11 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 
-import SEO from '../components/SEO.jsx';
-import Md from '../helpers/markdown.jsx';
+import SEO from "../components/SEO.jsx";
+import Md from "../helpers/markdown.jsx";
 
-import { ClientList } from '../components/client-list.jsx';
-import { ProjectList } from '../components/project-list.jsx';
+import { ClientList } from "../components/client-list.jsx";
+import { ProjectList } from "../components/project-list.jsx";
 
 export default function Projects({ data }) {
   const {

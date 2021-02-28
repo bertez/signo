@@ -34,7 +34,6 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     //    console.log(slug);
 
     if (
-      // slug === '/covid'
       template &&
       template !== 'client' &&
       template !== 'shop-product' &&
@@ -57,14 +56,8 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   });
 };
 
-exports.onCreateNode = ({
-  node,
-  getNode,
-  getNodes,
-  actions: { createNodeField },
-}) => {
-  fmImagesToRelative(node);
-
+exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {
+  // fmImagesToRelative(node);
   if (node.internal.type === 'MarkdownRemark') {
     const slug = createFilePath({ node, getNode, basePath: 'pages' });
 

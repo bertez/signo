@@ -1,30 +1,30 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Carousel, { Modal, ModalGateway } from 'react-images';
+import Carousel, { Modal, ModalGateway } from "react-images";
 
 export class Gallery extends Component {
   state = {
     selectedIndex: 0,
-    lightBoxIsOpen: false
+    lightBoxIsOpen: false,
   };
 
-  toggleLightBox = selectedIndex => {
+  toggleLightBox = (selectedIndex) => {
     this.setState({
       lightBoxIsOpen: !this.state.lightBoxIsOpen,
-      selectedIndex
+      selectedIndex,
     });
   };
 
   render = () => {
     const { images } = this.props;
 
-    const imageList = images.map(i => {
+    const imageList = images.map((i) => {
       return {
         caption: i.title,
         source: {
           thumbnail: i.image.childImageSharp.thumb.src,
-          regular: i.image.childImageSharp.big.src
-        }
+          regular: i.image.childImageSharp.big.src,
+        },
       };
     });
 
@@ -37,7 +37,7 @@ export class Gallery extends Component {
             <li key={i.source.thumbnail}>
               <a
                 href={i.source.regular}
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   this.toggleLightBox(j);
                 }}

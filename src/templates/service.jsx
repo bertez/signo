@@ -1,14 +1,14 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 
-import SEO from '../components/SEO.jsx';
-import { GatsbyImage } from 'gatsby-plugin-image';
-import Md from '../helpers/markdown.jsx';
+import SEO from "../components/SEO.jsx";
+import { GatsbyImage } from "gatsby-plugin-image";
+import Md from "../helpers/markdown.jsx";
 
-import { ServiceDetail } from '../components/service-detail.jsx';
-import { Gallery } from '../components/gallery.jsx';
-import { PriceTable } from '../components/prices.jsx';
-import { ProjectList } from '../components/project-list.jsx';
+import { ServiceDetail } from "../components/service-detail.jsx";
+import { Gallery } from "../components/gallery.jsx";
+import { PriceTable } from "../components/prices.jsx";
+import { ProjectList } from "../components/project-list.jsx";
 
 export default function Service({ data }) {
   const {

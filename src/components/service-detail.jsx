@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import Md from '../helpers/markdown.jsx';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import Md from "../helpers/markdown.jsx";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export function ServiceDetail({ detail }) {
   return (

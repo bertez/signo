@@ -1,6 +1,6 @@
-import React from 'react';
-import Md from '../helpers/markdown.jsx';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import React from "react";
+import Md from "../helpers/markdown.jsx";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 function TextSection({ section }) {
   return (
@@ -43,11 +43,11 @@ function VideoSection({ section }) {
 
 export function ProjectSection({ section }) {
   switch (section.type) {
-    case 'text':
+    case "text":
       return <TextSection section={section} />;
-    case 'video':
+    case "video":
       return <VideoSection section={section} />;
-    case 'image':
+    case "image":
       return <ImageSection section={section} />;
     default:
       return null;

@@ -1,13 +1,13 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 
-import SEO from '../components/SEO.jsx';
+import SEO from "../components/SEO.jsx";
 
-import { GatsbyImage } from 'gatsby-plugin-image';
-import Md from '../helpers/markdown.jsx';
+import { GatsbyImage } from "gatsby-plugin-image";
+import Md from "../helpers/markdown.jsx";
 
-import { Gallery } from '../components/gallery.jsx';
-import { ProductListSlider } from '../components/product-list.jsx';
+import { Gallery } from "../components/gallery.jsx";
+import { ProductListSlider } from "../components/product-list.jsx";
 
 export default function Product({ data }) {
   const {

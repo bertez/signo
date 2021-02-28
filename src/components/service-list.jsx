@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { Link } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export function ServiceList({ services }) {
   return (
