@@ -72,6 +72,13 @@ collections:
           - label: Entradilla
             name: tagline
             widget: markdown
+          - label: Servicio Destacado
+            name: related_service
+            widget: relation
+            collection: services
+            searchFields: ["title"]
+            valueField: title
+            displayFields: ["title"]
           - label: Proyectos Destacados
             name: related_projects
             widget: list
@@ -394,6 +401,7 @@ collections:
         fields:
           - label: Título
             name: title
+            required: false
             widget: string
           - label: Imagen
             name: image
@@ -464,6 +472,7 @@ collections:
         fields:
           - label: Título
             name: title
+            required: false
             widget: string
           - label: Imagen
             name: image
@@ -558,6 +567,7 @@ collections:
         fields:
           - label: Título
             name: title
+            required: false
             widget: string
           - label: Imagen
             name: image
@@ -615,6 +625,7 @@ collections:
         fields:
           - label: Título
             name: title
+            required: false
             widget: string
           - label: Imagen
             name: image
