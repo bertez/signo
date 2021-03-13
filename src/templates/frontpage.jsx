@@ -20,9 +20,16 @@ export default function Frontpage({ data }) {
     products: { edges: products },
   } = data;
 
+  console.log(frontmatter.related_service);
+
   return (
     <article className="content content-frontpage">
       <SEO pageData={data.page} />
+
+      <div className="hl-banner">
+        Destacado: {frontmatter.related_service.frontmatter.title}{" "}
+        <a href={frontmatter.related_service.fields.slug}>Ver servicio</a>
+      </div>
 
       <header className="ly-text-header">
         <h1>{frontmatter.title}</h1>
@@ -86,6 +93,14 @@ export const query = graphql`
         slug
       }
       frontmatter {
+        related_service {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+        }
         related_projects {
           project {
             fields {

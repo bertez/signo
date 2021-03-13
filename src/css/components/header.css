@@ -1,7 +1,8 @@
-.covid-banner {
+.hl-banner {
   background: black;
   color: white;
   text-align: center;
+  font-size: 2rem;
 
   & a {
     background: white;
@@ -41,10 +42,10 @@ header.main {
           padding-left: 1.75rem;
 
           &.phone {
-            background-image: url('../img/phone.svg');
+            background-image: url("../img/phone.svg");
           }
           &.dossier {
-            background-image: url('../img/download.svg');
+            background-image: url("../img/download.svg");
           }
         }
 
@@ -71,19 +72,19 @@ header.main {
         }
 
         & a.twitter {
-          background-image: url('../img/twitter.svg');
+          background-image: url("../img/twitter.svg");
         }
 
         & a.youtube {
-          background-image: url('../img/youtube.svg');
+          background-image: url("../img/youtube.svg");
         }
 
         & a.instagram {
-          background-image: url('../img/instagram.svg');
+          background-image: url("../img/instagram.svg");
         }
 
         & a.facebook {
-          background-image: url('../img/facebook.svg');
+          background-image: url("../img/facebook.svg");
         }
       }
     }
@@ -106,7 +107,7 @@ header.main {
       & .cart {
         border: 0;
         background-color: transparent;
-        background-image: url('../img/cart.svg');
+        background-image: url("../img/cart.svg");
         background-size: contain;
         background-repeat: no-repeat;
         font-size: 0;

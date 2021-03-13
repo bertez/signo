@@ -59,11 +59,11 @@ export default function MainWrapper({ path, children }) {
 
   return (
     <>
-      {path !== "/covid19" && (
+      {/* {path !== "/covid19" && (
         <div className="covid-banner">
           Especial protección COVID-19 <a href="/covid19">Ver productos</a>
         </div>
-      )}
+      )} */}
       <header className="main">
         <nav className="utility">
           <ul>
