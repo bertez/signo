@@ -2,7 +2,7 @@
 template: service
 title: Construcciones Singulares
 picture: /media/IMG_2670.JPG
-short_description: 'Ideamos, diseñamos, fabricamos e instalamos'
+short_description: "Ideamos, diseñamos, fabricamos e instalamos"
 description: >-
   Esta es la parte de la empresa que mas nos gusta, porque nos permite hacer
   realidad proyectos propios, ideas diferentes, desarrollar elementos que forman
@@ -70,7 +70,6 @@ prices: []
 related_projects:
   - project: Guitarra gigante
   - project: Escultura MötorHead
-  - project: Escenario Festival Resurrection Fest
   - project: Resurrection Fest
   - project: Guitarra SteamPunk
 ---
