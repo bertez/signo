@@ -1,0 +1,16 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    name: Publish on production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute SSH commmands on remote server
+        uses: JimCronqvist/action-ssh@master
+        with:
+          hosts: 'futures@sat.grupofutures.com'
+          privateKey: ${{ secrets.PRIVATE_KEY }}
+          command: ls -lah
