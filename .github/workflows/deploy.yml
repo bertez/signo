@@ -13,4 +13,5 @@ jobs:
         with:
           hosts: 'futures@sat.grupofutures.com'
           privateKey: ${{ secrets.PRIVATE_KEY }}
+          debug: true
           command: ls -lah
