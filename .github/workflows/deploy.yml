@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Execute SSH commmands on remote server
-        uses: JimCronqvist/action-ssh@master
+        uses: garygrossgarten/github-action-ssh@release
         with:
-          hosts: 'futures@sat.grupofutures.com'
-          privateKey: ${{ secrets.PRIVATE_KEY }}
-          debug: true
-          command: ls -lah
+          command: ls -lha
+          host: sat.grupofutures.com
+          username: futures
+          privateKey: ${{ secrets.PRIVATE_KEY}}
