@@ -5,7 +5,7 @@ on:
       - master
 jobs:
   deploy:
-    name: Publish on production
+    name: Publish on production!
     runs-on: ubuntu-latest
     steps:
       - name: Execute SSH commmands on remote server
