@@ -561,6 +561,10 @@ collections:
       - label: Descripción listados
         name: short_description
         widget: string
+      - label: Titulo de la sección de "Pídenos"
+        name: cta_title
+        required: false
+        widget: string
       - label: Galería
         name: gallery
         widget: list

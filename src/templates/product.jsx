@@ -33,7 +33,7 @@ export default function Product({ data }) {
       </section>
 
       <section className="ly-product-buy">
-        <h2>Cómo comprar</h2>
+        <h2>{frontmatter.cta_title || "Pídenos tu decoración"}</h2>
 
         <Md>{frontmatter.buy_details}</Md>
       </section>
@@ -73,11 +73,12 @@ export const query = graphql`
         }
         picture {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED)
+            gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.77)
           }
         }
         description
         buy_details
+        cta_title
         gallery {
           title
           image {

@@ -27,8 +27,10 @@ export default function Frontpage({ data }) {
       <SEO pageData={data.page} />
 
       <div className="hl-banner">
-        Destacado: {frontmatter.related_service.frontmatter.title}{" "}
-        <a href={frontmatter.related_service.fields.slug}>Ver servicio</a>
+        Destacado:
+        <a href={frontmatter.related_service.fields.slug}>
+          {frontmatter.related_service.frontmatter.title}
+        </a>
       </div>
 
       <header className="ly-text-header">
@@ -116,7 +118,7 @@ export const query = graphql`
               }
               picture {
                 childImageSharp {
-                  gatsbyImageData(layout: CONSTRAINED)
+                  gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.77)
                 }
               }
             }
