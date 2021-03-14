@@ -11,7 +11,7 @@ jobs:
       - name: Execute SSH commmands on remote server
         uses: garygrossgarten/github-action-ssh@release
         with:
-          command: ls -lha
+          command: sh deploy-signo.sh
           host: sat.grupofutures.com
           username: futures
           privateKey: ${{ secrets.KEY}}
