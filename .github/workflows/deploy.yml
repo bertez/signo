@@ -14,4 +14,4 @@ jobs:
           command: ls -lha
           host: sat.grupofutures.com
           username: futures
-          privateKey: ${{ secrets.PRIVATE_KEY}}
+          privateKey: ${{ secrets.KEY}}
