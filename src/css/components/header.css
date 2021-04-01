@@ -1,12 +1,11 @@
 .hl-banner {
-  background: black;
-  color: white;
+  background: lightgray;
   text-align: center;
   font-size: 2rem;
 
   & a {
-    background: white;
-    color: black;
+    background: black;
+    color: white;
     padding: 0.5rem;
     display: inline-block;
     border-radius: 5px;
@@ -18,6 +17,8 @@ header.main {
   padding-top: 1rem;
   margin-bottom: 2rem;
   position: relative;
+  background-color: lightgray;
+  padding-bottom: 2rem;
 
   & nav.utility {
     @extend %big-lr;
@@ -97,7 +98,7 @@ header.main {
     justify-content: space-between;
 
     & h1 img {
-      width: 10rem;
+      width: 13rem;
     }
 
     & nav {

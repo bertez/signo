@@ -28,6 +28,16 @@
   }
 }
 
+.signo-slider-timeline {
+  border-top: 1px solid black;
+
+  & > div > div {
+    background: url(../img/timeline-marker.svg);
+    background-repeat: no-repeat;
+    background-position: top left 1rem;
+  }
+}
+
 .ly-company-about {
   @extend %big-tb;
   @extend %big-lr;

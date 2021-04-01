@@ -80,7 +80,7 @@ export default function Frontpage({ data }) {
 
       <section className="ly-products-list">
         <header className="ly-text-header">
-          <h2>Construcciones singulares</h2>
+          <h2>Proyectos</h2>
         </header>
         <ProductListSlider products={products} />
       </section>
@@ -145,7 +145,9 @@ export const query = graphql`
       }
     }
     clients: allMarkdownRemark(
-      filter: { frontmatter: { template: { eq: "client" } } }
+      filter: {
+        frontmatter: { template: { eq: "client" }, visible: { eq: true } }
+      }
     ) {
       edges {
         node {

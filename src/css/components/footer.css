@@ -1,16 +1,16 @@
 footer.main {
   @extend %big-lr;
-  padding: 2rem 0;
+  padding-top: 2rem;
+  margin: 2rem 0 0 0;
+  background-color: lightgray;
 
   & h1 {
-    text-align: center;
-
     & img {
       max-width: 10rem;
     }
   }
 
-  & ul:first-child {
+  & ul.ly-footer-main-nav {
     @extend %text-headline;
   }
 
@@ -24,12 +24,66 @@ footer.main {
 
   & .legal {
     @extend %big-lr;
-    @extend %big-tb;
     text-align: center;
+    padding: 2rem 0;
+
+    & p {
+      font-size: 0.85rem;
+    }
 
     & img {
+      margin-top: 1rem;
       max-width: 10rem;
-      padding: 1rem 0;
+    }
+  }
+
+  /* 
+  .ly-footer-main-nav
+  .ly-footer-secondary-nav 
+  .ly-footer-extra
+  .legal
+  
+  */
+
+  @media (--medium) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+    & h1 {
+      width: 25%;
+      border-bottom: 1px solid black;
+    }
+
+    & .ly-footer-main-nav {
+      width: 75%;
+      margin-top: 0;
+      align-items: flex-end;
+      text-align: right;
+      padding-bottom: 2rem;
+
+      border-bottom: 1px solid black;
+    }
+
+    & .ly-footer-secondary-nav {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2rem;
+
+      & li {
+        margin: 0.5rem 1rem;
+      }
+    }
+
+    & .ly-footer-extra {
+      width: 100%;
+      justify-content: center;
+    }
+
+    & .legal {
+      margin: 1rem auto 0 auto;
     }
   }
 }

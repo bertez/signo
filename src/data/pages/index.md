@@ -9,9 +9,9 @@ tagline: Somos Signo. Ideamos, proyectamos, construimos, comercializamos e
   mira nuestro trabajo. Si te gusta, y crees que podemos hacer algo bonito para
   ti, puedes ponerte en contacto con nosotros y en breve estaremos hablado de tu
   proyecto.
-related_service: Elementos de protección
+related_service: Muebles de diseño industrial
 related_projects:
-  - project: Resurrection Fest
+  - project: Main stage de Resurrection Fest
 services_intro: Nuestros servicios son múltiples y los adaptamos a las
   necesidades específicas de cada cliente. Háblanos de lo que tu necesitas.
 company_name: Signo Rotulación

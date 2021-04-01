@@ -22,6 +22,34 @@ team:
     name: David
     picture: /media/david.jpg
     position: Diseñador
+  - email: publicidad@grupofutures.com
+    name: David
+    picture: /media/david.jpg
+    position: Diseñador
+  - email: publicidad@grupofutures.com
+    name: David
+    picture: /media/david.jpg
+    position: Diseñador
+  - email: publicidad@grupofutures.com
+    name: David
+    picture: /media/david.jpg
+    position: Diseñador
+  - email: publicidad@grupofutures.com
+    name: David
+    picture: /media/david.jpg
+    position: Diseñador
+  - email: publicidad@grupofutures.com
+    name: David
+    picture: /media/david.jpg
+    position: Diseñador
+  - email: publicidad@grupofutures.com
+    name: David
+    picture: /media/david.jpg
+    position: Diseñador
+  - email: publicidad@grupofutures.com
+    name: David
+    picture: /media/david.jpg
+    position: Diseñador
 description: >-
   Grupo Futures se alimenta principalmente del buen hacer de dos divisiones bien
   diferenciadas. Futures informática y Signo Taller del Rótulo.
@@ -76,4 +104,9 @@ links:
     source: La voz de galicia
     url: >-
       https://www.lavozdegalicia.es/noticia/amarina/2020/04/29/futures-vuelve-fabricar-mamparas-mes-incendio-arraso-nave/0003_202004X29C3996.htm
+  - cite: '"Signo Futures ofrece 1.000 pantallas de protección a centros asistenciales"'
+    date: 2020-03-28T10:11:41.674Z
+    source: La voz de galicia
+    url: >-
+      https://www.lavozdegalicia.es/noticia/sociedad/2020/03/27/signo-futures-ofrece-1000-pantallas-proteccion-centros-asistenciales/00031585327314563843179.htm
 ---

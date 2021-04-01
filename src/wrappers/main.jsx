@@ -132,46 +132,45 @@ export default function MainWrapper({ path, children }) {
             <img src={signo} alt="Signo" />
           </Link>
         </h1>
-        <nav>
-          <ul className="ly-footer-main-nav">
-            <li>
-              <Link to="/">Portada</Link>
-            </li>
-            <li>
-              <Link to="/proyectos">Proyectos</Link>
-            </li>
 
-            <li>
-              <Link to="/construcciones-singulares">
-                Construcciones singulares
+        <ul className="ly-footer-main-nav">
+          <li>
+            <Link to="/">Portada</Link>
+          </li>
+          <li>
+            <Link to="/proyectos">Proyectos</Link>
+          </li>
+
+          <li>
+            <Link to="/construcciones-singulares">
+              Construcciones singulares
+            </Link>
+          </li>
+          <li>
+            <Link to="/empresa">Sobre Signo</Link>
+          </li>
+        </ul>
+
+        <ul className="ly-footer-secondary-nav">
+          {services.map((service) => (
+            <li key={service.node.id}>
+              <Link to={service.node.fields.slug}>
+                {service.node.frontmatter.title}
               </Link>
             </li>
-            <li>
-              <Link to="/empresa">Sobre Signo</Link>
-            </li>
-          </ul>
-
-          <ul>
-            {services.map((service) => (
-              <li key={service.node.id}>
-                <Link to={service.node.fields.slug}>
-                  {service.node.frontmatter.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-
-          <ul>
-            <li>
-              <Link to="/nota-legal">Nota Legal</Link>
-            </li>
-          </ul>
-        </nav>
+          ))}
+        </ul>
 
         <section className="legal">
           <p>Proyecto cofinanciado por:</p>
           <img src={xunta} alt="Xunta de Galicia" />
         </section>
+
+        <ul className="ly-footer-extra">
+          <li>
+            <Link to="/nota-legal">Nota Legal</Link>
+          </li>
+        </ul>
       </footer>
     </>
   );

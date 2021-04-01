@@ -1,17 +1,17 @@
 ---
-phone: '982989110'
-address: 'Plantío, s/n - 27863 Celeiro - Viveiro'
+phone: "982989110"
+address: "Plantío, s/n - 27863 Celeiro - Viveiro"
 dossier:
-  file: /media/sample.pdf
-  title: Dossier 2020
+  file: /media/signo-covid.pdf
+  title: Dossier COVID
 social:
-  - handle: '@grupofutures'
+  - handle: "@grupofutures"
     network: youtube
-    url: 'https://www.youtube.com/channel/UCyU6pdNzQoPi_YogGm8pqDQ'
+    url: "https://www.youtube.com/channel/UCyU6pdNzQoPi_YogGm8pqDQ"
   - handle: grupofutures
     network: instagram
-    url: 'https://instagram.com/grupofutures'
-  - handle: '@grupofutures'
+    url: "https://instagram.com/grupofutures"
+  - handle: "@grupofutures"
     network: facebook
     url: https://facebook.com/grupofutures
 ---

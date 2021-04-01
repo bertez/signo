@@ -22,16 +22,24 @@ export default function Company({ data }) {
         <Md>{frontmatter.tagline}</Md>
       </header>
 
-      <section className="ly-company-contact">
-        <section className="contact">
-          <h2>Contacto</h2>
-          <Md>{frontmatter.contact_info}</Md>
-        </section>
-        <div
-          className="embed-container"
-          dangerouslySetInnerHTML={{ __html: frontmatter.map }}
-        />
+      <section className="ly-company-about">
+        <h2>Sobre la empresa</h2>
+        <Md>{frontmatter.description}</Md>
       </section>
+
+      {frontmatter.timeline && (
+        <section className="ly-company-timeline">
+          <h2>Historia</h2>
+          <Slider arrows name="timeline">
+            {frontmatter.timeline.map((unit, index) => (
+              <div className="year" key={`timeline_${unit}_${index}`}>
+                <h3>{unit.year}</h3>
+                <p>{unit.text}</p>
+              </div>
+            ))}
+          </Slider>
+        </section>
+      )}
 
       {frontmatter.team && (
         <section className="ly-company-team">
@@ -53,24 +61,16 @@ export default function Company({ data }) {
         </section>
       )}
 
-      <section className="ly-company-about">
-        <h2>Sobre la empresa</h2>
-        <Md>{frontmatter.description}</Md>
-      </section>
-
-      {frontmatter.timeline && (
-        <section className="ly-company-timeline">
-          <h2>Historia</h2>
-          <Slider arrows name="timeline">
-            {frontmatter.timeline.map((unit, index) => (
-              <div className="year" key={`timeline_${unit}_${index}`}>
-                <h3>{unit.year}</h3>
-                <p>{unit.text}</p>
-              </div>
-            ))}
-          </Slider>
+      <section className="ly-company-contact">
+        <section className="contact">
+          <h2>Contacto</h2>
+          <Md>{frontmatter.contact_info}</Md>
         </section>
-      )}
+        <div
+          className="embed-container"
+          dangerouslySetInnerHTML={{ __html: frontmatter.map }}
+        />
+      </section>
 
       {frontmatter.links && (
         <section className="ly-cites">

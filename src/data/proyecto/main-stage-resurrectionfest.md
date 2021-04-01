@@ -13,9 +13,6 @@ highlight: false
 related_client: Resurrection Fest Viveiro
 picture: /media/img-2826.jpg
 short_description: Detalles de la fabricación del main stage de ResurrectionFest
-sections:
-  - image: /media/sample-tablet.jpg
-    type: image
 gallery: []
 links: []
 ---
