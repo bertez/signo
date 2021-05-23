@@ -9,7 +9,7 @@ export default class Slider extends Component {
       perPage: {
         480: 3,
         800: 4,
-        1200: 6,
+        1200: 4,
       },
       ...this.props.settings,
     };

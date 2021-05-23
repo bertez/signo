@@ -11,6 +11,24 @@ module.exports = {
     image: "/extra/card.png",
   },
   plugins: [
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-relative-images",
+          },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 600,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -50,27 +68,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-image",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-relative-images",
-            options: {
-              name: "media",
-            },
-          },
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              maxWidth: 600,
-            },
-          },
-        ],
-      },
-    },
+
     // TODO: enable offline before production
     // 'gatsby-plugin-offline',
     "gatsby-plugin-react-helmet",
@@ -78,6 +76,7 @@ module.exports = {
     "gatsby-plugin-catch-links",
     "gatsby-plugin-sitemap",
     // 'gatsby-plugin-stripe',
+
     // {
     //   resolve: `gatsby-source-stripe`,
     //   options: {

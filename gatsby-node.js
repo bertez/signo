@@ -1,5 +1,5 @@
-const { fmImagesToRelative } = require('gatsby-remark-relative-images');
-const { createFilePath } = require('gatsby-source-filesystem');
+const { fmImagesToRelative } = require("gatsby-remark-relative-images");
+const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.createPages = async ({ actions: { createPage }, graphql }) => {
   const content = await graphql(`
@@ -35,10 +35,10 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
 
     if (
       template &&
-      template !== 'client' &&
-      template !== 'shop-product' &&
-      template !== 'checkout' &&
-      template !== 'shop'
+      template !== "client" &&
+      template !== "shop-product" &&
+      template !== "checkout" &&
+      template !== "shop"
     ) {
       createPage({
         path: slug,
@@ -51,20 +51,20 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   }
 
   createPage({
-    path: '/covid19',
-    component: require.resolve('./src/templates/covid.jsx'),
+    path: "/covid19",
+    component: require.resolve("./src/templates/covid.jsx"),
   });
 };
 
 exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {
-  // fmImagesToRelative(node);
-  if (node.internal.type === 'MarkdownRemark') {
-    const slug = createFilePath({ node, getNode, basePath: 'pages' });
+  fmImagesToRelative(node);
+  if (node.internal.type === "MarkdownRemark") {
+    const slug = createFilePath({ node, getNode, basePath: "pages" });
 
     // Add slug field
     createNodeField({
       node,
-      name: 'slug',
+      name: "slug",
       value: slug,
     });
   }
