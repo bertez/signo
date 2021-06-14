@@ -54,6 +54,11 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     path: "/covid19",
     component: require.resolve("./src/templates/covid.jsx"),
   });
+
+  createPage({
+    path: "/rcom",
+    component: require.resolve("./src/templates/rcom.jsx"),
+  });
 };
 
 exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {

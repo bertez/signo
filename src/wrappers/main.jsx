@@ -7,6 +7,7 @@ import "../css/base.css";
 
 import signo from "../img/signo.svg";
 import xunta from "../img/xunta.svg";
+import ue from "../img/ue.png";
 
 //import { Cart, CartIcon } from '../components/cart';
 
@@ -164,6 +165,10 @@ export default function MainWrapper({ path, children }) {
         <section className="legal">
           <p>Proyecto cofinanciado por:</p>
           <img src={xunta} alt="Xunta de Galicia" />
+
+          <a href="/rcom">
+            <img src={ue} alt="Unión Europea" />
+          </a>
         </section>
 
         <ul className="ly-footer-extra">

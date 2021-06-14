@@ -5,6 +5,7 @@ footer.main {
   background-color: lightgray;
 
   & h1 {
+    text-align: center;
     & img {
       max-width: 10rem;
     }
@@ -32,8 +33,13 @@ footer.main {
     }
 
     & img {
-      margin-top: 1rem;
+      margin: 1rem auto;
       max-width: 10rem;
+      display: block;
+
+      &:last-child {
+        max-width: 8rem;
+      }
     }
   }
 
@@ -51,6 +57,7 @@ footer.main {
     padding: 2rem;
 
     & h1 {
+      text-align: left;
       width: 25%;
       border-bottom: 1px solid black;
     }
@@ -80,6 +87,7 @@ footer.main {
     & .ly-footer-extra {
       width: 100%;
       justify-content: center;
+      margin-bottom: 2rem;
     }
 
     & .legal {
