@@ -8,6 +8,7 @@ import "../css/base.css";
 import signo from "../img/signo.svg";
 import xunta from "../img/xunta.svg";
 import ue from "../img/ue.png";
+import ueIcon from "../img/ue-icon.png";
 
 //import { Cart, CartIcon } from '../components/cart';
 
@@ -79,6 +80,9 @@ export default function MainWrapper({ path, children }) {
               >
                 {headerData.dossier.title}
               </a>
+            </li>
+            <li className="feder">
+              <Link to="/rcom">FEDER</Link>
             </li>
           </ul>
 

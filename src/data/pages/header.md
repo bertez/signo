@@ -3,7 +3,7 @@ phone: "982989110"
 address: "Plantío, s/n - 27863 Celeiro - Viveiro"
 dossier:
   file: /media/signo-covid.pdf
-  title: Dossier COVID
+  title: COVID
 social:
   - handle: "@grupofutures"
     network: youtube

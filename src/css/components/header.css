@@ -1,7 +1,6 @@
 .hl-banner {
   background: lightgray;
   text-align: center;
-  font-size: 2rem;
 
   & a {
     background: black;
@@ -47,6 +46,10 @@ header.main {
           }
           &.dossier {
             background-image: url("../img/download.svg");
+          }
+
+          &.feder {
+            background-image: url("../img/ue-icon.png");
           }
         }
 
