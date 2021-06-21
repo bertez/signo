@@ -8,7 +8,6 @@ import "../css/base.css";
 import signo from "../img/signo.svg";
 import xunta from "../img/xunta.svg";
 import ue from "../img/ue.png";
-import ueIcon from "../img/ue-icon.png";
 
 //import { Cart, CartIcon } from '../components/cart';
 
