@@ -167,7 +167,7 @@ export default function MainWrapper({ path, children }) {
         </ul>
 
         <section className="legal">
-          <p>Proyecto cofinanciado por:</p>
+          <p>Proyecto cofinanciado por</p>
           <img src={xunta} alt="Xunta de Galicia" />
 
           <a href="/rcom">
