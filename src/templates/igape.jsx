@@ -1,13 +1,12 @@
 import React from "react";
-import igape from "../img/igape.png";
 
 export default function Covid() {
   return (
     <article className="content content-covid">
       <header className="ly-text-header">
         <h2>
-          Proxecto cofinanciado por IGAPE, Xunta de Galicia e Fondo Europeo de
-          Desenvolvemento Rexional do programa operativo 2014-2020
+          Fabricación parametrizada e estable de elementos de protección frente
+          o Coronavirus
         </h2>
       </header>
       <section className="ly-legal-block">
