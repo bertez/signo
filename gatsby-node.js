@@ -59,6 +59,11 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     path: "/rcom",
     component: require.resolve("./src/templates/rcom.jsx"),
   });
+
+  createPage({
+    path: "/igape",
+    component: require.resolve("./src/templates/igape.jsx"),
+  });
 };
 
 exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {

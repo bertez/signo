@@ -85,6 +85,16 @@
   }
 }
 
+.ly-legal-block {
+  @extend %big-tb;
+  @extend %big-lr;
+
+  & h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
 .ly-slider-wrapper {
   & .arrows {
     display: flex;
@@ -176,7 +186,7 @@
         display: block;
       }
 
-      & input:not([type='checkbox']),
+      & input:not([type="checkbox"]),
       & textarea {
         @extend %text-body;
         border: 1px solid var(--dark-80);
@@ -200,7 +210,7 @@
       margin-right: 1rem;
     }
 
-    & button[type='submit'] {
+    & button[type="submit"] {
       @extend %actionButton;
       display: inline-block;
     }

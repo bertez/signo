@@ -1,6 +1,7 @@
 footer.main {
   @extend %big-lr;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   margin: 2rem 0 0 0;
   background-color: lightgray;
 
@@ -93,5 +94,15 @@ footer.main {
     & .legal {
       margin: 1rem auto 0 auto;
     }
+  }
+}
+
+footer.legal {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+
+  & img {
+    max-width: 100%;
   }
 }

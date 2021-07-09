@@ -8,6 +8,7 @@ import "../css/base.css";
 import signo from "../img/signo.svg";
 import xunta from "../img/xunta.svg";
 import ue from "../img/ue.png";
+import igape from "../img/igape.png";
 
 //import { Cart, CartIcon } from '../components/cart';
 
@@ -166,8 +167,7 @@ export default function MainWrapper({ path, children }) {
         </ul>
 
         <section className="legal">
-          <p>Proyecto cofinanciado por</p>
-          <img src={xunta} alt="Xunta de Galicia" />
+          <p>Con la ayuda de:</p>
 
           <a href="/rcom">
             <img src={ue} alt="Unión Europea" />
@@ -179,6 +179,16 @@ export default function MainWrapper({ path, children }) {
             <Link to="/nota-legal">Nota Legal</Link>
           </li>
         </ul>
+      </footer>
+
+      <footer className="legal">
+        <a href="/igape">
+          <img
+            src={igape}
+            alt="Proxecto cofinanciado por IGAPE, Xunta de Galicia e Fondo Europeo de
+Desenvolvemento Rexional do programa operativo 2014-2020"
+          />
+        </a>
       </footer>
     </>
   );
