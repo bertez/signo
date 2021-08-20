@@ -146,10 +146,6 @@ collections:
           - label: Entradilla
             name: tagline
             widget: markdown
-          - label: "Meta Servicio"
-            name: "metaservice"
-            widget: "select"
-            options: ["mobiliario", "tematización", "rotulación", "señalética"]
       - label: Tienda Online
         name: shop
         file: src/data/pages/tienda.md
@@ -440,6 +436,10 @@ collections:
       - label: Título
         name: title
         widget: string
+      - label: "Meta Servicio"
+        name: "metaservice"
+        widget: "select"
+        options: ["mobiliario", "tematización", "rotulación", "señalética"]
       - label: Descripción SEO
         name: seo_description
         widget: string
