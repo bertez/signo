@@ -21,5 +21,5 @@ company_intro: Signo forma parte de la estructura empresarial de Grupo Futures.
   seca, no somos una empresa aburrida, somos todo lo contrario. Nos gusta
   experimentar, nos gustan los proyectos diferentes, nos gusta proponer ideas y
   crear cosas  con personalidad.
-company_picture: /media/ls.jpg
+company_picture: /media/signo-creaciones.png
 ---
