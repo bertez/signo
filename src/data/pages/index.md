@@ -1,6 +1,6 @@
 ---
 template: frontpage
-title: Signo Taller del Rótulo
+title: Signo Creaciones
 seo_description: Portada de Signo, texto de SEO
 seo_image: /media/ls.jpg
 tagline: Somos Signo. Ideamos, proyectamos, construimos, comercializamos e
