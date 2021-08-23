@@ -47,7 +47,7 @@ export const ProjectList = React.memo(function ProjectList({
   return (
     <>
       <ul>
-        {projects.map((project) => (
+        {projects.filter(Boolean).map((project) => (
           <li className="project" key={project.fields.slug}>
             <FeaturedProject
               project={project}
