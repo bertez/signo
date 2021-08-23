@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gatsby clean && gatsby develop",
-    "build": "gatsby build",
+    "build": "gatsby clean && gatsby build",
     "deploy": "gatsby build && rsync -azP public futures@sat.grupofutures.com:/home/futures/Projects/signo"
   },
   "keywords": [],
