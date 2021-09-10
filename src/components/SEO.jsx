@@ -39,7 +39,7 @@ const SEO = ({ pageData }) => {
 
   const SEO_title = title || defaultTitle;
   const SEO_description = description || defaultDescription;
-  const SEO_image = (image && image.childImageSharp.fixed.src) || defaultImage;
+  const SEO_image = (image && image.childImageSharp.gatsbyImageData.src) || defaultImage;
 
   // TODO: add schema.org data
 

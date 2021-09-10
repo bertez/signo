@@ -90,6 +90,10 @@ header.main {
         & a.facebook {
           background-image: url("../img/facebook.svg");
         }
+
+        & a.linkedin {
+          background-image: url("../img/linkedin.svg");
+        }
       }
     }
   }

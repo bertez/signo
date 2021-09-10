@@ -5,8 +5,7 @@ import { Link } from "gatsby";
 
 import "../css/base.css";
 
-import signo from "../img/signo.svg";
-import xunta from "../img/xunta.svg";
+import signo from "../img/signo.png";
 import ue from "../img/ue.png";
 import igape from "../img/igape.png";
 
@@ -145,12 +144,10 @@ export default function MainWrapper({ path, children }) {
           <li>
             <Link to="/proyectos">Proyectos</Link>
           </li>
-
           <li>
-            <Link to="/construcciones-singulares">
-              Construcciones singulares
-            </Link>
+            <Link to="/servicios">Servicios</Link>
           </li>
+
           <li>
             <Link to="/empresa">Sobre Signo</Link>
           </li>
@@ -177,6 +174,12 @@ export default function MainWrapper({ path, children }) {
         <ul className="ly-footer-extra">
           <li>
             <Link to="/nota-legal">Nota Legal</Link>
+          </li>
+          <li>
+            <a href="mailto:signo@signocreaciones.com">
+              signo@signocreaciones.com
+            </a>
+            {" - "} <a href="tel:982989110">982989110</a>
           </li>
         </ul>
       </footer>
@@ -213,9 +216,6 @@ function Menu({ close, services }) {
       </li>
       <li>
         <Link to="/servicios">Servicios</Link>
-      </li>
-      <li>
-        <Link to="/construcciones-singulares">Construcciones singulares</Link>
       </li>
       <li>
         <Link to="/empresa">Sobre Signo</Link>

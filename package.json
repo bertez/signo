@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gatsby clean && gatsby develop",
     "build": "gatsby clean && gatsby build",
-    "deploy": "gatsby build && rsync -azP public futures@sat.grupofutures.com:/home/futures/Projects/signo"
+    "serve": "gatsby serve"
   },
   "keywords": [],
   "author": "",
@@ -16,35 +15,34 @@
     "extends": "react-app"
   },
   "dependencies": {
-    "gatsby": "^2.22.4",
-    "gatsby-plugin-catch-links": "^2.3.2",
-    "gatsby-plugin-image": "^0.7.2",
-    "gatsby-plugin-manifest": "^2.4.8",
-    "gatsby-plugin-netlify-cms": "^4.3.3",
+    "gatsby": "^3.13.0",
+    "gatsby-plugin-catch-links": "^3.13.0",
+    "gatsby-plugin-image": "^1.13.0",
+    "gatsby-plugin-manifest": "^3.13.0",
+    "gatsby-plugin-netlify-cms": "^5.13.0",
     "gatsby-plugin-netlify-cms-paths": "^1.3.0",
-    "gatsby-plugin-offline": "^3.2.6",
-    "gatsby-plugin-postcss": "^2.3.2",
-    "gatsby-plugin-react-helmet": "^3.3.2",
-    "gatsby-plugin-sharp": "^2.14.3",
-    "gatsby-plugin-sitemap": "^2.4.3",
-    "gatsby-remark-images": "^3.3.7",
-    "gatsby-remark-relative-images": "^0.3.0",
-    "gatsby-source-filesystem": "^2.3.7",
-    "gatsby-transformer-remark": "^2.8.12",
-    "gatsby-transformer-sharp": "^2.12.0",
-    "netlify-cms-app": "^2.12.13",
-    "postcss": "^7.0.30",
+    "gatsby-plugin-offline": "^4.13.0",
+    "gatsby-plugin-postcss": "^4.13.0",
+    "gatsby-plugin-react-helmet": "^4.13.0",
+    "gatsby-plugin-sharp": "^3.13.0",
+    "gatsby-plugin-sitemap": "^4.9.0",
+    "gatsby-remark-images": "^5.10.0",
+    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-source-filesystem": "^3.13.0",
+    "gatsby-transformer-remark": "^4.10.0",
+    "gatsby-transformer-sharp": "^3.13.0",
+    "netlify-cms-app": "^2.15.40",
+    "postcss": "^8.3.6",
     "postcss-extend": "^1.0.5",
-    "postcss-import": "^12.0.1",
+    "postcss-import": "^14.0.2",
     "postcss-preset-env": "^6.7.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0",
-    "react-images": "^1.1.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
     "siema": "^1.5.1",
-    "snarkdown": "^1.2.2"
+    "snarkdown": "^2.0.0"
   },
   "devDependencies": {
-    "eslint-config-react-app": "^5.2.1"
+    "eslint-config-react-app": "^6.0.0"
   }
 }

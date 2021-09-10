@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 
-import Carousel, { Modal, ModalGateway } from "react-images";
+// import Carousel, { Modal, ModalGateway } from "react-images";
 
 export class Gallery extends Component {
-  state = {
-    selectedIndex: 0,
-    lightBoxIsOpen: false,
-  };
+  // state = {
+  //   selectedIndex: 0,
+  //   lightBoxIsOpen: false,
+  // };
 
-  toggleLightBox = (selectedIndex) => {
-    this.setState({
-      lightBoxIsOpen: !this.state.lightBoxIsOpen,
-      selectedIndex,
-    });
-  };
+  // toggleLightBox = (selectedIndex) => {
+  //   this.setState({
+  //     lightBoxIsOpen: !this.state.lightBoxIsOpen,
+  //     selectedIndex,
+  //   });
+  // };
 
   render = () => {
     const { images } = this.props;
@@ -28,7 +28,7 @@ export class Gallery extends Component {
       };
     });
 
-    const { selectedIndex, lightBoxIsOpen } = this.state;
+    // const { selectedIndex, lightBoxIsOpen } = this.state;
 
     return (
       <>
@@ -39,25 +39,13 @@ export class Gallery extends Component {
                 href={i.source.regular}
                 onClick={(e) => {
                   e.preventDefault();
-                  this.toggleLightBox(j);
+                  // this.toggleLightBox(j);
                 }}
               >
                 <img src={i.source.thumbnail} alt={i.title} />
               </a>
             </li>
           ))}
-
-          <ModalGateway>
-            {lightBoxIsOpen ? (
-              <Modal onClose={this.toggleLightBox} allowFullscreen={false}>
-                <Carousel
-                  currentIndex={selectedIndex}
-                  views={imageList}
-                  components={{ FooterCount: () => <></> }}
-                />
-              </Modal>
-            ) : null}
-          </ModalGateway>
         </ul>
       </>
     );

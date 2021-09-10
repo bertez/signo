@@ -60,59 +60,54 @@ export default function Project({ data }) {
   );
 }
 
-export const query = graphql`
-  query($id: String!) {
-    page: markdownRemark(id: { eq: $id }) {
-      fields {
-        slug
+export const query = graphql`query ($id: String!) {
+  page: markdownRemark(id: {eq: $id}) {
+    fields {
+      slug
+    }
+    frontmatter {
+      title
+      seo_description
+      seo_image {
+        childImageSharp {
+          gatsbyImageData(width: 1000, placeholder: BLURRED, layout: FIXED)
+        }
       }
-      frontmatter {
+      tagline
+      picture {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.77)
+        }
+      }
+      sections {
+        type
         title
-        seo_description
-        seo_image {
+        text
+        video
+        image {
           childImageSharp {
-            fixed(width: 1000) {
-              src
-            }
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
-        tagline
-        picture {
+      }
+      gallery {
+        title
+        image {
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.77)
-          }
-        }
-        sections {
-          type
-          title
-          text
-          video
-          image {
-            childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
+            big: gatsbyImageData(layout: FULL_WIDTH)
+            thumb: fixed(width: 300, height: 200) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
-        gallery {
-          title
-          image {
-            childImageSharp {
-              big: sizes(maxWidth: 1440) {
-                ...GatsbyImageSharpSizes
-              }
-              thumb: resolutions(width: 300, height: 200) {
-                ...GatsbyImageSharpResolutions
-              }
-            }
-          }
-        }
-        links {
-          cite
-          date(formatString: "DD/MM/YYYY")
-          source
-          url
-        }
+      }
+      links {
+        cite
+        date(formatString: "DD/MM/YYYY")
+        source
+        url
       }
     }
   }
+}
 `;

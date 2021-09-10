@@ -74,81 +74,76 @@ export default function Service({ data }) {
   );
 }
 
-export const query = graphql`
-  query($id: String!) {
-    page: markdownRemark(id: { eq: $id }) {
-      fields {
-        slug
+export const query = graphql`query ($id: String!) {
+  page: markdownRemark(id: {eq: $id}) {
+    fields {
+      slug
+    }
+    frontmatter {
+      title
+      seo_description
+      seo_image {
+        childImageSharp {
+          gatsbyImageData(width: 1000, placeholder: BLURRED, layout: FIXED)
+        }
       }
-      frontmatter {
+      description
+      short_description
+      related_projects {
+        project {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            short_description
+            related_client {
+              frontmatter {
+                title
+              }
+            }
+            picture {
+              childImageSharp {
+                gatsbyImageData(layout: CONSTRAINED)
+              }
+            }
+          }
+        }
+      }
+      picture {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.77)
+        }
+      }
+      details {
         title
-        seo_description
-        seo_image {
+        text
+        image {
           childImageSharp {
-            fixed(width: 1000) {
-              src
+            gatsbyImageData(layout: CONSTRAINED)
+          }
+        }
+      }
+      gallery {
+        title
+        image {
+          childImageSharp {
+            big: gatsbyImageData(layout: FULL_WIDTH)
+            thumb: fixed(width: 300, height: 200) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
+      }
+      prices {
+        name
         description
-        short_description
-        related_projects {
-          project {
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              short_description
-              related_client {
-                frontmatter {
-                  title
-                }
-              }
-              picture {
-                childImageSharp {
-                  gatsbyImageData(layout: CONSTRAINED)
-                }
-              }
-            }
-          }
-        }
-        picture {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.77)
-          }
-        }
-        details {
-          title
-          text
-          image {
-            childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
-            }
-          }
-        }
-        gallery {
-          title
-          image {
-            childImageSharp {
-              big: sizes(maxWidth: 1440) {
-                ...GatsbyImageSharpSizes
-              }
-              thumb: resolutions(width: 300, height: 200) {
-                ...GatsbyImageSharpResolutions
-              }
-            }
-          }
-        }
-        prices {
-          name
-          description
-          price
-          unit
-          budget
-          template
-        }
+        price
+        unit
+        budget
+        template
       }
     }
   }
+}
 `;

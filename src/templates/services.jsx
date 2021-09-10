@@ -27,44 +27,39 @@ export default function Projects({ data }) {
   );
 }
 
-export const query = graphql`
-  query($id: String!) {
-    page: markdownRemark(id: { eq: $id }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        seo_description
-        seo_image {
-          childImageSharp {
-            fixed(width: 1000) {
-              src
-            }
-          }
-        }
-        tagline
-      }
+export const query = graphql`query ($id: String!) {
+  page: markdownRemark(id: {eq: $id}) {
+    fields {
+      slug
     }
-    services: allMarkdownRemark(
-      filter: { frontmatter: { template: { eq: "service" } } }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            short_description
-            picture {
-              childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
-              }
+    frontmatter {
+      title
+      seo_description
+      seo_image {
+        childImageSharp {
+          gatsbyImageData(width: 1000, placeholder: BLURRED, layout: FIXED)
+        }
+      }
+      tagline
+    }
+  }
+  services: allMarkdownRemark(filter: {frontmatter: {template: {eq: "service"}}}) {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          short_description
+          picture {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED)
             }
           }
         }
       }
     }
   }
+}
 `;

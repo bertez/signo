@@ -89,6 +89,10 @@ footer.main {
       width: 100%;
       justify-content: center;
       margin-bottom: 2rem;
+
+      & li {
+        @extend %small-tb;
+      }
     }
 
     & .legal {

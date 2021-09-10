@@ -42,52 +42,47 @@ export default function Products({ data }) {
   );
 }
 
-export const query = graphql`
-  query($id: String!) {
-    page: markdownRemark(id: { eq: $id }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        seo_description
-        seo_image {
-          childImageSharp {
-            fixed(width: 1000) {
-              src
-            }
-          }
-        }
-        tagline
-      }
+export const query = graphql`query ($id: String!) {
+  page: markdownRemark(id: {eq: $id}) {
+    fields {
+      slug
     }
-    products: allMarkdownRemark(
-      filter: {
-        frontmatter: { template: { eq: "product" }, active: { eq: true } }
+    frontmatter {
+      title
+      seo_description
+      seo_image {
+        childImageSharp {
+          gatsbyImageData(width: 1000, placeholder: BLURRED, layout: FIXED)
+        }
       }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            short_description
-            highlight
-            alt_picture {
-              childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
-              }
+      tagline
+    }
+  }
+  products: allMarkdownRemark(
+    filter: {frontmatter: {template: {eq: "product"}, active: {eq: true}}}
+  ) {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          short_description
+          highlight
+          alt_picture {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED)
             }
-            picture {
-              childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
-              }
+          }
+          picture {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED)
             }
           }
         }
       }
     }
   }
+}
 `;

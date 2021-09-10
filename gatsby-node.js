@@ -67,7 +67,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
 };
 
 exports.onCreateNode = ({ node, getNode, actions: { createNodeField } }) => {
-  fmImagesToRelative(node);
+  // fmImagesToRelative(node);
   if (node.internal.type === "MarkdownRemark") {
     const slug = createFilePath({ node, getNode, basePath: "pages" });
 

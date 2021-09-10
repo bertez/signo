@@ -52,70 +52,63 @@ export default function Projects({ data }) {
   );
 }
 
-export const query = graphql`
-  query($id: String!) {
-    page: markdownRemark(id: { eq: $id }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-        seo_description
-        seo_image {
-          childImageSharp {
-            fixed(width: 1000) {
-              src
-            }
-          }
-        }
-        tagline
-      }
+export const query = graphql`query ($id: String!) {
+  page: markdownRemark(id: {eq: $id}) {
+    fields {
+      slug
     }
-    clients: allMarkdownRemark(
-      filter: { frontmatter: { template: { eq: "client" } } }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            picture {
-              childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
-              }
-            }
-          }
+    frontmatter {
+      title
+      seo_description
+      seo_image {
+        childImageSharp {
+          gatsbyImageData(width: 1000, placeholder: BLURRED, layout: FIXED)
         }
       }
+      tagline
     }
-    projects: allMarkdownRemark(
-      filter: { frontmatter: { template: { eq: "project" } } }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            tagline
-            highlight
-            short_description
-            related_client {
-              frontmatter {
-                title
-              }
-            }
-            picture {
-              childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
-              }
+  }
+  clients: allMarkdownRemark(filter: {frontmatter: {template: {eq: "client"}}}) {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          picture {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED)
             }
           }
         }
       }
     }
   }
+  projects: allMarkdownRemark(filter: {frontmatter: {template: {eq: "project"}}}) {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          tagline
+          highlight
+          short_description
+          related_client {
+            frontmatter {
+              title
+            }
+          }
+          picture {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED)
+            }
+          }
+        }
+      }
+    }
+  }
+}
 `;

@@ -11,6 +11,7 @@ module.exports = {
     image: "/extra/card.png",
   },
   plugins: [
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -67,7 +68,6 @@ module.exports = {
         icon: "static/extra/icon.png",
       },
     },
-    "gatsby-plugin-image",
 
     // TODO: enable offline before production
     // 'gatsby-plugin-offline',

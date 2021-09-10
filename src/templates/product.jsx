@@ -56,7 +56,7 @@ export default function Product({ data }) {
 }
 
 export const query = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       fields {
         slug
@@ -66,9 +66,7 @@ export const query = graphql`
         seo_description
         seo_image {
           childImageSharp {
-            fixed(width: 1000) {
-              src
-            }
+            gatsbyImageData(width: 1000, layout: FIXED)
           }
         }
         picture {
@@ -83,11 +81,9 @@ export const query = graphql`
           title
           image {
             childImageSharp {
-              big: sizes(maxWidth: 1440) {
-                ...GatsbyImageSharpSizes
-              }
-              thumb: resolutions(width: 300, height: 200) {
-                ...GatsbyImageSharpResolutions
+              big: gatsbyImageData(layout: FULL_WIDTH)
+              thumb: fixed(width: 300, height: 200) {
+                ...GatsbyImageSharpFixed
               }
             }
           }

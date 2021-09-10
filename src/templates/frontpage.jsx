@@ -89,7 +89,7 @@ export default function Frontpage({ data }) {
 }
 
 export const query = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       fields {
         slug
@@ -128,9 +128,7 @@ export const query = graphql`
         seo_description
         seo_image {
           childImageSharp {
-            fixed(width: 1000) {
-              src
-            }
+            gatsbyImageData(width: 1000, layout: FIXED)
           }
         }
         tagline
@@ -139,7 +137,7 @@ export const query = graphql`
         company_name
         company_picture {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED, width: 800)
+            gatsbyImageData(width: 800)
           }
         }
       }

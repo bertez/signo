@@ -14,4 +14,7 @@ social:
   - handle: "@grupofutures"
     network: facebook
     url: https://facebook.com/grupofutures
+  - handle: "signocreaciones"
+    network: linkedin
+    url: https://www.linkedin.com/in/alberto-garcia-50464a51/
 ---
