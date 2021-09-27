@@ -3,6 +3,7 @@ template: frontpage
 title: Signo Creaciones
 seo_description: Portada de Signo, texto de SEO
 seo_image: /media/ls.jpg
+main_image: /media/letra.jpg
 tagline: >-
   En Signo Creaciones, llevamos más de 25 años ideando, construyendo e
   instalando soluciones en comunicación visual. Entendemos nuestro trabajo como

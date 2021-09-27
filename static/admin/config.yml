@@ -69,6 +69,9 @@ collections:
             name: seo_image
             widget: image
             required: false
+          - label: Imagen principal
+            name: main_image
+            widget: image
           - label: Entradilla
             name: tagline
             widget: markdown

@@ -1,6 +1,7 @@
 .hl-banner {
   background: lightgray;
   text-align: center;
+  @extend %small-tb;
 
   & a {
     background: black;

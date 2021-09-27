@@ -20,7 +20,7 @@ export default function Frontpage({ data }) {
     products: { edges: products },
   } = data;
 
-  console.log(frontmatter.related_service);
+  console.log(data.page.frontmatter.main_image);
 
   return (
     <article className="content content-frontpage">
@@ -33,6 +33,14 @@ export default function Frontpage({ data }) {
         </a>
       </div>
 
+      <figure>
+        <GatsbyImage
+          image={
+            data.page.frontmatter.main_image.childImageSharp.gatsbyImageData
+          }
+          alt={frontmatter.title}
+        />
+      </figure>
       <header className="ly-text-header">
         <h1>{frontmatter.title}</h1>
         <Md>{frontmatter.tagline}</Md>
@@ -129,6 +137,11 @@ export const query = graphql`
         seo_image {
           childImageSharp {
             gatsbyImageData(width: 1000, layout: FIXED)
+          }
+        }
+        main_image {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.77)
           }
         }
         tagline
